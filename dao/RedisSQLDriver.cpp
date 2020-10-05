@@ -27,7 +27,7 @@ RedisSQLDriver::RedisSQLDriver()
     }
     logger->debug("|redisDriver|constructor|" + config.ToFormattedString() + "|");
     SQLConn conn = SQLConn(config);
-    logger->debug("|redisDriver|constructor|" + conn.toString());
+    logger->debug("|redisDriver|constructor|" + conn.toString() + "|");
     this->connect(conn);
 }
 
@@ -44,11 +44,11 @@ SQLResult RedisSQLDriver::connect(SQLConn &conn)
     {
         if (pRedisContext)
         {
-            logger->error("|redisDriver|" + string(pRedisContext->errstr));
+            logger->error("|redisDriver|" + string(pRedisContext->errstr) + "|");
         }
         else
         {
-            logger->error("|redisDriver|connect error: can't allocate redis context.");
+            logger->error("|redisDriver|connect error: can't allocate redis context.|");
         }
         exit(-1);
     }
@@ -91,7 +91,7 @@ SQLResult RedisSQLDriver::opt(string query)
     SQLResult result = SQLResult(
         (REDIS_REPLY_ERROR == pRedisReply->integer) ? REDIS_REPLY_ERROR : 0, string(pRedisReply->str));
 
-    logger->info("|redisDriver|" + query + "|" + result.result().ToString());
+    logger->info("|redisDriver|" + query + "|" + result.result().ToString() + "|");
 
     //每一次执行完Redis命令后需要清空redisReply 以免对下一次的Redis操作造成影响
     freeReplyObject(pRedisReply);
