@@ -1,0 +1,8 @@
+
+git clone https://github.com/meihao1203/log4cpp
+tar -zxvf log4cpp-1.1.1.tar.gz
+
+./configure
+make
+make check
+make install

@@ -1,0 +1,76 @@
+2020-10-04 08:12:07,351: INFO rootCategory : myLog()
+2020-10-04 08:12:07,359: INFO rootCategory : |redisDriver|testKey test|{"resultCode":0,"resultComment":"ERR unknown command 'testKey'"}
+2020-10-04 08:13:59,613: INFO rootCategory : myLog()
+2020-10-04 08:13:59,614: INFO rootCategory : |redisDriver|settestKey test|{"resultCode":0,"resultComment":"ERR unknown command 'settestKey'"}
+2020-10-04 08:14:55,847: INFO rootCategory : myLog()
+2020-10-04 08:14:55,850: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:16:23,956: INFO rootCategory : myLog()
+2020-10-04 08:16:23,958: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:17:01,944: INFO rootCategory : myLog()
+2020-10-04 08:17:01,945: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:17:28,537: INFO rootCategory : myLog()
+2020-10-04 08:17:28,538: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:18:14,244: INFO rootCategory : myLog()
+2020-10-04 08:18:14,246: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:20:19,012: INFO rootCategory : myLog()
+2020-10-04 08:20:19,014: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:21:16,161: INFO rootCategory : myLog()
+2020-10-04 08:21:16,162: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:22:03,704: INFO rootCategory : myLog()
+2020-10-04 08:22:03,706: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:22:53,842: INFO rootCategory : myLog()
+2020-10-04 08:22:53,843: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:26:10,471: INFO rootCategory : myLog()
+2020-10-04 08:26:10,473: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:29:27,432: INFO rootCategory : myLog()
+2020-10-04 08:29:27,433: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:30:10,852: INFO rootCategory : myLog()
+2020-10-04 08:30:10,854: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 08:34:31,520: INFO rootCategory : myLog()
+2020-10-04 08:34:31,657: INFO rootCategory : |redisDriver|set testKey test|{"resultCode":0,"resultComment":"OK"}
+2020-10-04 09:08:15,566: INFO rootCategory : myLog()
+2020-10-04 09:08:15,568: INFO rootCategory : |redisDriver|set testKey test 10|{"resultCode":0,"resultComment":"ERR syntax error"}
+2020-10-04 18:39:32,963: INFO rootCategory : myLog()
+2020-10-04 18:39:32,971: ERROR rootCategory : |redisDriver|Name or service not known
+2020-10-04 18:43:59,994: INFO rootCategory : myLog()
+2020-10-04 18:43:59,994: DEBUG rootCategory : |redisDriver|constructor|start|
+2020-10-04 18:43:59,994: DEBUG rootCategory : |redisDriver|constructor||
+2020-10-04 18:43:59,994: DEBUG rootCategory : |redisDriver|constructor|ip :, port :, username :, password
+2020-10-04 18:44:00,001: ERROR rootCategory : |redisDriver|Name or service not known
+2020-10-04 18:45:52,615: INFO rootCategory : myLog()
+2020-10-04 18:45:52,615: DEBUG rootCategory : |redisDriver|constructor|start|
+2020-10-04 18:45:52,615: DEBUG rootCategory : |redisDriver|constructor||
+2020-10-04 18:45:52,615: DEBUG rootCategory : |redisDriver|constructor|ip :, port :, username :, password
+2020-10-04 18:45:52,620: ERROR rootCategory : |redisDriver|Name or service not known
+2020-10-04 18:46:26,616: INFO rootCategory : myLog()
+2020-10-04 18:46:26,616: DEBUG rootCategory : |redisDriver|constructor|start|
+2020-10-04 18:46:26,616: DEBUG rootCategory : |redisDriver|constructor||
+2020-10-04 18:46:26,616: DEBUG rootCategory : |redisDriver|constructor|ip :, port :, username :, password
+2020-10-04 18:46:26,621: ERROR rootCategory : |redisDriver|Name or service not known
+2020-10-04 18:47:17,933: INFO rootCategory : myLog()
+2020-10-04 18:47:17,934: DEBUG rootCategory : |redisDriver|constructor|start|
+2020-10-04 18:47:17,934: DEBUG rootCategory : |redisDriver|constructor||
+2020-10-04 18:47:17,934: DEBUG rootCategory : |redisDriver|constructor|ip :, port :, username :, password
+2020-10-04 18:47:17,938: ERROR rootCategory : |redisDriver|Name or service not known
+2020-10-04 18:58:42,111: INFO rootCategory : myLog()
+2020-10-04 18:58:42,112: DEBUG rootCategory : |redisDriver|constructor|start|
+2020-10-04 18:58:42,112: ERROR rootCategory : |redisDriver|constructor|parse redisConfig error|
+2020-10-04 18:58:42,112: DEBUG rootCategory : |redisDriver|constructor||
+2020-10-04 18:58:42,112: DEBUG rootCategory : |redisDriver|constructor|ip :, port :, username :, password
+2020-10-04 18:58:42,134: ERROR rootCategory : |redisDriver|Name or service not known
+2020-10-04 18:59:52,889: INFO rootCategory : myLog()
+2020-10-04 18:59:52,889: DEBUG rootCategory : |redisDriver|constructor|start|
+2020-10-04 18:59:52,889: ERROR rootCategory : |redisDriver|constructor|parse redisConfig error|
+2020-10-04 18:59:52,889: DEBUG rootCategory : |redisDriver|constructor||
+2020-10-04 18:59:52,889: DEBUG rootCategory : |redisDriver|constructor|ip :, port :, username :, password
+2020-10-04 18:59:52,894: ERROR rootCategory : |redisDriver|Name or service not known
+2020-10-04 19:00:14,254: INFO rootCategory : myLog()
+2020-10-04 19:00:14,254: DEBUG rootCategory : |redisDriver|constructor|start|
+2020-10-04 19:00:14,254: DEBUG rootCategory : |redisDriver|constructor|{
+	"ip":	"127.0.0.1",
+	"port":	"6379",
+	"username":	"null",
+	"password":	"null"
+}|
+2020-10-04 19:00:14,254: DEBUG rootCategory : |redisDriver|constructor|ip :127.0.0.1, port :6379, username :null, passwordnull
+2020-10-04 19:00:14,255: INFO rootCategory : |redisDriver|set testKey test EX 10|{"resultCode":0,"resultComment":"OK"}
