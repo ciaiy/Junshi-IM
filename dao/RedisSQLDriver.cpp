@@ -63,26 +63,6 @@ SQLResult RedisSQLDriver::disConnect()
     return SQLResult(0, "nil");
 }
 
-SQLResult RedisSQLDriver::get(string query)
-{
-    return opt(query);
-}
-
-SQLResult RedisSQLDriver::mod(string query)
-{
-    return opt(query);
-}
-
-SQLResult RedisSQLDriver::del(string query)
-{
-    return opt(query);
-}
-
-SQLResult RedisSQLDriver::add(string query)
-{
-    return opt(query);
-}
-
 SQLResult RedisSQLDriver::opt(string query)
 {
     //redisReply是Redis命令回复对象 redis返回的信息保存在redisReply对象中
@@ -100,10 +80,10 @@ SQLResult RedisSQLDriver::opt(string query)
 
 SQLResult RedisSQLDriver::set(string key, string value)
 {
-    return add("set " + key + " " + value);
+    return opt("set " + key + " " + value);
 }
 
 SQLResult RedisSQLDriver::setWithExpire(string key, string value, string expireTime)
 {
-    return add("set " + key + " " + value + " EX " + expireTime);
+    return opt("set " + key + " " + value + " EX " + expireTime);
 }

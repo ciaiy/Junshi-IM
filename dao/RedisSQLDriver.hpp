@@ -21,14 +21,10 @@ namespace im
 {
     namespace dao
     {
-        class RedisSQLDriver : protected SQLDriver
+        class RedisSQLDriver
         {
         private:
             redisContext *pRedisContext;
-            virtual SQLResult add(std::string query);
-            virtual SQLResult del(std::string query);
-            virtual SQLResult mod(std::string query);
-            virtual SQLResult get(std::string query);
             virtual SQLResult opt(std::string query);
             virtual SQLResult connect(SQLConn &conn);
             RedisSQLDriver();
