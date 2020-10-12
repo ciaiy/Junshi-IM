@@ -12,16 +12,18 @@
 
 #include "SQLDriver.hpp"
 #include "SQLResult.hpp"
+#include "../common/SingletonPattern.hpp"
 
 using im::dao::SQLConn;
 using im::dao::SQLDriver;
 using im::dao::SQLResult;
+using im::common::SingtonPattern;
 
 namespace im
 {
     namespace dao
     {
-        class RedisSQLDriver
+        class RedisSQLDriver : SingtonPattern<RedisSQLDriver>
         {
         private:
             redisContext *pRedisContext;
@@ -29,7 +31,7 @@ namespace im
             virtual SQLResult connect(SQLConn &conn);
             RedisSQLDriver();
         public:
-            static RedisSQLDriver* getInstance();
+            static RedisSQLDriver *getInstance();
             virtual SQLResult disConnect();
             SQLResult set(std::string key, std::string value);
             SQLResult setWithExpire(std::string key, std::string value, std::string expireTime);

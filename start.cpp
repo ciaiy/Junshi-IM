@@ -1,3 +1,9 @@
+/*
+ * @Author: Qizhou 
+ * @Date: 2020-10-12 00:02:02 
+ * @Last Modified by:   Qizhou 
+ * @Last Modified time: 2020-10-12 00:02:02 
+ */
 #include <iostream>
 #include <thread>
 #include "DefaultMQPushConsumer.h"
