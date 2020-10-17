@@ -10,12 +10,11 @@
 #include <hiredis/hiredis.h>
 #include <string.h>
 
-#include "SQLDriver.hpp"
 #include "SQLResult.hpp"
+#include "SQLConn.hpp"
 #include "../common/SingletonPattern.hpp"
 
 using im::dao::SQLConn;
-using im::dao::SQLDriver;
 using im::dao::SQLResult;
 using im::common::SingtonPattern;
 

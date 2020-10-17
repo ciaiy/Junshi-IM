@@ -10,6 +10,7 @@
 #include <iostream>
 
 using namespace im::dao;
+using namespace std;
 
 void testSQLResult() {
     std::cout << "testSQLResult" << std::endl;
@@ -17,8 +18,26 @@ void testSQLResult() {
     std::cout << result.result().ToFormattedString() << std::endl;
 }
 
+void testCJsonObject() {
+    cout << "testCJsonObject" << endl;
+    int item = 123;
+    bool l;
+    CJsonObject object;
+    cout << object.Add("int", item) << endl;
+    cout << object.ToFormattedString() << endl;
+    try{
+        cout << object.getBool("int", l) << endl;
+    }catch(std::string e) {
+        cout << "receive " + e << endl;
+    }
+}
+
+
 int main() {
     RedisSQLDriver *sqldriver = RedisSQLDriver::getInstance();
     std::cout << (sqldriver->setWithExpire("testKey", "test", "10").result().ToFormattedString() ) << std::endl;
+    testCJsonObject();
+    CJsonObject object;
+
     testSQLResult();
 }

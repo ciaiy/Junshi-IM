@@ -72,6 +72,15 @@ namespace im
             bool Get(const std::string &strKey, bool &bValue) const;
             bool Get(const std::string &strKey, float &fValue) const;
             bool Get(const std::string &strKey, double &dValue) const;
+            CJsonObject getCJsonObject(const std::string &strKey, CJsonObject &oJsonObject) const;
+            std::string getString(const std::string &strKey, std::string &strValue) const;
+            int32 geyInt32(const std::string &strKey, int32 &iValue) const;
+            uint32 getUInt32(const std::string &strKey, uint32 &uiValue) const;
+            int64 getInt64(const std::string &strKey, int64 &llValue) const;
+            uint64 getUInt64(const std::string &strKey, uint64 &ullValue) const;
+            bool getBool(const std::string &strKey, bool &bValue) const;
+            float getFloat(const std::string &strKey, float &fValue) const;
+            double getDouble(const std::string &strKey, double &dValue) const;
             bool IsNull(const std::string &strKey) const;
             bool Add(const std::string &strKey, const CJsonObject &oJsonObject);
             bool Add(const std::string &strKey, const std::string &strValue);
