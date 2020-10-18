@@ -18,16 +18,16 @@ namespace im
         {
         public:
             Exception(std::string what);
-            ~Exception() noexcept override = default;
+            ~Exception() = default;
 
             // default copy-ctor and operator= are okay.
 
-            const char *what() const noexcept override
+            const char *what() 
             {
                 return message_.c_str();
             }
 
-            const char *stackTrace() const noexcept
+            const char *stackTrace()  
             {
                 return stack_.c_str();
             }

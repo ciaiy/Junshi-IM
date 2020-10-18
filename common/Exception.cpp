@@ -4,12 +4,12 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
 #include "Exception.hpp"
-
+#include "CurrentThread.hpp"
+#include <iostream>
 using namespace im::common;
 
 Exception::Exception(std::string msg)
-    : message_(std::move(msg)),
-      stack_(std::CurrentThread::stackTrace(/*demangle=*/false))
+    : message_(msg),
+      stack_(CurrentThread::stackTrace(/*demangle=*/true))
 {
-    
 }

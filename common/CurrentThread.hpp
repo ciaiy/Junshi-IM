@@ -12,43 +12,46 @@ namespace im
 {
     namespace common
     {
-        // internal
-        extern __thread int t_cachedTid;
-        extern __thread char t_tidString[32];
-        extern __thread int t_tidStringLength;
-        extern __thread const char *t_threadName;
-        void cacheTid();
-
-        inline int tid()
+        namespace CurrentThread
         {
-            if (__builtin_expect(t_cachedTid == 0, 0))
+            // internal
+            extern __thread int t_cachedTid;
+            extern __thread char t_tidString[32];
+            extern __thread int t_tidStringLength;
+            extern __thread const char *t_threadName;
+            void cacheTid();
+
+            inline int tid()
             {
-                cacheTid();
+                if (__builtin_expect(t_cachedTid == 0, 0))
+                {
+                    cacheTid();
+                }
+                return t_cachedTid;
             }
-            return t_cachedTid;
-        }
 
-        inline const char *tidString() // for logging
-        {
-            return t_tidString;
-        }
+            inline const char *tidString() // for logging
+            {
+                return t_tidString;
+            }
 
-        inline int tidStringLength() // for logging
-        {
-            return t_tidStringLength;
-        }
+            inline int tidStringLength() // for logging
+            {
+                return t_tidStringLength;
+            }
 
-        inline const char *name()
-        {
-            return t_threadName;
-        }
+            inline const char *name()
+            {
+                return t_threadName;
+            }
 
-        bool isMainThread();
+            bool isMainThread();
 
-        void sleepUsec(long long usec); // for testing
+            void sleepUsec(long long usec); // for testing
 
-        std::string stackTrace(bool demangle);
-    } // namespace common
+            std::string stackTrace(bool demangle);
+        } // namespace CurrentThread
+    }     // namespace common
 } // namespace im
 
 #endif // MUDUO_BASE_CURRENTTHREAD_H

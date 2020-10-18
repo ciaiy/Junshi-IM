@@ -6,11 +6,13 @@
  */
 #include "../../dao/RedisSQLDriver.hpp"
 #include "../../common/CJsonObject.hpp"
+#include "../../common/Exception.hpp"
 #include <assert.h>
 #include <iostream>
 
 using namespace im::dao;
 using namespace std;
+using im::common::Exception;
 
 void testSQLResult() {
     std::cout << "testSQLResult" << std::endl;
@@ -32,12 +34,24 @@ void testCJsonObject() {
     }
 }
 
+void throwException() {
+    throw im::common::Exception("test");
+}
+
+void catchException() {
+    try {
+        throwException();
+    }catch(Exception &e) {
+        cout << e.what() << e.stackTrace() << endl;
+    }
+}
 
 int main() {
     RedisSQLDriver *sqldriver = RedisSQLDriver::getInstance();
     std::cout << (sqldriver->setWithExpire("testKey", "test", "10").result().ToFormattedString() ) << std::endl;
     testCJsonObject();
     CJsonObject object;
-
     testSQLResult();
+    catchException();
+    return 0;
 }
