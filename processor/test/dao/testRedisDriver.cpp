@@ -4,9 +4,9 @@
  * @Last Modified by: Qizhou
  * @Last Modified time: 2020-10-04 08:35:15
  */
-#include "../../dao/RedisSQLDriver.hpp"
-#include "../../common/CJsonObject.hpp"
-#include "../../common/Exception.hpp"
+#include "../../src/dao/RedisSQLDriver.hpp"
+#include "../../src/common/CJsonObject.hpp"
+#include "../../src/common/Exception.hpp"
 #include <assert.h>
 #include <iostream>
 
