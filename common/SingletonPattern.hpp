@@ -10,7 +10,6 @@ namespace im
         class SingtonPattern
         {
         public:
-            virtual static T* getInstance() = 0;
             virtual ~SingtonPattern() = default;
         };
     } // namespace common

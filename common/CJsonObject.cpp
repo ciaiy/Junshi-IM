@@ -9,7 +9,7 @@
  ******************************************************************************/
 
 #include "CJsonObject.hpp"
-#include <exception>
+#include "Exception.hpp"
 #ifdef _WIN32
 #define snprintf _snprintf_s
 #endif
@@ -65,7 +65,7 @@ CJsonObject CJsonObject::getCJsonObject(const std::string &strKey, CJsonObject &
     CJsonObject ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {
@@ -78,7 +78,7 @@ std::string CJsonObject::getString(const std::string &strKey, std::string &strVa
     std::string ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {
@@ -90,7 +90,7 @@ int32 CJsonObject::geyInt32(const std::string &strKey, int32 &iValue) const
     int32 ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {
@@ -102,7 +102,7 @@ uint32 CJsonObject::getUInt32(const std::string &strKey, uint32 &uiValue) const
     uint32 ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {
@@ -114,7 +114,7 @@ int64 CJsonObject::getInt64(const std::string &strKey, int64 &llValue) const
     int64 ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {
@@ -126,7 +126,7 @@ uint64 CJsonObject::getUInt64(const std::string &strKey, uint64 &ullValue) const
     uint64 ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {
@@ -138,7 +138,7 @@ bool CJsonObject::getBool(const std::string &strKey, bool &bValue) const
     bool ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {
@@ -150,7 +150,7 @@ float CJsonObject::getFloat(const std::string &strKey, float &fValue) const
     float ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {
@@ -162,7 +162,7 @@ double CJsonObject::getDouble(const std::string &strKey, double &dValue) const
     double ret;
     if (Get(strKey, ret) == false)
     {
-        throw strKey + " not exist";
+        throw Exception(m_strErrMsg);
     }
     else
     {

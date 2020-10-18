@@ -29,8 +29,8 @@ void testCJsonObject() {
     cout << object.ToFormattedString() << endl;
     try{
         cout << object.getBool("int", l) << endl;
-    }catch(std::string e) {
-        cout << "receive " + e << endl;
+    }catch(Exception e) {
+        cout << e.what() << endl;
     }
 }
 
@@ -42,7 +42,7 @@ void catchException() {
     try {
         throwException();
     }catch(Exception &e) {
-        cout << e.what() << e.stackTrace() << endl;
+        cout << e.what()  << endl;
     }
 }
 

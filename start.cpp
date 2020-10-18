@@ -6,8 +6,9 @@
  */
 #include <iostream>
 #include <thread>
-#include "DefaultMQPushConsumer.h"
-#include "MessageListener.hpp"
+#include <DefaultMQPushConsumer.h>
+#include <MessageListener.hpp>
+
 #include "common/CJsonObject.hpp"
 #include "common/cJSON.h"
 #include "common/myLog.h"
