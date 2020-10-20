@@ -1,7 +1,7 @@
 #include "QueryProcessor.hpp"
-#include "common/CJsonObject.hpp"
-#include "common/myLog.h"
-#include "common/Exception.hpp"
+#include "../../common/CJsonObject.hpp"
+#include "../../common/myLog.h"
+#include "../../common/Exception.hpp"
 
 using namespace im;
 using namespace im::common;
@@ -18,6 +18,8 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, string queryStr)
     try
     {
         int64_t dataAck = queryJson.getInt64("dataAck");
+        conn->send(&dataAck, sizeof(int64_t));
+        producer->produce(queryJson.getCJsonObject("queryBody").ToString());
     }
     catch (Exception ex)
     {

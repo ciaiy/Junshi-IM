@@ -1,8 +1,14 @@
 /*
  * @Author: Qizhou 
+ * @Date: 2020-10-20 18:54:33 
+ * @Last Modified by: Qizhou
+ * @Last Modified time: 2020-10-20 18:58:31
+ */
+/*
+ * @Author: Qizhou 
  * @Date: 2020-10-20 14:16:47 
  * @Last Modified by: Qizhou
- * @Last Modified time: 2020-10-20 14:17:10
+ * @Last Modified time: 2020-10-20 18:54:20
  */
 #include <muduo/net/TcpServer.h>
 #include <muduo/net/EventLoop.h>
@@ -13,8 +19,11 @@
 #include <muduo/net/Buffer.h>
 #include <iostream>
 
-#include "common/myLog.h"
+#include "TcpKeeper.hpp"
 
+#include "../../common/myLog.h"
+
+using namespace im;
 using namespace muduo;
 using namespace muduo::net;
 
@@ -33,20 +42,7 @@ int main(int argc, char *argv[])
         uint16_t port = static_cast<uint16_t>(atoi(argv[2]));
         InetAddress listenAddr(ip, port);
         int threadCount = atoi(argv[3]);
-
-        EventLoop loop;
-
-        TcpServer server(&loop, listenAddr, "TcpKeeper");
-
-        server.setConnectionCallback(onConnection);
-        server.setMessageCallback(onMessage);
-
-        if (threadCount > 1)
-        {
-            server.setThreadNum(threadCount);
-        }
-
-        server.start();
-        loop.loop();
+        TCPKeeper keeper;
+        keeper.start(ip, port, threadCount);
     }
 }

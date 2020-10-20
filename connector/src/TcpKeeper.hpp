@@ -2,7 +2,7 @@
  * @Author: Qizhou 
  * @Date: 2020-10-19 09:39:33 
  * @Last Modified by: Qizhou
- * @Last Modified time: 2020-10-20 14:39:55
+ * @Last Modified time: 2020-10-20 18:57:47
  */
 #include <muduo/net/TcpServer.h>
 #include <muduo/net/EventLoop.h>
@@ -13,7 +13,7 @@
 #include <muduo/net/Buffer.h>
 #include <iostream>
 
-#include "common/myLog.h"
+#include "../../common/myLog.h"
 #include "QueryProcessor.hpp"
 
 using namespace muduo;
@@ -28,7 +28,32 @@ namespace im
         static const int HeaderLenth = 4;
         static const int DataMaxSize = 65534;
 
-        void onConnection(const TcpConnectionPtr &conn)
+        TCPKeeper()
+        {
+            processor = QueryProcessor::getInstance();
+        }
+        
+        void start(const string &ip, uint16_t port, int threadNum)
+        {
+            LOG_INFO << "pid = " << getpid() << ", tid = " << CurrentThread::tid();
+            Logger::setLogLevel(Logger::WARN);
+            InetAddress listenAddr(ip.c_str(), port);
+            int threadCount = threadNum;
+            EventLoop loop;
+            TcpServer server(&loop, listenAddr, "TcpKeeper");
+            server.setConnectionCallback(onConnection);
+            server.setMessageCallback(onMessage);
+
+            if (threadCount > 1)
+            {
+                server.setThreadNum(threadCount);
+            }
+
+            server.start();
+            loop.loop();
+        }
+
+        static void onConnection(const TcpConnectionPtr &conn)
         {
             if (conn->connected())
             {
@@ -37,7 +62,7 @@ namespace im
             }
         }
 
-        void onMessage(const TcpConnectionPtr &conn, Buffer *buf, Timestamp)
+        static void onMessage(const TcpConnectionPtr &conn, Buffer *buf, Timestamp)
         {
             // 大于HeaderLenth 则进行读取
             while (buf->readableBytes() >= HeaderLenth)
@@ -61,7 +86,8 @@ namespace im
                 }
             }
         }
-        private:
-            QueryProcessor *processor = QueryProcessor::getInstance();
+
+    private:
+        static QueryProcessor *processor;
     };
 } // namespace im

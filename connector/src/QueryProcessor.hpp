@@ -1,7 +1,7 @@
 #ifndef _QUERY_PROCESSOR_H_
 #define _QUERY_PROCESSOR_H_
 
-#include "common/SingletonPattern.hpp"
+#include "../../common/SingletonPattern.hpp"
 #include "MQProducer.hpp"
 
 #include <muduo/net/TcpConnection.h>
