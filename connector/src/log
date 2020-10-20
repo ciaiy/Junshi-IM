@@ -1,0 +1,17 @@
+2020-10-19 14:37:25,687: INFO rootCategory : myLog()
+2020-10-19 14:37:40,964: INFO rootCategory : myLog()
+2020-10-19 14:37:56,573: INFO rootCategory : myLog()
+2020-10-19 14:39:57,346: INFO rootCategory : myLog()
+2020-10-19 14:43:12,500: INFO rootCategory : myLog()
+2020-10-19 14:43:19,234: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=232000 ato=0 snd_mss=1448 rcv_mss=536 lost=0 retrans=0 rtt=28000 rttvar=14000 sshthresh=2147483647 cwnd=10 total_retrans=0|
+2020-10-19 14:43:19,247: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=232000 ato=0 snd_mss=1448 rcv_mss=536 lost=0 retrans=0 rtt=26000 rttvar=13000 sshthresh=2147483647 cwnd=10 total_retrans=0|
+2020-10-19 14:43:19,249: INFO rootCategory : |TcpKeeper|onMessage receive|GET / HTTP/1.1
+Host: 47.94.149.37:12345
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+|

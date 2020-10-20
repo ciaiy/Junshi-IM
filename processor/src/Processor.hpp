@@ -7,7 +7,7 @@ using im::common::SingtonPattern;
 
 namespace im
 {
-    class Processor : SingtonPattern<Processor>
+    class Processor : SingtonPattern
     {
     public:
         static Processor *getInstance();
