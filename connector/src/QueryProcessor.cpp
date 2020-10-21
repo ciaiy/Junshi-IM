@@ -4,9 +4,15 @@
 #include "../../common/Exception.hpp"
 #include "MQProducer.hpp"
 
-
 using namespace im;
 using namespace im::common;
+
+QueryProcessor::ObjectCreator QueryProcessor::objectCreator;
+
+QueryProcessor::QueryProcessor()
+{
+    logger->info("|QueryProcessor|Constructor complete|");
+};
 
 QueryProcessor *QueryProcessor::getInstance()
 {
@@ -19,7 +25,8 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string query
     CJsonObject queryJson(queryStr);
     try
     {
-        int64_t dataAck = queryJson.getInt64("dataAck");
+        int32_t dataAck = queryJson.getUInt32("dataAck");
+        logger->debug("|QueryProcessor|receiveData|dataAck" + to_string(dataAck));
         conn->send(&dataAck, sizeof(int64_t));
         MQProducer::getInstance()->produce(queryJson.getCJsonObject("queryBody").ToString());
     }

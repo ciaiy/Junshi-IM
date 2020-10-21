@@ -57,5 +57,8 @@ else
     # 启动
     cd /opt/rocketmq-all-4.7.1-source-release/distribution/target/rocketmq-4.7.1/rocketmq-4.7.1
     nohup sh bin/mqnamesrv & 
-    nohup sh bin/mqbroker -n $1:9876 &
+    nohup sh bin/mqbroker -n 0.0.0.0:9876 &
+
+    cd /opt/rocketmq-externals/rocketmq-console/
+    java -jar target/rocketmq-console-ng-1.0.0.jar > ~/rocket-console.log &
 fi

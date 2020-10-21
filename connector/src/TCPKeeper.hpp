@@ -35,6 +35,7 @@ namespace im
         TCPKeeper() = default;
         void start(const string &ip, uint16_t port, int threadNum);
         static void onConnection(const TcpConnectionPtr &conn);
+        static void onClose(const TcpConnectionPtr &conn);
         static void onMessage(const TcpConnectionPtr &conn, Buffer *buf, Timestamp);
     };
 } // namespace im

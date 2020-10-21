@@ -114,7 +114,7 @@ int64 CJsonObject::getInt64(const std::string &strKey) const
     int64 ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get Int64 error");
     }
     else
     {

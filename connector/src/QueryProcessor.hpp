@@ -20,10 +20,21 @@ namespace im
 
     private:
         MQProducer *producer;
-        QueryProcessor() = default;
+        QueryProcessor();
 
     public:
         void receiveData(const TcpConnectionPtr &conn, std::string query);
+
+    public:
+        // 辅助代理类
+        struct ObjectCreator
+        {
+            ObjectCreator()
+            {
+                QueryProcessor::getInstance();
+            }
+        };
+        static ObjectCreator objectCreator;
     };
 
 } // namespace im
