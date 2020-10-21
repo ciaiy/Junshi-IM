@@ -2,6 +2,8 @@
 #include "../../common/CJsonObject.hpp"
 #include "../../common/myLog.h"
 #include "../../common/Exception.hpp"
+#include "MQProducer.hpp"
+
 
 using namespace im;
 using namespace im::common;
@@ -12,14 +14,14 @@ QueryProcessor *QueryProcessor::getInstance()
     return &processor;
 }
 
-void QueryProcessor::receiveData(const TcpConnectionPtr &conn, string queryStr)
+void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string queryStr)
 {
     CJsonObject queryJson(queryStr);
     try
     {
         int64_t dataAck = queryJson.getInt64("dataAck");
         conn->send(&dataAck, sizeof(int64_t));
-        producer->produce(queryJson.getCJsonObject("queryBody").ToString());
+        MQProducer::getInstance()->produce(queryJson.getCJsonObject("queryBody").ToString());
     }
     catch (Exception ex)
     {

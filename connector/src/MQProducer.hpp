@@ -4,7 +4,6 @@
 #include <thread>
 #include <DefaultMQProducer.h>
 
-using namespace im;
 using namespace rocketmq;
 
 namespace im
@@ -13,11 +12,11 @@ namespace im
     {
     public:
         // 后期均改为配置信息
-        const string TopicName = "ConnectorToProcessor";
+        const std::string TopicName = "ConnectorToProcessor";
     public:
         static MQProducer *getInstance();
         DefaultMQProducer *producer;
-        void produce(const string query);
+        void produce(const std::string query);
     private:
         MQProducer();
     };

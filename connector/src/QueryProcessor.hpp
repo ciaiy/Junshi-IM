@@ -7,9 +7,10 @@
 #include <muduo/net/TcpConnection.h>
 
 using im::common::SingtonPattern;
-
+using std::string;
 using namespace muduo;
 using namespace muduo::net;
+
 namespace im
 {
     class QueryProcessor : SingtonPattern
@@ -18,13 +19,11 @@ namespace im
         static QueryProcessor *getInstance();
 
     private:
-        MQProducer *producer = MQProducer::getInstance();
+        MQProducer *producer;
+        QueryProcessor() = default;
 
     public:
-        void receiveData(const TcpConnectionPtr &conn, string query);
-
-    private:
-        QueryProcessor() = default;
+        void receiveData(const TcpConnectionPtr &conn, std::string query);
     };
 
 } // namespace im

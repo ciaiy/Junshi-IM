@@ -15,3 +15,10 @@ Accept-Encoding: gzip, deflate
 Connection: keep-alive
 
 |
+2020-10-21 09:47:03,186: INFO rootCategory : myLog()
+2020-10-21 09:47:18,496: INFO rootCategory : myLog()
+2020-10-21 09:47:31,926: INFO rootCategory : myLog()
+2020-10-21 09:48:08,630: INFO rootCategory : myLog()
+2020-10-21 09:48:14,497: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=227000 ato=0 snd_mss=1448 rcv_mss=536 lost=0 retrans=0 rtt=24000 rttvar=12000 sshthresh=2147483647 cwnd=10 total_retrans=0|
+2020-10-21 09:48:14,508: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=227000 ato=0 snd_mss=1448 rcv_mss=536 lost=0 retrans=0 rtt=25000 rttvar=12500 sshthresh=2147483647 cwnd=10 total_retrans=0|
+2020-10-21 09:48:14,516: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=227000 ato=0 snd_mss=1448 rcv_mss=536 lost=0 retrans=0 rtt=27000 rttvar=13500 sshthresh=2147483647 cwnd=10 total_retrans=0|

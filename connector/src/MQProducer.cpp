@@ -6,7 +6,13 @@ using namespace im;
 using im::common::logger;
 using rocketmq::SendStatus;
 
-void MQProducer::produce(const string query)
+MQProducer *MQProducer::getInstance()
+{
+     static MQProducer producer;
+    return &producer;
+}
+
+void MQProducer::produce(const std::string query)
 {
     // 不安全，有可能produce失败
     MQMessage msg(MQProducer::TopicName, "HiTAG", query);
