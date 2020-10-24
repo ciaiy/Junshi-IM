@@ -14,6 +14,17 @@ namespace im
         void process(string msg);
     private:
         void createMessageQuery(string queryBody);
+        OptionProcessor *optionProcessor;
+    public:
+        // 辅助代理类
+        struct ObjectCreator
+        {
+            ObjectCreator()
+            {
+                Processor::getInstance();
+            }
+        };
+        static ObjectCreator objectCreator;
     };
 } // namespace im
 #endif

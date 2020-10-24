@@ -60,12 +60,25 @@ bool CJsonObject::operator==(const CJsonObject &oJsonObject) const
     return (this->ToString() == oJsonObject.ToString());
 }
 
+std::string CJsonObject::getItem(int iWhich) const
+{
+    std::string ret;
+    if (Get(iWhich, ret) == false)
+    {
+        throw Exception("get Item error, " + m_strErrMsg);
+    }
+    else
+    {
+        return ret;
+    }
+}
+
 CJsonObject CJsonObject::getCJsonObject(const std::string &strKey) const
 {
     CJsonObject ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {
@@ -78,19 +91,19 @@ std::string CJsonObject::getString(const std::string &strKey) const
     std::string ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {
         return ret;
     }
 }
-int32 CJsonObject::geyInt32(const std::string &strKey) const
+int32 CJsonObject::getInt32(const std::string &strKey) const
 {
     int32 ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {
@@ -102,7 +115,7 @@ uint32 CJsonObject::getUInt32(const std::string &strKey) const
     uint32 ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {
@@ -114,7 +127,7 @@ int64 CJsonObject::getInt64(const std::string &strKey) const
     int64 ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception("get Int64 error");
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {
@@ -126,7 +139,7 @@ uint64 CJsonObject::getUInt64(const std::string &strKey) const
     uint64 ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {
@@ -138,7 +151,7 @@ bool CJsonObject::getBool(const std::string &strKey) const
     bool ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {
@@ -150,7 +163,7 @@ float CJsonObject::getFloat(const std::string &strKey) const
     float ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {
@@ -162,7 +175,7 @@ double CJsonObject::getDouble(const std::string &strKey) const
     double ret;
     if (Get(strKey, ret) == false)
     {
-        throw Exception(m_strErrMsg);
+        throw Exception("get value error, strKey = " + strKey);
     }
     else
     {

@@ -74,7 +74,7 @@ namespace im
             bool Get(const std::string &strKey, double &dValue) const;
             CJsonObject getCJsonObject(const std::string &strKey) const;
             std::string getString(const std::string &strKey) const;
-            int32 geyInt32(const std::string &strKey) const;
+            int32 getInt32(const std::string &strKey) const;
             uint32 getUInt32(const std::string &strKey) const;
             int64 getInt64(const std::string &strKey) const;
             uint64 getUInt64(const std::string &strKey) const;
@@ -119,6 +119,7 @@ namespace im
             std::string operator()(unsigned int uiWhich) const;
             bool Get(int iWhich, CJsonObject &oJsonObject) const;
             bool Get(int iWhich, std::string &strValue) const;
+            std::string getItem(int iWhich) const ;
             bool Get(int iWhich, int32 &iValue) const;
             bool Get(int iWhich, uint32 &uiValue) const;
             bool Get(int iWhich, int64 &llValue) const;

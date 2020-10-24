@@ -1,5 +1,11 @@
-consumer_demo : common/* MessageListener.hpp Processor.hpp start.cpp 
-	g++ -o consumer_demo -std=c++11 -lrocketmq -llog4cpp -lpthread MessageListener.hpp Processor.hpp start.cpp common/* 
+CFLAGS = -g -std=c++11
+LIBS = -lpthread  -llog4cpp -lrocketmq
 
-clean : consumer_demo
-	rm -rf consumer_demo
+
+COMMONSRCS = ../../common/*.cpp ../../common/*.hpp ../../common/*.c ../../common/*.h
+SRCS = MessageListener.hpp Processor.hpp start.cpp  $(COMMONSRCS)
+EXECUTABLE = processor
+CC = g++
+
+all:
+	$(CC) $(CFLAGS) -o $(EXECUTABLE) $(SRCS) $(LIBS)

@@ -2,7 +2,7 @@
  * @Author: Qizhou 
  * @Date: 2020-10-12 00:01:27 
  * @Last Modified by: Qizhou
- * @Last Modified time: 2020-10-12 00:15:01
+ * @Last Modified time: 2020-10-22 18:10:23
  */
 #ifndef _MESSAGEQUERY_H_
 #define _MESSAGEQUERY_H_
@@ -18,10 +18,15 @@ namespace im
         class MessageQuery
         {
         private:
+            // 发起请求的id
             string uid;
+            // 相关cid
             string cid;
+            // 操作数据
             string message;
+            // 操作类型
             string type;
+            // 冗余备用
             string ext;
 
         public:

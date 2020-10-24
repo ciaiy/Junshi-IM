@@ -2,80 +2,80 @@
  * @Author: Qizhou 
  * @Date: 2020-10-12 00:01:47 
  * @Last Modified by: Qizhou
- * @Last Modified time: 2020-10-12 00:40:42
+ * @Last Modified time: 2020-10-22 18:07:03
  */
 #include "Processor.hpp"
-#include "common/myLog.h"
-#include "common/config.hpp"
-#include "common/CJsonObject.hpp"
+#include "../../common/myLog.h"
+#include "../../common/config.hpp"
+#include "../../common/CJsonObject.hpp"
 #include "entry/MessageQuery.hpp"
+#include "OptionProcessor.hpp"
 
 using namespace im;
-using im::common::CJsonObject;
-using im::common::logger;
-using im::entry::MessageQuery;
+using namespace im::common;
+using namespace im::entry;
 
-namespace im
+Processor::ObjectCreator Processor::objectCreator;
+
+Processor::Processor()
 {
-    Processor *Processor::getInstance()
+    optionProcessor = OptionProcessor::getInstance();
+    logger->info("|Processor|Constructor complete|");
+}
+
+Processor *Processor::getInstance()
+{
+    static Processor processor;
+    return &processor;
+}
+void Processor::process(string msg)
+{
+    if (msg.empty())
     {
-        static Processor processor;
-        return &processor;
+        logger->warn("|processor|process msg is null|");
     }
-    void Processor::process(string msg)
+    else
     {
-        if (msg.empty())
+        CJsonObject query = CJsonObject(msg);
+        if (query.IsEmpty())
         {
-            logger->warn("|processor|process msg is null|");
+            logger->warn("|processor|process parse error|" + msg + "|");
         }
-        else
+        string queryType;
+        if (query.Get("queryType", queryType))
         {
-            CJsonObject query = CJsonObject(msg);
-            if (query.IsEmpty())
+            if (common::MESSAGE_QUREY.compare(queryType))
             {
-                logger->warn("|processor|process parse error|" + msg + "|");
-            }
-            string queryType;
-            if (query.Get("queryType", queryType))
-            {
-                if (common::MESSAGE_QUREY.compare(queryType))
+                string messageQuery;
+                if (query.Get("queryInfo", messageQuery))
                 {
-                    string messageQuery;
-                    if (query.Get("queryInfo", messageQuery))
-                    {
-                        MessageProcessor->process(createMessageQuery(messageQuery));
-                    }
-                    else
-                    {
-                        logger->warn("|processor|process getQueryInfo error|" + msg + "|");
-                    }
-                }
-                else if (common::OPTION_QUERY.compare(queryType))
-                {
-                    string optionQuery;
-                    if (query.Get("queryInfo", optionQuery))
-                    {
-                        optionProcessor->process(createOptionQuery(optionQuery));
-                    }
-                    else
-                    {
-                        logger->warn("|processor|process getQueryInfo error|" + msg + "|");
-                    }
+                    // MessageProcessor->process(createMessageQuery(messageQuery));
                 }
                 else
                 {
-                    logger->warn("|processor|process parseType error|" + msg + "|");
+                    logger->warn("|processor|process getQueryInfo error|" + msg + "|");
+                }
+            }
+            else if (common::OPTION_QUERY.compare(queryType))
+            {
+                string optionQuery;
+                if (query.Get("queryInfo", optionQuery))
+                {
+                    optionProcessor->process(optionQuery);
+                }
+                else
+                {
+                    logger->warn("|processor|process getQueryInfo error|" + msg + "|");
                 }
             }
             else
             {
-                logger->warn("|processor|process getType error|" + msg + "|");
+                logger->warn("|processor|process parseType error|" + msg + "|");
             }
         }
+        else
+        {
+            logger->warn("|processor|process getType error|" + msg + "|");
+        }
     }
-
-    void createMessageQuery(string queryBody) {
-        CJsonObject query = CJsonObject(queryBody);
-
-    }
-} // namespace im
+}
