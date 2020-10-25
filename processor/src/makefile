@@ -1,9 +1,11 @@
 CFLAGS = -g -std=c++11
-LIBS = -lpthread  -llog4cpp -lrocketmq
+LIBS = -lpthread  -llog4cpp -lrocketmq -lmysqlclient 
 
 
 COMMONSRCS = ../../common/*.cpp ../../common/*.hpp ../../common/*.c ../../common/*.h
-SRCS = MessageListener.hpp Processor.hpp start.cpp  $(COMMONSRCS)
+DAOS = dao/*.hpp dao/*.cpp
+ENTRYS = entry/*.hpp entry/*.cpp
+SRCS = MessageListener.hpp Processor.hpp  Processor.cpp OptionProcessor.hpp OptionProcessor.cpp start.cpp  $(COMMONSRCS) $(DAOS) $(ENTRYS)
 EXECUTABLE = processor
 CC = g++
 

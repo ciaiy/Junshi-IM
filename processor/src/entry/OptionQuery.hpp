@@ -42,32 +42,32 @@ namespace im
                 int32_t type;
                 string ext;
 
-                Builder *uid(string uid)
+                Builder *setUid(string uid)
                 {
                     this->uid = uid;
                     return this;
                 }
-                Builder *cid(string cid)
+                Builder *setCid(string cid)
                 {
                     this->cid = cid;
                     return this;
                 }
-                Builder *message(string message)
+                Builder *setMessage(string message)
                 {
                     this->message = message;
                     return this;
                 }
-                Builder *optid(string optid)
+                Builder *setOptid(string optid)
                 {
                     this->optid = optid;
                     return this;
                 }
-                Builder *type(int32_t type)
+                Builder *setType(int32_t type)
                 {
                     this->type = type;
                     return this;
                 }
-                Builder *ext(string ext)
+                Builder *setExt(string ext)
                 {
                     this->ext = ext;
                     return this;

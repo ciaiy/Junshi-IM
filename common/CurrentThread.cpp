@@ -6,8 +6,11 @@
 #include "CurrentThread.hpp"
 
 #include <cxxabi.h>
+#include <iostream>
 #include <execinfo.h>
 #include <stdlib.h>
+#include <thread>
+#include <sstream>
 
 namespace im
 {
@@ -15,6 +18,14 @@ namespace im
     {
         namespace CurrentThread
         {
+
+            std::string getThreadIdOfString(const std::thread::id id)
+            {
+                std::stringstream sin;
+                sin << id;
+                return sin.str();
+            }
+
             std::string stackTrace(bool demangle)
             {
                 std::string stack;

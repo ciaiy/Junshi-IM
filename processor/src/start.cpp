@@ -7,27 +7,28 @@
 #include <iostream>
 #include <thread>
 #include <DefaultMQPushConsumer.h>
-#include <MessageListener.hpp>
+#include "MessageListener.hpp"
+#include <vector>
 
-#include "common/CJsonObject.hpp"
-#include "common/cJSON.h"
-#include "common/myLog.h"
+#include "../../common/CurrentThread.hpp"
+#include "../../common/CJsonObject.hpp"
+#include "../../common/cJSON.h"
+#include "../../common/config.hpp"
+#include "../../common/myLog.h"
 
 using namespace im;
 
-int main(int argc, char *argv[])
-{   
-    std::cout << "=======Before consuming messages=======" << std::endl;
-
+static void workFun()
+{
     DefaultMQPushConsumer *consumer = new DefaultMQPushConsumer("qizhouTestConsumerGroup");
-
+    consumer->setInstanceName("consumer" + common::CurrentThread::getThreadIdOfString(this_thread::get_id()));
     consumer->setNamesrvAddr("47.94.149.37:9876");
     auto start = std::chrono::system_clock::now();
-
     //register your own listener here to handle the messages received.
     //请注册自定义侦听函数用来处理接收到的消息，并返回响应的处理结果。
+    logger->info("|start|workFun|thread id : " + common::CurrentThread::getThreadIdOfString(this_thread::get_id()) + "|");
     MessageListener *messageListener = new MessageListener();
-    consumer->subscribe("qizhouTestTopic", "*");
+    consumer->subscribe("ConnectorToProcessor", "*");
     consumer->registerMessageListener(messageListener);
     //Start this consumer
     //准备工作完成，必须调用启动函数，才可以正常工作。
@@ -36,10 +37,16 @@ int main(int argc, char *argv[])
     // 2.确保相同 GID 下面的消费者的订阅关系一致。
     // *********************************************
     consumer->start();
-    //Keep main thread running until process finished.
-    //请保持线程常驻，不要执行 shutdown 操作。
-    std::this_thread::sleep_for(std::chrono::milliseconds(60 * 1000));
-    consumer->shutdown();
-    std::cout << "=======After consuming messages======" << std::endl;
+}
+
+int main(int argc, char *argv[])
+{
+
+    for (int i = 0; i < common::ThreadNum; i++)
+    {
+        thread th(workFun);
+        th.join();
+    }
+
     return 0;
 }

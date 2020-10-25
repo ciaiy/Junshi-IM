@@ -15,19 +15,12 @@ using namespace im;
 using namespace im::common;
 using namespace im::entry;
 
-Processor::ObjectCreator Processor::objectCreator;
-
 Processor::Processor()
 {
-    optionProcessor = OptionProcessor::getInstance();
+    optionProcessor = new OptionProcessor();
     logger->info("|Processor|Constructor complete|");
 }
 
-Processor *Processor::getInstance()
-{
-    static Processor processor;
-    return &processor;
-}
 void Processor::process(string msg)
 {
     if (msg.empty())

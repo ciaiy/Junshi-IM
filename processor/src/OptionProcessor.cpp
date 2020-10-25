@@ -9,20 +9,13 @@
 #include "../../common/Exception.hpp"
 #include "entry/OptionQuery.hpp"
 #include "dao/MysqlService.hpp"
+#include "../../common/CurrentThread.hpp"
 #include "dao/SQLResult.hpp"
 
 using namespace im;
 using namespace im::common;
 using namespace im::entry;
 using namespace im::dao;
-
-OptionProcessor::ObjectCreator OptionProcessor::objectCreator;
-
-OptionProcessor *OptionProcessor::getInstance()
-{
-    static OptionProcessor processor;
-    return &processor;
-}
 
 OptionProcessor::OptionProcessor()
 {
@@ -45,30 +38,38 @@ void OptionProcessor::process(string query)
     delete optionQuery;
 }
 
-void OptionProcessor::dispatch(OptionQuery *optionQuery)  {
+void OptionProcessor::dispatch(OptionQuery *optionQuery)
+{
     switch (optionQuery->getType())
     {
-    case  OptionQuery::Type::LOGIN:
+    case OptionQuery::Type::LOGIN:
         login(optionQuery->getOptid(), optionQuery->getMessage());
         break;
-    
+
     default:
         break;
     }
 }
 
-void OptionProcessor::login(string optid, string message) {
+void OptionProcessor::login(string optid, string message)
+{
     SQLResult sqlResult = sqlService.getUserInfo(optid);
-    if(sqlResult.isSuccess()) {
+    if (sqlResult.isSuccess())
+    {
         CJsonObject userInfo = CJsonObject(CJsonObject(sqlResult.getData()).getItem(0));
         std::string userpasswd = userInfo.getString("user_passwd");
-        if(message.compare(userpasswd) == 0) {
+        if (message.compare(userpasswd) == 0)
+        {
             logger->info("|OptionProcessor|login|optid = " + optid + " login success|");
             // do something...
-        }else {
+        }
+        else
+        {
             logger->info("|OptionProcessor|login|optid = " + optid + " login failed|");
         }
-    }else {
+    }
+    else
+    {
         logger->warn("|OptionProcessor|login|optid = " + optid + ", errorInfo :" + sqlResult.result().ToString());
     }
 }

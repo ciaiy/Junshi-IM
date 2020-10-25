@@ -8,29 +8,26 @@
 #define _OPTIONPROCESSOR_H_
 #include "../../common/SingletonPattern.hpp"
 #include "dao/MysqlService.hpp"
-using im::common::SingtonPattern;
-using im::dao::MysqlService;
+#include "entry/OptionQuery.hpp"
+
+using namespace im;
+using namespace im::common;
+using namespace im::dao;
+using namespace im::entry;
 namespace im
 {
     class OptionProcessor : SingtonPattern
     {
     public:
-        static OptionProcessor *getInstance();
+        OptionProcessor();
 
-        // 辅助代理类
-        struct ObjectCreator
-        {
-            ObjectCreator()
-            {
-                OptionProcessor::getInstance();
-            }
-        };
-        static ObjectCreator objectCreator;
     private:
         MysqlService sqlService;
+
     public:
         void process(string query);
         void dispatch(OptionQuery *optionQuery);
+
     private:
         void login(string optid, string message);
     };

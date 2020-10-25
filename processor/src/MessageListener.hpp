@@ -7,10 +7,10 @@
 #include <iostream>
 #include <thread>
 #include "DefaultMQPushConsumer.h"
-#include "common/CJsonObject.hpp"
-#include "common/cJSON.h"
+#include "../../common/CJsonObject.hpp"
+#include "../../common/cJSON.h"
 #include "Processor.hpp"
-#include "common/myLog.h"
+#include "../../common/myLog.h"
 
 using namespace rocketmq;
 using namespace std;
@@ -22,7 +22,7 @@ namespace im
     class MessageListener : public MessageListenerConcurrently
     {
     private:
-        Processor *processor = Processor::getInstance();
+        Processor *processor = new Processor();
 
     public:
         ConsumeStatus consumeMessage(const std::vector<MQMessageExt> &msgs)

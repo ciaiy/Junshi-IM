@@ -7,6 +7,12 @@
 #define MUDUO_BASE_CURRENTTHREAD_H
 
 #include <string>
+#include <cxxabi.h>
+#include <iostream>
+#include <execinfo.h>
+#include <stdlib.h>
+#include <thread>
+#include <sstream>
 
 namespace im
 {
@@ -15,6 +21,7 @@ namespace im
         namespace CurrentThread
         {
             std::string stackTrace(bool demangle);
+            std::string getThreadIdOfString(const std::thread::id id);
         } // namespace CurrentThread
     }     // namespace common
 } // namespace im
