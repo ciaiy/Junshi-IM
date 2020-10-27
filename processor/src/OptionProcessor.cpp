@@ -17,7 +17,7 @@ using namespace im::common;
 using namespace im::entry;
 using namespace im::dao;
 
-OptionProcessor::OptionProcessor()
+OptionProcessor::OptionProcessor(SenderProducer *senderProducer) : senderProducer(senderProducer)
 {
     logger->info("|OptionProcessor|Constructor complete|");
 }
@@ -62,6 +62,10 @@ void OptionProcessor::login(string optid, string message)
         {
             logger->info("|OptionProcessor|login|optid = " + optid + " login success|");
             sqlService.userOnline(optid);
+            CJsonObject msg;
+            msg.Add("optid", optid);
+            msg.Add("type", "USER_ONLINE");
+            senderProducer->produce(msg.ToString());
         }
         else
         {

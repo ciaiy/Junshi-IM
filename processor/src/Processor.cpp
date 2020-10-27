@@ -17,7 +17,8 @@ using namespace im::entry;
 
 Processor::Processor()
 {
-    optionProcessor = new OptionProcessor();
+    senderProducer = new SenderProducer();
+    optionProcessor = new OptionProcessor(senderProducer);
     logger->info("|Processor|Constructor complete|");
 }
 

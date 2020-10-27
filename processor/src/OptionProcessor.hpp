@@ -9,6 +9,7 @@
 #include "../../common/SingletonPattern.hpp"
 #include "dao/MysqlService.hpp"
 #include "entry/OptionQuery.hpp"
+#include "SenderProducer.hpp"
 
 using namespace im;
 using namespace im::common;
@@ -16,14 +17,14 @@ using namespace im::dao;
 using namespace im::entry;
 namespace im
 {
-    class OptionProcessor : SingtonPattern
+    class OptionProcessor
     {
     public:
-        OptionProcessor();
+        OptionProcessor(SenderProducer *SenderProducer);
 
     private:
         MysqlService sqlService;
-
+        SenderProducer *senderProducer;
     public:
         void process(string query);
         void dispatch(OptionQuery *optionQuery);
