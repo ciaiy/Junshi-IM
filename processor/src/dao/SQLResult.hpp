@@ -26,8 +26,7 @@ namespace im
             MYSQL_RES *_res;
 
         public:
-            inline SQLResult(int resultCode, std::string resultComment)
-                : _resultCode(resultCode), _resultComment(resultComment), _data(""), _res(nullptr) {}
+            SQLResult(int resultCode, std::string resultComment);
             SQLResult(int resultCode, std::string resultComment, MYSQL *const sqlConn, MYSQL_RES *const res);
             std::string getData();
             // 返回是否成功

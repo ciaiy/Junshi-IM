@@ -65,17 +65,32 @@ void MysqlSQLDriver::connect(SQLConn conn)
 
 SQLResult MysqlSQLDriver::select(const string &query)
 {
-    logger->info("|MysqlDriver|select|start query = " + query);
+    logger->info("|MysqlDriver|select|query = " + query);
     if (mysql_query(sqlConn, query.c_str()) != 0)
     {
 
         string errorComment = string(mysql_error(sqlConn));
-        logger->info("|MysqlSQLDriver|select|query : " + query + "| error :|" + errorComment);
+        logger->info("|MysqlSQLDriver|select|query : " + query + "| error :" + errorComment + "|");
         return SQLResult(-1, errorComment);
     }
     else
     {
         MYSQL_RES *res = mysql_store_result(sqlConn);
         return SQLResult(0, "success", sqlConn, res);
+    }
+}
+
+SQLResult MysqlSQLDriver::update(const string &query)
+{
+    logger->info("|MysqlDriver|update|query = " + query);
+    if (mysql_query(sqlConn, query.c_str()) != 0)
+    {
+        string errorComment = string(mysql_error(sqlConn));
+        logger->info("|MysqlDriver|update|query = " + query + "| error :" + errorComment + "|");
+        return SQLResult(-1, errorComment);
+    }
+    else
+    {
+        return SQLResult(0, "success");
     }
 }

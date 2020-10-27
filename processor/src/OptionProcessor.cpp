@@ -61,7 +61,7 @@ void OptionProcessor::login(string optid, string message)
         if (message.compare(userpasswd) == 0)
         {
             logger->info("|OptionProcessor|login|optid = " + optid + " login success|");
-            // do something...
+            sqlService.userOnline(optid);
         }
         else
         {

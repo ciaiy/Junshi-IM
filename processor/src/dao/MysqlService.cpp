@@ -8,8 +8,13 @@ MysqlService::MysqlService() {
     logger->info("|MysqlService|constructor|complete|");
 }
 
-SQLResult MysqlService::getUserInfo(const std::string uid) {
+SQLResult MysqlService::getUserInfo(const std::string& uid) {
     logger->debug("|MysqlService|getUserInfo|start|");
     string query = "select * from allUser where account = " + uid;
     return sqlDriver.select(query);
+}
+
+SQLResult MysqlService::userOnline(const std::string& uid) {
+    string query = "update allUser set onlineState = 1 where account = " + uid;  
+    return sqlDriver.update(query);
 }

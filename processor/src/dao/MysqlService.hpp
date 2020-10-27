@@ -15,7 +15,8 @@ namespace im
         public:
         MysqlService();
             ~MysqlService() = default;
-            SQLResult getUserInfo(const std::string uid);
+            SQLResult getUserInfo(const std::string& uid);
+            SQLResult userOnline(const std::string& uid);
         };
 
     } // namespace dao

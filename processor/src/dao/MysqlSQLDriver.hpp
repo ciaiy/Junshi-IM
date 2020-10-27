@@ -32,6 +32,7 @@ namespace im
 
         public:
             SQLResult select(const std::string &query);
+            SQLResult update(const std::string &query);
         };
     } // namespace dao
 

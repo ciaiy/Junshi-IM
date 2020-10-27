@@ -9,10 +9,15 @@
 using im::common::logger;
 using namespace im::dao;
 
+SQLResult::SQLResult(int resultCode, std::string resultComment)
+    : _resultCode(resultCode), _resultComment(resultComment), _data(""), _res(nullptr) {
+        logger->debug("|SQLResult|constructor|complete|");
+    }
+
 SQLResult::SQLResult(int resultCode, std::string resultComment, MYSQL *const sqlConn, MYSQL_RES *const res)
     : _resultCode(resultCode),
       _resultComment(resultComment),
-          _res(res)
+      _res(res)
 {
     logger->debug("|SQLResult|constructor|start|");
     int rowNum = mysql_affected_rows(sqlConn);
