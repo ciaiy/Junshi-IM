@@ -7,6 +7,7 @@
 #ifndef _MYSQLSQLRRIVER_H_
 #define _MYSQLSQLRRIVER_H_
 #include <mysql/mysql.h>
+#include <mutex>
 #include <thread>
 #include "SQLConn.hpp"
 #include "SQLResult.hpp"
@@ -22,6 +23,7 @@ namespace im
         private:
             MYSQL *sqlConn;
             void connect(SQLConn conn);
+            static std::mutex init_lock;
 
         public:
             std::thread::id thisThread;
@@ -30,7 +32,6 @@ namespace im
 
         public:
             SQLResult select(const std::string &query);
-            
         };
     } // namespace dao
 

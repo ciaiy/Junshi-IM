@@ -13,9 +13,13 @@ using namespace im;
 using namespace im::common;
 using namespace im::dao;
 
+std::mutex MysqlSQLDriver::init_lock;
+
 MysqlSQLDriver::MysqlSQLDriver()
 {
-    sqlConn = mysql_init(NULL);
+    init_lock.lock();
+    sqlConn = new MYSQL();
+    mysql_init(sqlConn);
     try
     {
         if (sqlConn == nullptr)
@@ -33,9 +37,11 @@ MysqlSQLDriver::MysqlSQLDriver()
     catch (Exception ex)
     {
         logger->error("|MysqlSQLDriver|constructor|error : " + string(ex.what()) + "|");
+        init_lock.unlock();
         exit(-1);
     }
     thisThread = this_thread::get_id();
+    init_lock.unlock();
     logger->info("|MysqlSQLDriver|constructor|complete|");
 }
 MysqlSQLDriver::~MysqlSQLDriver()
