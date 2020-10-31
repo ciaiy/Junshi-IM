@@ -2,7 +2,7 @@
  * @Author: Qizhou 
  * @Date: 2020-10-22 17:54:50 
  * @Last Modified by: Qizhou
- * @Last Modified time: 2020-10-22 18:38:31
+ * @Last Modified time: 2020-10-31 16:39:39
  */
 #include "OptionProcessor.hpp"
 #include "../../common/myLog.h"
@@ -65,6 +65,10 @@ void OptionProcessor::login(string optid, string message)
             CJsonObject msg;
             msg.Add("optid", optid);
             msg.Add("type", "USER_ONLINE");
+            CJsonObject data;
+            data.Add("userInfo", userInfo.ToString());
+            msg.Add("data", data);
+            msg.Add("mustDeliver", "true");
             senderProducer->produce(msg.ToString());
         }
         else
