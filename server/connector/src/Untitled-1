@@ -1,0 +1,5 @@
+connector : ../../common/* MQProducer.hpp MQProducer.cpp QueryProcessor.hpp QueryProcessor.cpp TCPKeeper.hpp TCPKeeper.cpp start.cpp
+	g++ -o connector -std=c++11 -lrocketmq -llog4cpp -lpthread -lmuduo_net -lmuduo_base -lrt QueryProcessor.hpp QueryProcessor.cpp MQProducer.hpp MQProducer.cpp TCPKeeper.hpp TCPKeeper.cpp start.cpp ../../common/* 
+
+
+g++ -o connector  -I -std=c++11 -llog4cpp -lpthread -lmuduo_net -lmuduo_base echo.cpp

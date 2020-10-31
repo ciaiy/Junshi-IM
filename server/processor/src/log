@@ -1,0 +1,110 @@
+2020-10-25 17:23:17,480: INFO rootCategory : myLog()
+2020-10-25 17:23:17,481: INFO rootCategory : |start|workFun|thread id : 140278439941888|
+2020-10-25 17:23:17,577: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:23:17,577: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:23:17,577: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:23:17,577: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:23:17,577: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:23:17,674: INFO rootCategory : |start|workFun|thread id : 140278439941888|
+2020-10-25 17:23:17,674: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:23:17,674: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:23:17,674: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:23:17,674: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:23:17,674: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:28:02,636: INFO rootCategory : myLog()
+2020-10-25 17:32:02,524: INFO rootCategory : myLog()
+2020-10-25 17:32:02,526: INFO rootCategory : |start|workFun|thread id : 140461800392448|
+2020-10-25 17:32:02,528: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:32:02,528: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:32:02,528: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:32:02,528: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:32:02,528: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:32:02,571: INFO rootCategory : |start|workFun|thread id : 140461800392448|
+2020-10-25 17:32:02,571: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:32:02,571: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:32:02,571: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:32:02,571: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:32:02,571: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:33:12,257: INFO rootCategory : myLog()
+2020-10-25 17:33:12,257: INFO rootCategory : |start|workFun|thread id : 139678808241920|
+2020-10-25 17:33:12,262: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:33:12,262: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:33:12,262: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:33:12,262: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:33:12,262: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:33:12,279: INFO rootCategory : |start|workFun|thread id : 139678808241920|
+2020-10-25 17:33:12,280: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:33:12,280: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:33:12,280: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:33:12,280: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:33:12,280: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:34:22,304: INFO rootCategory : myLog()
+2020-10-25 17:34:22,304: INFO rootCategory : |start|workFun|thread id : 139739424900864|
+2020-10-25 17:34:22,307: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:34:22,307: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:34:22,307: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:34:22,307: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:34:22,307: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:34:22,321: INFO rootCategory : |start|workFun|thread id : 139739424900864|
+2020-10-25 17:34:22,321: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:34:22,321: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:34:22,321: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:34:22,321: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:34:22,321: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:37:05,699: INFO rootCategory : myLog()
+2020-10-25 17:38:24,424: INFO rootCategory : myLog()
+2020-10-25 17:39:00,445: INFO rootCategory : myLog()
+2020-10-25 17:39:00,452: INFO rootCategory : |start|workFun|thread id : 139925026543360|
+2020-10-25 17:39:00,483: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:39:00,483: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:39:00,483: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:39:00,483: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:39:00,483: INFO rootCategory : |Processor|Constructor complete|
+2020-10-25 17:39:28,875: INFO rootCategory : myLog()
+2020-10-25 17:39:28,896: INFO rootCategory : |start|workFun|thread id : 139992819488512|
+2020-10-25 17:39:28,896: INFO rootCategory : |start|workFun|thread id : 139992827881216|
+2020-10-25 17:39:28,897: ERROR rootCategory : |MysqlSQLDriver|connect|error Can't connect to MySQL server on '127.0.0.1' (111)|
+2020-10-25 17:40:56,795: INFO rootCategory : myLog()
+2020-10-25 17:40:56,817: INFO rootCategory : |start|workFun|thread id : 139807317735168|
+2020-10-25 17:40:56,818: INFO rootCategory : |start|workFun|thread id : 139807309342464|
+2020-10-25 17:40:56,819: ERROR rootCategory : |MysqlSQLDriver|connect|error Can't connect to MySQL server on '127.0.0.1' (111)|
+2020-10-25 17:41:47,349: INFO rootCategory : myLog()
+2020-10-25 17:41:47,368: INFO rootCategory : |start|workFun|thread id : 140205639632640|
+2020-10-25 17:41:47,384: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-25 17:41:47,384: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-25 17:41:47,384: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-25 17:41:47,384: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-25 17:41:47,384: INFO rootCategory : |Processor|Constructor complete|
+2020-10-26 10:16:36,184: INFO rootCategory : myLog()
+2020-10-26 10:16:36,204: INFO rootCategory : |start|workFun|thread id : 139973285304064|
+2020-10-26 10:16:36,205: INFO rootCategory : |start|workFun|thread id : 139973276911360|
+2020-10-26 10:16:36,206: ERROR rootCategory : |MysqlSQLDriver|connect|error Can't connect to MySQL server on '127.0.0.1' (111)|
+2020-10-26 10:24:00,698: INFO rootCategory : myLog()
+2020-10-26 10:24:00,723: INFO rootCategory : |start|workFun|thread id : 140256419411712|
+2020-10-26 10:24:00,723: INFO rootCategory : |start|workFun|thread id : 140256411019008|
+2020-10-26 10:24:00,737: ERROR rootCategory : |MysqlSQLDriver|constructor|error : mysql thread unsafe|
+2020-10-26 10:26:16,059: INFO rootCategory : myLog()
+2020-10-26 10:26:16,082: INFO rootCategory : |start|workFun|thread id : 140271203866368|
+2020-10-26 10:26:16,083: INFO rootCategory : |start|workFun|thread id : 140271195473664|
+2020-10-26 10:26:16,083: ERROR rootCategory : |MysqlSQLDriver|connect|error Can't connect to MySQL server on '127.0.0.1' (111)|
+2020-10-27 10:18:49,050: INFO rootCategory : myLog()
+2020-10-27 10:18:49,071: INFO rootCategory : |start|workFun|thread id : 140620133283584|
+2020-10-27 10:18:49,073: INFO rootCategory : |start|workFun|thread id : 140620124890880|
+2020-10-27 10:18:49,073: ERROR rootCategory : |MysqlSQLDriver|constructor|error : mysql thread unsafe|
+2020-10-27 10:19:26,803: INFO rootCategory : myLog()
+2020-10-27 10:19:26,829: INFO rootCategory : |start|workFun|thread id : 140065102722816|
+2020-10-27 10:19:26,829: INFO rootCategory : |start|workFun|thread id : 140065094330112|
+2020-10-27 10:19:26,830: ERROR rootCategory : |MysqlSQLDriver|connect|error Can't connect to MySQL server on '127.0.0.1' (111)|
+2020-10-27 22:54:24,485: INFO rootCategory : myLog()
+2020-10-27 22:54:24,516: INFO rootCategory : |start|workFun|thread id : 140074015602432|
+2020-10-27 22:54:24,518: INFO rootCategory : |start|workFun|thread id : 140074007209728|
+2020-10-27 22:54:24,708: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-27 22:54:24,708: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-27 22:54:24,708: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-27 22:54:24,708: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-27 22:54:24,708: INFO rootCategory : |Processor|Constructor complete|
+2020-10-27 22:54:24,719: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-27 22:54:24,719: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-27 22:54:24,719: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-27 22:54:24,719: INFO rootCategory : |OptionProcessor|Constructor complete|
+2020-10-27 22:54:24,719: INFO rootCategory : |Processor|Constructor complete|

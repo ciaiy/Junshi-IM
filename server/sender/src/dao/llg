@@ -1,0 +1,10 @@
+2020-10-24 15:27:08,404: INFO rootCategory : myLog()
+2020-10-24 15:27:08,406: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-10-24 15:27:08,406: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-10-24 15:27:08,406: INFO rootCategory : |MysqlService|constructor|complete|
+2020-10-24 15:27:08,406: DEBUG rootCategory : |MysqlService|getUserInfo|start|
+2020-10-24 15:27:08,406: INFO rootCategory : |MysqlDriver|select|start query = select * from allUser where account = 124
+2020-10-24 15:27:08,406: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-10-24 15:27:08,406: DEBUG rootCategory : |SQLResult|constructor|end|
+[{"account":"124","user_passwd":"123456","sculputre":"123123","nickName":"qizhou2","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"","isFreeze":"","nation":"","privince":"","city":""}]
+2020-10-24 15:27:08,406: INFO rootCategory : |MysqlSQLDriver|destructor|complete|
