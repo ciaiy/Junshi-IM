@@ -44,12 +44,14 @@ void TCPKeeper::onMessage(const TcpConnectionPtr &conn, Buffer *buf, Timestamp)
     while (buf->readableBytes() >= HeaderLenth)
     {
         const void *data = buf->peek();
-        int dataLen = *(int *)data;
+        uint32_t lenthTemp = *(uint32_t *)data;
+        uint32_t dataLen = ntohl(lenthTemp);
         logger->debug("|TCPKeeper|onMessage|dataLen:" + to_string(dataLen) + "|");
         if (dataLen > DataMaxSize || dataLen < 0)
         {
             logger->info("|TCPKeeper|onMessage|dataLen error|");
             conn->shutdown();
+            break;
         }
         else if (buf->readableBytes() >= dataLen)
         {

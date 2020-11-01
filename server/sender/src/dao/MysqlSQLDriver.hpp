@@ -2,7 +2,7 @@
  * @Author: Qizhou 
  * @Date: 2020-10-23 10:08:21 
  * @Last Modified by: Qizhou
- * @Last Modified time: 2020-10-31 16:45:50
+ * @Last Modified time: 2020-10-31 18:22:29
  */
 #ifndef _MYSQLSQLRRIVER_H_
 #define _MYSQLSQLRRIVER_H_
@@ -33,7 +33,7 @@ namespace im
         public:
             SQLResult select(const std::string &query);
             SQLResult update(const std::string &query);
-            SQLResult insert(const string &query);
+            SQLResult insert(const std::string &query);
         };
     } // namespace dao
 
