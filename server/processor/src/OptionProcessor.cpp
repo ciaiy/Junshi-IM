@@ -68,7 +68,7 @@ void OptionProcessor::login(string optid, string message)
             CJsonObject data;
             data.Add("userInfo", userInfo.ToString());
             msg.Add("data", data);
-            msg.Add("mustDeliver", "true");
+            msg.Add("mustDeliver", "false");
             senderProducer->produce(msg.ToString());
         }
         else

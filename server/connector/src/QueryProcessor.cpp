@@ -27,8 +27,8 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string query
     {
         int32_t dataAck = queryJson.getUInt32("dataAck");
         logger->debug("|QueryProcessor|receiveData|dataAck" + to_string(dataAck));
-        conn->send(&dataAck, sizeof(int64_t));
         MQProducer::getInstance()->produce(queryJson.getCJsonObject("queryBody").ToString());
+        conn->send(&dataAck, sizeof(int64_t));
     }
     catch (Exception ex)
     {

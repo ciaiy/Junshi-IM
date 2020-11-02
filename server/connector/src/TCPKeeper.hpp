@@ -14,6 +14,7 @@
 #include <iostream>
 
 #include "../../common/myLog.h"
+#include "ConnectionMapper.hpp"
 #include "QueryProcessor.hpp"
 
 using namespace muduo;
@@ -30,7 +31,7 @@ namespace im
     public:
         static const int HeaderLenth = 4;
         static const int DataMaxSize = 65534;
-
+        static ConnectionMapper mapper;
     public:
         TCPKeeper() = default;
         void start(const string &ip, uint16_t port, int threadNum);

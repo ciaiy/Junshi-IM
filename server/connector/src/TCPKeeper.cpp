@@ -2,6 +2,8 @@
 
 using namespace im;
 
+ConnectionMapper TCPKeeper::mapper;
+
 void TCPKeeper::start(const string &ip, uint16_t port, int threadNum)
 {
     LOG_INFO << "pid = " << getpid() << ", tid = " << CurrentThread::tid();
@@ -29,6 +31,7 @@ void TCPKeeper::onConnection(const TcpConnectionPtr &conn)
         logger->info("|TcpKeeper|onConnection|" + conn->getTcpInfoString() + "|");
         conn->setTcpNoDelay(true);
         conn->setCloseCallback(onClose);
+        cout << conn->name() << endl; 
     }
 }
 
