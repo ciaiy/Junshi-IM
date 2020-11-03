@@ -11,7 +11,7 @@ namespace im
     class MQProducer
     {
     public:
-        // 后期均改为配置信息
+        // todo：后期均改为配置信息
         const std::string TopicName = "ConnectorToProcessor";
 
     public:

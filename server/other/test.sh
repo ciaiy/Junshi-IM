@@ -32,7 +32,7 @@ else
     ## 获取log4cppu源代码并编译
     cd /opt
     git clone https://github.com/meihao1203/log4cpp
-    cd log4cpp
+    cd log4cpp/log4cpp
     tar -zxvf log4cpp-1.1.1.tar.gz
 
     ./configure
