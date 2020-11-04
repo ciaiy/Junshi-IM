@@ -2,7 +2,6 @@
 #include <thread>
 #include "../../common/CurrentThread.hpp"
 
-
 using namespace im;
 
 ConnectionMapper::ObjectCreator ConnectionMapper::objectCreator;
