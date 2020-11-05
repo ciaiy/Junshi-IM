@@ -9,7 +9,9 @@
  - client发送数据格式
 ```json
 {
+    "sourceType" : "client",
     "dataAck" : 123, // 随机值
+    "authTokn": "uid:your device token", // 123:TOKENTOKENTOKEN
     "queryBody" : {
         "queryType": "optionQuery",
         "queryInfo" : {
@@ -18,10 +20,27 @@
             "optid" : "optid",
             "type" : 1,  // LOGIN == 1
             "message" : "password",
-            "ext" : ""
+            "ext" : "your token"
         }
     }  
 }
+```
+
+ - connectorToProcessor数据格式
+
+```json
+{
+        "queryType": "optionQuery",
+        "token" : "tokenTemp assigned by connector",
+        "queryInfo" : {
+            "uid" : "uid",
+            "cid" : "cid",
+            "optid" : "optid",
+            "type" : 1,  // LOGIN == 1
+            "message" : "password",
+            "ext" : "your token"
+        },
+        "ext" : "uid + your device token"
 ```
 
  - processorToSender数据格式
@@ -29,8 +48,10 @@
 ```json
 {
     "optid" : "123", // optid
-    "type" :"USER_ONLINE",
+    "type" : "USER_ONLINE",
+    "token" : "Token assigned by connector", 
     "data" : {
+        "loginResult" : 1,
         "userInfo" : {  // mysql的allUser表数据
             "account":"124",
             "user_passwd":"123456",
@@ -49,7 +70,8 @@
             "city":""
         }
     },
-    "mustDeliver"  : "false"
+    "mustDeliver"  : "false",
+    "ext" : "device token"
 }
 ```
 

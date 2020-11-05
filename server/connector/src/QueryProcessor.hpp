@@ -17,11 +17,13 @@ namespace im
     {
     public:
         static QueryProcessor *getInstance();
+        const uint32_t OPTION_LOGIN = 1;
 
     private:
         MQProducer *producer;
         QueryProcessor();
-
+        bool userAuthCheck(const TcpConnectionPtr &conn, const string &authToken, const uint32_t type);
+        string generateTempSign();
     public:
         void receiveData(const TcpConnectionPtr &conn, std::string query);
 
