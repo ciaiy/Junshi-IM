@@ -4,6 +4,14 @@
 
 using namespace im;
 
+ConnectionMapper::ObjectCreator ConnectionMapper::objectCreator;
+
+ConnectionMapper *ConnectionMapper::getInstance()
+{
+    static ConnectionMapper mapper;
+    return &mapper;
+}
+
 std::string ConnectionMapper::insertConnection(const TcpConnectionPtr &conn)
 {
     time_t timestamp = time(nullptr);

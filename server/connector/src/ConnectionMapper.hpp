@@ -6,6 +6,7 @@
 #include "../../common/Exception.hpp"
 
 using namespace muduo::net;
+
 namespace im
 {
     class ConnectionMapper
@@ -17,6 +18,20 @@ namespace im
         std::string insertConnection(const TcpConnectionPtr &conn);
         bool findConnection(const std::string &key);
         const TcpConnectionPtr getConnection(const std::string &key);
+         static ConnectionMapper *getInstance();
+        DefaultConnectionMapper *mapper;
+    
+    public:
+        // 辅助代理类
+        struct ObjectCreator
+        {
+            ObjectCreator()
+            {
+                ConnectionMapper::getInstance();
+            }
+        };
+        static ObjectCreator objectCreator;
+
     };
 
 } // namespace im
