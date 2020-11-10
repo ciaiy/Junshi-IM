@@ -57,7 +57,7 @@ else
     # 启动
     cd /opt/rocketmq-all-4.7.1-source-release/distribution/target/rocketmq-4.7.1/rocketmq-4.7.1
     nohup sh bin/mqnamesrv & 
-    nohup sh bin/mqbroker -n 0.0.0.0:9876 &
+    nohup sh bin/mqbroker -n 47.94.149.37:9876 &
     cd /opt/rocketmq-externals/rocketmq-console
     mvn clean package -Dmaven.test.skip=true
     cd /opt/rocketmq-externals/rocketmq-console/

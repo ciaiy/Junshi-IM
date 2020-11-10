@@ -22,7 +22,6 @@ QueryProcessor *QueryProcessor::getInstance()
 
 void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string queryStr)
 {
-    conn->getContext();
     CJsonObject queryJson(queryStr);
     try
     {
