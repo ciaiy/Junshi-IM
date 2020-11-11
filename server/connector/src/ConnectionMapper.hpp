@@ -22,7 +22,7 @@ namespace im
     {
     private:
         std::map<std::string, const TcpConnectionPtr> connectionMapper;
-        mutex mtx;
+        mutex mtx; 
     public:
         // 以下操作均为线程安全的
         bool findConnection(const std::string &key);
