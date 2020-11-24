@@ -30,7 +30,7 @@ namespace im
         void dispatch(OptionQuery *optionQuery);
 
     private:
-        void login(string optid, string message);
+        void login(string optid, string message, string context);
     };
 
 } // namespace im

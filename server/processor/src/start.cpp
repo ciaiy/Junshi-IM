@@ -22,13 +22,12 @@ using namespace im;
 static void workFun()
 {
     logger->info("|start|workFun|thread id : " + common::CurrentThread::getThreadIdOfString(this_thread::get_id()) + "|");
-    DefaultMQPushConsumer *consumer = new DefaultMQPushConsumer("consumer" + common::CurrentThread::getThreadIdOfString(this_thread::get_id()));
+    DefaultMQPushConsumer *consumer = new DefaultMQPushConsumer("GID_Processor");
     consumer->setNamesrvAddr("47.94.149.37:9876");
-    auto start = std::chrono::system_clock::now();
     //register your own listener here to handle the messages received.
     //请注册自定义侦听函数用来处理接收到的消息，并返回响应的处理结果。
     MessageListener *messageListener = new MessageListener();
-    consumer->subscribe("ConnectorToProcessor", "*");
+    consumer->subscribe("ConnectorToProcessor", "HiTAG");
     consumer->registerMessageListener(messageListener);
     //Start this consumer
     //准备工作完成，必须调用启动函数，才可以正常工作。
@@ -43,8 +42,7 @@ int main(int argc, char *argv[])
 {
 
     thread th(workFun);
-    thread th2(workFun);
-
+   
     while(true) {
         // std::cout << "1" << std::endl;
     }

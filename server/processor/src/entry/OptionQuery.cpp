@@ -9,11 +9,12 @@ using namespace im::entry;
 OptionQuery::OptionQuery(string queryStr)
 {
     CJsonObject queryJson(queryStr);
-
-    uid = queryJson.getString("uid");
-    cid = queryJson.getString("cid");
-    optid = queryJson.getString("optid");
-    type = queryJson.getInt32("type");
-    message = queryJson.getString("message");
-    ext = queryJson.getString("ext");
+    CJsonObject queryInfo = queryJson.getCJsonObject("queryInfo");
+    context = queryJson.getCJsonObject("context").ToString();
+    uid = queryInfo.getString("uid");
+    cid = queryInfo.getString("cid");
+    optid = queryInfo.getString("optid");
+    type = queryInfo.getInt32("type");
+    message = queryInfo.getString("message");
+    ext = queryInfo.getString("ext");
 }

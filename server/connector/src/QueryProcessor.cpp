@@ -3,6 +3,7 @@
 #include "../../common/myLog.h"
 #include "../../common/Exception.hpp"
 #include "MQProducer.hpp"
+#include "ConnectionMapper.hpp"
 
 using namespace im;
 using namespace im::common;
@@ -25,19 +26,21 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string query
     CJsonObject queryJson(queryStr);
     try
     {
-        int32_t dataAck = queryJson.getUInt32("dataAck");
-        string authToken = queryJson.getString("authTokn");
+        string dataAck = queryJson.getString("dataAck");
+        CJsonObject context = queryJson.getCJsonObject("context");
         CJsonObject queryBody = queryJson.getCJsonObject("queryBody");
-        uint32_t queryType = queryBody.getUInt32("type");
         // 在此检查数据是否安全，当mapper中没有该用户时，除非请求的类型为登录，否则其他的请求全部丢弃，并关闭该Connection
-        if (userAuthCheck(conn, authToken, queryType))
+        if (userAuthCheckAndSet(conn, context.getString("authToken"), queryBody.getCJsonObject("queryInfo").getInt32("type")))
         {
-
-            logger->debug("|QueryProcessor|receiveData|dataAck" + to_string(dataAck));
-            queryBody.Add("token", queryType == OPTION_LOGIN ? generateTempSign()
-                                                             : boost::any_cast<string>(conn->getContext()));
-            queryBody.Add("ext", queryType == OPTION_LOGIN ? authToken : "");
-            MQProducer::getInstance()->produce(queryBody.ToString());
+            logger->debug("|QueryProcessor|receiveData|dataAck" + dataAck);
+            // 临时加上ip + port
+            context.Add("ip", "47.94.149.37");
+            context.Add("port", "2333");
+            CJsonObject query;
+            query.Add("context", context);
+            query.Add("queryBody", queryBody);
+            query.Add("ext", "");
+            MQProducer::getInstance()->produce(query.ToString());
             conn->send(&dataAck, sizeof(int64_t));
         }
         else
@@ -56,7 +59,7 @@ string QueryProcessor::generateTempSign()
     return to_string(time(nullptr));
 }
 
-bool QueryProcessor::userAuthCheck(const TcpConnectionPtr &conn, const string &authToken, const uint32_t type)
+bool QueryProcessor::userAuthCheckAndSet(const TcpConnectionPtr &conn, const string &authToken, const uint32_t type)
 {
     boost::any context = conn->getContext();
     // 不为空的话，则校验其authToken是否和conn中的Context一致
@@ -68,6 +71,22 @@ bool QueryProcessor::userAuthCheck(const TcpConnectionPtr &conn, const string &a
     else
     {
         // 为空的话，则校验其是否为LOGIN
-        return type == OPTION_LOGIN;
+        if (type == OPTION_LOGIN)
+        {
+            try
+            {
+                conn->setContext(generateTempSign());
+                ConnectionMapper::getInstance()->insertConnection(conn);
+            }
+            catch (Exception ex)
+            {
+                logger->info("|QueryProcessor|userAuthCheckAndSet| error " + string(ex.what()) + "|");
+            }
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

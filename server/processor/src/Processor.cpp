@@ -7,6 +7,7 @@
 #include "Processor.hpp"
 #include "../../common/myLog.h"
 #include "../../common/config.hpp"
+#include "../../common/Exception.hpp"
 #include "../../common/CJsonObject.hpp"
 #include "entry/MessageQuery.hpp"
 #include "OptionProcessor.hpp"
@@ -30,15 +31,16 @@ void Processor::process(string msg)
     }
     else
     {
-        CJsonObject query = CJsonObject(msg);
-        if (query.IsEmpty())
+        try
         {
-            logger->warn("|processor|process parse error|" + msg + "|");
-        }
-        string queryType;
-        if (query.Get("queryType", queryType))
-        {
-            if (common::MESSAGE_QUREY.compare(queryType))
+            CJsonObject query = CJsonObject(msg);
+            CJsonObject queryBody = query.getCJsonObject("queryBody");
+            if (query.IsEmpty())
+            {
+                logger->warn("|processor|process parse error|" + msg + "|");
+            }
+            string queryType = queryBody.getString("queryType");
+            if (common::MESSAGE_QUREY.compare(queryType) == 0)
             {
                 string messageQuery;
                 if (query.Get("queryInfo", messageQuery))
@@ -50,26 +52,18 @@ void Processor::process(string msg)
                     logger->warn("|processor|process getQueryInfo error|" + msg + "|");
                 }
             }
-            else if (common::OPTION_QUERY.compare(queryType))
+            else if (common::OPTION_QUERY.compare(queryType) == 0)
             {
-                string optionQuery;
-                if (query.Get("queryInfo", optionQuery))
-                {
-                    optionProcessor->process(optionQuery);
-                }
-                else
-                {
-                    logger->warn("|processor|process getQueryInfo error|" + msg + "|");
-                }
+                CJsonObject queryInfo = queryBody.getCJsonObject("queryInfo");
+                CJsonObject context = query.getCJsonObject("context");
+                CJsonObject optionQuery;
+                optionQuery.Add("context", context);
+                optionQuery.Add("queryInfo", queryInfo);
+                optionQuery.Add("ext", "");
+                optionProcessor->process(optionQuery.ToString());
             }
-            else
-            {
-                logger->warn("|processor|process parseType error|" + msg + "|");
-            }
-        }
-        else
-        {
-            logger->warn("|processor|process getType error|" + msg + "|");
+        }catch(Exception ex) {
+               logger->warn("|processor|process error|" + string(ex.what())+ "|");
         }
     }
 }

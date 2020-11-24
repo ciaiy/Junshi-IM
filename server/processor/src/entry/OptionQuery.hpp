@@ -30,6 +30,8 @@ namespace im
             int32_t type;
             // 冗余备用
             string ext;
+            // 用户上下文
+            string context;
 
         public:
             class Builder
@@ -96,6 +98,9 @@ namespace im
             }
 
         public:
+        string getContext() {
+            return this->context;
+        }
             string getUid()
             {
                 return this->uid;

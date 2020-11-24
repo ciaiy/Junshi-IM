@@ -6,10 +6,11 @@
  */
 #include "MysqlService.hpp"
 #include "../../../common/myLog.h"
+#include <string>
 using namespace im;
 using namespace im::common;
 using namespace im::dao;
-
+using std::string;
 MysqlService::MysqlService()
 {
     logger->info("|MysqlService|constructor|complete|");

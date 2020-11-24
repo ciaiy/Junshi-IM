@@ -8,13 +8,12 @@
 #define _CONNECTIONMAPPER_
 #include <map>
 #include <mutex>
-#include <stdlib>
 #include <string>
 #include <muduo/net/TcpServer.h>
 #include "../../common/Exception.hpp"
 
 using namespace muduo::net;
-
+using namespace std;
 namespace im
 {
     // todo : 线程不安全！！
@@ -28,7 +27,7 @@ namespace im
         bool findConnection(const std::string &key);
         const TcpConnectionPtr getConnection(const std::string &key);
         void deleteConneciton(const std::string key);
-        std::string insertConnection(const TcpConnectionPtr &conn);
+        void insertConnection(const TcpConnectionPtr &conn);
 
     public:
         static ConnectionMapper *getInstance();

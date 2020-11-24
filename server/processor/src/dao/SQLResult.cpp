@@ -43,6 +43,7 @@ SQLResult::SQLResult(int resultCode, std::string resultComment, MYSQL *const sql
         dataJson.Add(colJson);
     }
     _data = dataJson.ToString();
+    logger->debug("|SQLResult|constructor|datajson = " + _data + "|");
     logger->debug("|SQLResult|constructor|end|");
 }
 

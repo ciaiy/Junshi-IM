@@ -1,0 +1,810 @@
+2020-11-20 21:06:33,215: INFO rootCategory : myLog()
+2020-11-20 21:06:33,227: INFO rootCategory : |start|workFun|thread id : 140278114662144|
+2020-11-20 21:06:33,228: INFO rootCategory : |start|workFun|thread id : 140278106269440|
+2020-11-20 21:06:33,494: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-20 21:06:33,494: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-20 21:06:33,494: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-20 21:06:33,494: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-20 21:06:33,512: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-20 21:06:33,513: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-20 21:06:33,513: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-20 21:06:33,513: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-20 21:06:33,528: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140278106269440|
+2020-11-20 21:06:33,535: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140278114662144|
+2020-11-21 11:49:21,148: INFO rootCategory : myLog()
+2020-11-21 11:49:21,171: INFO rootCategory : |start|workFun|thread id : 140675303728896|
+2020-11-21 11:49:21,174: INFO rootCategory : |start|workFun|thread id : 140675295336192|
+2020-11-21 11:49:21,220: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-21 11:49:21,220: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-21 11:49:21,220: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-21 11:49:21,220: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-21 11:49:21,225: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140675303728896|
+2020-11-21 11:49:21,260: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-21 11:49:21,260: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-21 11:49:21,260: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-21 11:49:21,260: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-21 11:49:21,260: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140675295336192|
+2020-11-21 12:30:11,742: INFO rootCategory : myLog()
+2020-11-21 12:30:11,801: INFO rootCategory : |start|workFun|thread id : 139808925845248|
+2020-11-21 12:30:11,805: INFO rootCategory : |start|workFun|thread id : 139808934237952|
+2020-11-21 12:30:11,914: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-21 12:30:11,914: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-21 12:30:11,914: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-21 12:30:11,914: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-21 12:30:11,926: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139808925845248|
+2020-11-21 12:30:11,936: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-21 12:30:11,936: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-21 12:30:11,936: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-21 12:30:11,936: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-21 12:30:11,936: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139808934237952|
+2020-11-21 13:14:50,115: INFO rootCategory : myLog()
+2020-11-21 13:14:50,154: INFO rootCategory : |start|workFun|thread id : 140387750672128|
+2020-11-21 13:14:50,155: INFO rootCategory : |start|workFun|thread id : 140387759064832|
+2020-11-21 13:14:50,210: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-21 13:14:50,210: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-21 13:14:50,210: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-21 13:14:50,210: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-21 13:14:50,213: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140387750672128|
+2020-11-21 13:14:50,217: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-21 13:14:50,217: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-21 13:14:50,217: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-21 13:14:50,217: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-21 13:14:50,217: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140387759064832|
+2020-11-24 12:22:57,679: INFO rootCategory : myLog()
+2020-11-24 12:22:57,706: INFO rootCategory : |start|workFun|thread id : 139639890388736|
+2020-11-24 12:22:57,729: INFO rootCategory : |start|workFun|thread id : 139639898781440|
+2020-11-24 12:22:57,788: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 12:22:57,788: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 12:22:57,788: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 12:22:57,788: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 12:22:57,791: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139639890388736|
+2020-11-24 12:22:57,820: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 12:22:57,820: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 12:22:57,820: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 12:22:57,820: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 12:22:57,820: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139639898781440|
+2020-11-24 14:34:04,045: INFO rootCategory : myLog()
+2020-11-24 14:34:04,139: INFO rootCategory : |start|workFun|thread id : 140236193552128|
+2020-11-24 14:34:04,165: INFO rootCategory : |start|workFun|thread id : 140236201944832|
+2020-11-24 14:34:04,343: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 14:34:04,343: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 14:34:04,343: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 14:34:04,343: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 14:34:04,385: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 14:34:04,385: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 14:34:04,385: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 14:34:04,385: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 14:34:04,404: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140236193552128|
+2020-11-24 14:34:04,429: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140236201944832|
+2020-11-24 14:39:12,393: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:39:12,394: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:39:12,393: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:39:12,394: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:39:12,394: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:39:12,394: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:39:12,395: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:39:12,395: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:39:22,464: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:39:22,464: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:39:22,465: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:39:22,465: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:39:22,480: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:39:22,480: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:39:22,481: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:39:22,481: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:39:52,531: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:39:52,531: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:39:52,531: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:39:52,531: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:39:52,568: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:39:52,568: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:39:52,569: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:39:52,569: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:40:52,606: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:40:52,606: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:40:52,606: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:40:52,606: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:40:52,635: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:40:52,635: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:40:52,636: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:40:52,636: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:42:52,687: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:42:52,687: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:42:52,688: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:42:52,688: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:42:52,701: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:42:52,701: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:42:52,702: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:42:52,702: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:45:52,757: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:45:52,757: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:45:52,758: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:45:52,758: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:45:52,780: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:45:52,780: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:45:52,781: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:45:52,781: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:52:04,036: INFO rootCategory : myLog()
+2020-11-24 14:52:04,074: INFO rootCategory : |start|workFun|thread id : 139916278802176|
+2020-11-24 14:52:04,116: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 14:52:04,116: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 14:52:04,116: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 14:52:04,116: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 14:52:04,120: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139916278802176|
+2020-11-24 14:52:05,724: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:52:05,724: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:52:05,725: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:52:05,725: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:52:15,870: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:52:15,870: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:52:15,871: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:52:15,871: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:53:57,492: INFO rootCategory : myLog()
+2020-11-24 14:53:57,519: INFO rootCategory : |start|workFun|thread id : 140455318537984|
+2020-11-24 14:53:57,570: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 14:53:57,570: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 14:53:57,570: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 14:53:57,570: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 14:53:57,611: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140455318537984|
+2020-11-24 14:53:59,055: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:53:59,055: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:53:59,056: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:53:59,056: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:54:09,190: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:54:09,190: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:54:09,191: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:54:09,191: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:54:39,273: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:54:39,274: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:54:39,274: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:54:39,274: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:55:39,347: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:55:39,347: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:55:39,347: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:55:39,347: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:57:52,731: INFO rootCategory : myLog()
+2020-11-24 14:57:52,755: INFO rootCategory : |start|workFun|thread id : 140483327452928|
+2020-11-24 14:57:52,802: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 14:57:52,802: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 14:57:52,802: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 14:57:52,802: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 14:57:52,820: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140483327452928|
+2020-11-24 14:57:54,364: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:57:54,364: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:57:54,365: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:57:54,365: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:57:54,365: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 14:58:04,542: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:58:04,542: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:58:04,543: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:58:04,543: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:58:04,543: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 14:58:34,620: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:58:34,620: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:58:34,620: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:58:34,620: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:58:34,620: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 14:59:34,705: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 14:59:34,705: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 14:59:34,706: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 14:59:34,706: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 14:59:34,706: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:01:34,782: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:01:34,782: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:01:34,783: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:01:34,783: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:01:34,783: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:03:43,047: INFO rootCategory : myLog()
+2020-11-24 15:03:43,061: INFO rootCategory : |start|workFun|thread id : 140383833343744|
+2020-11-24 15:03:43,105: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:03:43,105: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:03:43,105: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:03:43,105: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:03:43,125: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140383833343744|
+2020-11-24 15:03:44,527: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:03:44,527: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:03:44,528: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:03:44,528: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:03:44,528: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:03:54,683: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:03:54,683: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:03:54,684: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:03:54,684: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:03:54,684: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:04:24,786: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:04:24,787: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:04:24,787: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:04:24,787: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:04:24,787: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:05:24,861: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:05:24,861: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:05:24,861: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:05:24,861: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:05:24,861: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:08:29,077: INFO rootCategory : myLog()
+2020-11-24 15:08:29,098: INFO rootCategory : |start|workFun|thread id : 139907459770112|
+2020-11-24 15:08:29,133: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:08:29,133: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:08:29,133: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:08:29,133: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:08:29,153: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139907459770112|
+2020-11-24 15:08:29,734: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:08:29,734: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:08:29,734: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:08:29,734: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:08:29,734: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:08:31,007: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:08:31,007: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:08:31,007: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:08:31,007: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:08:31,007: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:08:41,090: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:08:41,090: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:08:41,090: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:08:41,090: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:08:41,090: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:09:11,174: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:09:11,174: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:09:11,174: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:09:11,174: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:09:11,174: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:09:27,970: INFO rootCategory : myLog()
+2020-11-24 15:09:27,991: INFO rootCategory : |start|workFun|thread id : 140555646007040|
+2020-11-24 15:09:28,040: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:09:28,040: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:09:28,040: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:09:28,040: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:09:28,056: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140555646007040|
+2020-11-24 15:10:10,963: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:10:10,963: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:10:10,966: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:10:10,966: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:10:10,966: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:10:11,237: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:10:11,237: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:10:11,238: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:10:11,238: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:10:11,238: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:10:21,045: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:10:21,045: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:10:21,049: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:10:21,049: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:10:21,049: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:10:51,119: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:10:51,119: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:10:51,119: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:10:51,119: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:10:51,119: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:11:29,795: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:11:29,795: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:11:29,796: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:11:29,796: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:11:29,796: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:11:51,192: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:11:51,192: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:11:51,193: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:11:51,193: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:11:51,193: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:12:09,564: INFO rootCategory : myLog()
+2020-11-24 15:12:09,600: INFO rootCategory : |start|workFun|thread id : 139708894430976|
+2020-11-24 15:12:09,638: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:12:09,638: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:12:09,638: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:12:09,638: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:12:09,660: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139708894430976|
+2020-11-24 15:12:11,312: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:12:11,312: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:12:11,313: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:12:11,313: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:12:11,313: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:12:53,772: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:12:53,772: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:12:53,773: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:12:53,773: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:12:53,773: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:13:03,843: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:13:03,843: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:13:03,843: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:13:03,843: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:13:03,843: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:13:54,850: INFO rootCategory : myLog()
+2020-11-24 15:13:54,875: INFO rootCategory : |start|workFun|thread id : 139662091691776|
+2020-11-24 15:13:54,926: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:13:54,926: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:13:54,926: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:13:54,926: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:13:54,942: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139662091691776|
+2020-11-24 15:13:55,387: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:13:55,387: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:13:55,387: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:13:55,387: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:13:55,387: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:14:55,451: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:14:55,451: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:14:55,452: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:14:55,452: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:14:55,452: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:15:11,387: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:15:11,387: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:15:11,388: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:15:11,388: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:15:11,388: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:15:29,864: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:15:29,864: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:15:29,865: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:15:29,865: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:15:29,865: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:16:33,828: INFO rootCategory : myLog()
+2020-11-24 15:16:33,854: INFO rootCategory : |start|workFun|thread id : 139881080248064|
+2020-11-24 15:16:33,905: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:16:33,905: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:16:33,905: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:16:33,905: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:16:33,924: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139881080248064|
+2020-11-24 15:16:55,512: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:16:55,512: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:16:55,513: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:16:55,513: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:16:55,513: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:16:55,608: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:16:55,608: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:16:55,609: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:16:55,609: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:16:55,609: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:18:48,607: INFO rootCategory : myLog()
+2020-11-24 15:18:48,629: INFO rootCategory : |start|workFun|thread id : 140716837447424|
+2020-11-24 15:18:48,676: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:18:48,676: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:18:48,676: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:18:48,676: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:18:48,698: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140716837447424|
+2020-11-24 15:19:11,446: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:19:11,446: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:19:11,447: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:19:11,447: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:19:11,447: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:19:33,135: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79BC23CF0001
+2020-11-24 15:19:33,135: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:19:33,136: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:19:33,136: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:19:33,136: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:19:43,193: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79BC23CF0001
+2020-11-24 15:19:43,193: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:19:43,194: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:19:43,194: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:19:43,194: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:19:55,573: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:19:55,573: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:19:55,573: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:19:55,573: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:19:55,573: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:20:13,251: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79BC23CF0001
+2020-11-24 15:20:13,251: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:20:13,252: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:20:13,252: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:20:13,252: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:20:29,980: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:20:29,980: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:20:29,982: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:20:29,982: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:20:29,982: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:21:10,445: INFO rootCategory : myLog()
+2020-11-24 15:21:10,486: INFO rootCategory : |start|workFun|thread id : 140164183193344|
+2020-11-24 15:21:10,516: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:21:10,516: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:21:10,516: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:21:10,516: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:21:10,535: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140164183193344|
+2020-11-24 15:21:10,968: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:21:10,969: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:21:10,969: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:21:10,969: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:21:10,969: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:21:10,969: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:8dfce913-55b8-42af-bbd3-817945a11abe","randomId":"466a3146-7b79-4f03-b4fd-7a968b13d3c0","token":"8dfce913-55b8-42af-bbd3-817945a11abe","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:21:13,317: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79BC23CF0001
+2020-11-24 15:21:13,317: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:21:13,317: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:21:13,317: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:21:13,317: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:21:13,317: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:ccabee51-c145-453d-92df-33a295538a43","randomId":"af305176-21fc-4d39-921b-0b88fd7969d1","token":"ccabee51-c145-453d-92df-33a295538a43","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:22:23,779: INFO rootCategory : myLog()
+2020-11-24 15:22:23,798: INFO rootCategory : |start|workFun|thread id : 140485855176448|
+2020-11-24 15:22:23,838: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:22:23,838: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:22:23,838: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:22:23,838: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:22:23,851: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140485855176448|
+2020-11-24 15:22:35,892: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279BEEDAA0000
+2020-11-24 15:22:35,892: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:22:35,892: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:22:35,892: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:22:35,892: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:22:35,892: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:3251e9c3-2f7c-420e-93ec-4dcf189cc15c","randomId":"a0bb6ffb-9f92-4114-b2c7-e5a5206e8678","token":"3251e9c3-2f7c-420e-93ec-4dcf189cc15c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:22:45,969: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279BEEDAA0000
+2020-11-24 15:22:45,969: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:22:45,970: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:22:45,970: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:22:45,970: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:22:45,970: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:3251e9c3-2f7c-420e-93ec-4dcf189cc15c","randomId":"a0bb6ffb-9f92-4114-b2c7-e5a5206e8678","token":"3251e9c3-2f7c-420e-93ec-4dcf189cc15c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:23:13,383: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79BC23CF0001
+2020-11-24 15:23:13,383: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:23:13,384: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:23:13,384: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:23:13,384: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:23:13,384: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:ccabee51-c145-453d-92df-33a295538a43","randomId":"af305176-21fc-4d39-921b-0b88fd7969d1","token":"ccabee51-c145-453d-92df-33a295538a43","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:23:16,037: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279BEEDAA0000
+2020-11-24 15:23:16,037: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:23:16,037: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:23:16,037: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:23:16,037: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:23:16,037: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:3251e9c3-2f7c-420e-93ec-4dcf189cc15c","randomId":"a0bb6ffb-9f92-4114-b2c7-e5a5206e8678","token":"3251e9c3-2f7c-420e-93ec-4dcf189cc15c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:23:55,638: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:23:55,638: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:23:55,639: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:23:55,639: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:23:55,639: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:23:55,639: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:4c0eb426-1fdf-4066-880f-e26128d4ab5b","randomId":"471b8fa8-2f3a-40ce-8b20-b4a0d61ca6cf","token":"4c0eb426-1fdf-4066-880f-e26128d4ab5b","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:24:48,487: INFO rootCategory : myLog()
+2020-11-24 15:24:48,511: INFO rootCategory : |start|workFun|thread id : 139764337260288|
+2020-11-24 15:24:48,573: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:24:48,573: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:24:48,573: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:24:48,573: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:24:48,623: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139764337260288|
+2020-11-24 15:24:49,018: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:24:49,018: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:24:49,018: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:24:49,018: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:24:49,018: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:24:49,018: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:a4f352c7-a239-48e1-b41e-98876897f47c","randomId":"b4614514-fc25-4793-8089-ab1b49d59935","token":"a4f352c7-a239-48e1-b41e-98876897f47c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:24:49,019: DEBUG rootCategory : error
+2020-11-24 15:24:49,019: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 15:24:49,019: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:26:11,040: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:26:11,040: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:26:11,040: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:26:11,041: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:26:11,041: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:26:11,041: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:8dfce913-55b8-42af-bbd3-817945a11abe","randomId":"466a3146-7b79-4f03-b4fd-7a968b13d3c0","token":"8dfce913-55b8-42af-bbd3-817945a11abe","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:26:11,041: DEBUG rootCategory : error
+2020-11-24 15:26:11,041: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 15:26:11,041: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:26:13,460: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79BC23CF0001
+2020-11-24 15:26:13,460: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:26:13,460: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:26:13,460: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:26:13,460: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:26:13,460: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:ccabee51-c145-453d-92df-33a295538a43","randomId":"af305176-21fc-4d39-921b-0b88fd7969d1","token":"ccabee51-c145-453d-92df-33a295538a43","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:26:13,461: DEBUG rootCategory : error
+2020-11-24 15:26:13,461: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 15:26:13,461: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:26:30,056: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:26:30,056: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:26:30,056: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:26:30,056: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:26:30,056: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:26:30,056: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:a4f352c7-a239-48e1-b41e-98876897f47c","randomId":"b4614514-fc25-4793-8089-ab1b49d59935","token":"a4f352c7-a239-48e1-b41e-98876897f47c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:26:30,057: DEBUG rootCategory : error
+2020-11-24 15:26:30,057: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 15:26:30,057: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:26:49,143: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279BEEDAA0000
+2020-11-24 15:26:49,143: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:26:49,144: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:26:49,144: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:26:49,144: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:26:49,144: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:3251e9c3-2f7c-420e-93ec-4dcf189cc15c","randomId":"a0bb6ffb-9f92-4114-b2c7-e5a5206e8678","token":"3251e9c3-2f7c-420e-93ec-4dcf189cc15c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:26:49,145: DEBUG rootCategory : error
+2020-11-24 15:26:49,145: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 15:26:49,145: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:28:07,370: INFO rootCategory : myLog()
+2020-11-24 15:28:07,399: INFO rootCategory : |start|workFun|thread id : 140595382961920|
+2020-11-24 15:28:07,529: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:28:07,529: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:28:07,529: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:28:07,529: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:28:07,554: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140595382961920|
+2020-11-24 15:28:23,329: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C43AD00001
+2020-11-24 15:28:23,329: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:28:23,329: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:28:23,329: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:28:23,329: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:28:23,329: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:df73bf31-4db5-4087-b2fb-e707e3b34dde","randomId":"9508d51d-88a6-4269-9813-73252d674618","token":"df73bf31-4db5-4087-b2fb-e707e3b34dde","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:28:33,396: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C43AD00001
+2020-11-24 15:28:33,396: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:28:33,397: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:28:33,397: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:28:33,397: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:28:33,397: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:df73bf31-4db5-4087-b2fb-e707e3b34dde","randomId":"9508d51d-88a6-4269-9813-73252d674618","token":"df73bf31-4db5-4087-b2fb-e707e3b34dde","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:28:55,706: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:28:55,706: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:28:55,707: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:28:55,707: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:28:55,707: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:28:55,707: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:4c0eb426-1fdf-4066-880f-e26128d4ab5b","randomId":"471b8fa8-2f3a-40ce-8b20-b4a0d61ca6cf","token":"4c0eb426-1fdf-4066-880f-e26128d4ab5b","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:29:03,462: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C43AD00001
+2020-11-24 15:29:03,462: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:29:03,462: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:29:03,462: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:29:03,462: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:29:03,462: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:df73bf31-4db5-4087-b2fb-e707e3b34dde","randomId":"9508d51d-88a6-4269-9813-73252d674618","token":"df73bf31-4db5-4087-b2fb-e707e3b34dde","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:29:49,212: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279BEEDAA0000
+2020-11-24 15:29:49,212: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:29:49,213: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:29:49,213: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:29:49,213: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:29:49,213: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:3251e9c3-2f7c-420e-93ec-4dcf189cc15c","randomId":"a0bb6ffb-9f92-4114-b2c7-e5a5206e8678","token":"3251e9c3-2f7c-420e-93ec-4dcf189cc15c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:30:03,528: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C43AD00001
+2020-11-24 15:30:03,528: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:30:03,528: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:30:03,529: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:30:03,529: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:30:03,529: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:df73bf31-4db5-4087-b2fb-e707e3b34dde","randomId":"9508d51d-88a6-4269-9813-73252d674618","token":"df73bf31-4db5-4087-b2fb-e707e3b34dde","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:30:13,531: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79BC23CF0001
+2020-11-24 15:30:13,531: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:30:13,532: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:30:13,532: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:30:13,532: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:30:13,532: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:ccabee51-c145-453d-92df-33a295538a43","randomId":"af305176-21fc-4d39-921b-0b88fd7969d1","token":"ccabee51-c145-453d-92df-33a295538a43","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:31:18,130: INFO rootCategory : myLog()
+2020-11-24 15:31:18,159: INFO rootCategory : |start|workFun|thread id : 140015762417408|
+2020-11-24 15:31:18,242: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:31:18,242: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:31:18,242: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:31:18,242: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:31:18,244: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140015762417408|
+2020-11-24 15:31:19,800: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:31:19,800: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:31:19,802: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:31:19,802: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:31:19,802: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:31:19,802: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:a4f352c7-a239-48e1-b41e-98876897f47c","randomId":"b4614514-fc25-4793-8089-ab1b49d59935","token":"a4f352c7-a239-48e1-b41e-98876897f47c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:31:59,035: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C785710002
+2020-11-24 15:31:59,035: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:31:59,035: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:31:59,035: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:31:59,035: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:31:59,035: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:a43c1aa9-8b4c-4d4e-8a06-51ccb4a5ecdf","randomId":"79242da3-e61f-4318-88b2-c81aacae2e3e","token":"a43c1aa9-8b4c-4d4e-8a06-51ccb4a5ecdf","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:31:59,035: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:31:59,035: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:32:03,599: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C43AD00001
+2020-11-24 15:32:03,599: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:32:03,600: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:32:03,600: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:32:03,600: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:32:03,600: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:df73bf31-4db5-4087-b2fb-e707e3b34dde","randomId":"9508d51d-88a6-4269-9813-73252d674618","token":"df73bf31-4db5-4087-b2fb-e707e3b34dde","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:32:03,600: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:32:03,600: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:32:09,108: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C785710002
+2020-11-24 15:32:09,108: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:32:09,109: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:32:09,109: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:32:09,109: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:32:09,109: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:a43c1aa9-8b4c-4d4e-8a06-51ccb4a5ecdf","randomId":"79242da3-e61f-4318-88b2-c81aacae2e3e","token":"a43c1aa9-8b4c-4d4e-8a06-51ccb4a5ecdf","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:32:09,109: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:32:09,109: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:32:11,109: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:32:11,109: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:32:11,110: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:32:11,110: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:32:11,110: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:32:11,110: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:8dfce913-55b8-42af-bbd3-817945a11abe","randomId":"466a3146-7b79-4f03-b4fd-7a968b13d3c0","token":"8dfce913-55b8-42af-bbd3-817945a11abe","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:32:39,185: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C785710002
+2020-11-24 15:32:39,185: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:32:39,186: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:32:39,186: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:32:39,186: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:32:39,186: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:a43c1aa9-8b4c-4d4e-8a06-51ccb4a5ecdf","randomId":"79242da3-e61f-4318-88b2-c81aacae2e3e","token":"a43c1aa9-8b4c-4d4e-8a06-51ccb4a5ecdf","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:32:39,186: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:32:39,186: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:34:19,284: INFO rootCategory : myLog()
+2020-11-24 15:34:19,307: INFO rootCategory : |start|workFun|thread id : 139719124211456|
+2020-11-24 15:34:19,423: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:34:19,423: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:34:19,423: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:34:19,423: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:34:19,425: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139719124211456|
+2020-11-24 15:34:19,827: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:34:19,828: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:34:19,828: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:34:19,828: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:34:19,828: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:34:19,828: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:a4f352c7-a239-48e1-b41e-98876897f47c","randomId":"b4614514-fc25-4793-8089-ab1b49d59935","token":"a4f352c7-a239-48e1-b41e-98876897f47c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:34:39,222: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C9F72F0003
+2020-11-24 15:34:39,222: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:34:39,222: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:34:39,223: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:34:39,223: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:34:39,223: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:4fc71aed-11af-48f1-864f-cef8c4c7423b","randomId":"dc91d872-9aee-42b5-8d89-c92bcba8be12","token":"4fc71aed-11af-48f1-864f-cef8c4c7423b","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:34:39,223: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:34:39,223: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:34:49,297: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C9F72F0003
+2020-11-24 15:34:49,297: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:34:49,298: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:34:49,298: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:34:49,298: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:34:49,298: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:4fc71aed-11af-48f1-864f-cef8c4c7423b","randomId":"dc91d872-9aee-42b5-8d89-c92bcba8be12","token":"4fc71aed-11af-48f1-864f-cef8c4c7423b","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:34:49,298: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:34:49,298: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:34:55,785: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:34:55,785: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:34:55,785: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:34:55,785: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:34:55,785: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:34:55,785: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:4c0eb426-1fdf-4066-880f-e26128d4ab5b","randomId":"471b8fa8-2f3a-40ce-8b20-b4a0d61ca6cf","token":"4c0eb426-1fdf-4066-880f-e26128d4ab5b","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:37:24,437: INFO rootCategory : myLog()
+2020-11-24 15:37:24,461: INFO rootCategory : |start|workFun|thread id : 139996840535808|
+2020-11-24 15:37:24,501: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:37:24,501: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:37:24,501: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:37:24,501: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:37:24,506: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139996840535808|
+2020-11-24 15:37:24,872: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C43AD00001
+2020-11-24 15:37:24,872: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:37:24,872: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:37:24,872: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:37:24,872: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:37:24,872: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:df73bf31-4db5-4087-b2fb-e707e3b34dde","randomId":"9508d51d-88a6-4269-9813-73252d674618","token":"df73bf31-4db5-4087-b2fb-e707e3b34dde","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:37:24,872: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:37:24,872: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:37:24,873: INFO rootCategory : |Sender|send|error|get value error, strKey = context|
+2020-11-24 15:37:24,873: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79BC23CF0001
+2020-11-24 15:37:24,873: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:37:24,873: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:37:24,873: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:37:24,873: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:37:24,873: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:ccabee51-c145-453d-92df-33a295538a43","randomId":"af305176-21fc-4d39-921b-0b88fd7969d1","token":"ccabee51-c145-453d-92df-33a295538a43","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:37:24,874: INFO rootCategory : |Sender|send|error|get value error, strKey = mustDeliver|
+2020-11-24 15:37:24,874: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C9F72F0003
+2020-11-24 15:37:24,874: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:37:24,876: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:37:24,876: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:37:24,876: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:37:24,876: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:4fc71aed-11af-48f1-864f-cef8c4c7423b","randomId":"dc91d872-9aee-42b5-8d89-c92bcba8be12","token":"4fc71aed-11af-48f1-864f-cef8c4c7423b","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:37:24,876: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:37:24,876: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:37:24,876: INFO rootCategory : |Sender|send|error|get value error, strKey = context|
+2020-11-24 15:37:24,876: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279C785710002
+2020-11-24 15:37:24,876: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:37:24,876: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:37:24,877: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:37:24,877: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:37:24,877: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:a43c1aa9-8b4c-4d4e-8a06-51ccb4a5ecdf","randomId":"79242da3-e61f-4318-88b2-c81aacae2e3e","token":"a43c1aa9-8b4c-4d4e-8a06-51ccb4a5ecdf","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:37:24,877: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:37:24,877: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:37:24,877: INFO rootCategory : |Sender|send|error|get value error, strKey = context|
+2020-11-24 15:38:19,865: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30400B640D7F79B03F1A0000
+2020-11-24 15:38:19,865: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:38:19,866: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:38:19,866: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:38:19,866: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:38:19,866: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:a4f352c7-a239-48e1-b41e-98876897f47c","randomId":"b4614514-fc25-4793-8089-ab1b49d59935","token":"a4f352c7-a239-48e1-b41e-98876897f47c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:38:19,866: INFO rootCategory : |Sender|send|error|get value error, strKey = mustDeliver|
+2020-11-24 15:39:09,985: INFO rootCategory : myLog()
+2020-11-24 15:39:10,006: INFO rootCategory : |start|workFun|thread id : 139989390608128|
+2020-11-24 15:39:10,052: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:39:10,052: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:39:10,052: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:39:10,052: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:39:10,054: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139989390608128|
+2020-11-24 15:39:11,187: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30612DAFBFDD79B38FC90000
+2020-11-24 15:39:11,187: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:39:11,188: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:39:11,188: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:39:11,188: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:39:11,188: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:8dfce913-55b8-42af-bbd3-817945a11abe","randomId":"466a3146-7b79-4f03-b4fd-7a968b13d3c0","token":"8dfce913-55b8-42af-bbd3-817945a11abe","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:39:11,188: INFO rootCategory : |Sender|send|error|get value error, strKey = mustDeliver|
+2020-11-24 15:39:20,063: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279BEEDAA0000
+2020-11-24 15:39:20,063: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:39:20,064: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:39:20,064: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:39:20,064: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:39:20,064: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:3251e9c3-2f7c-420e-93ec-4dcf189cc15c","randomId":"a0bb6ffb-9f92-4114-b2c7-e5a5206e8678","token":"3251e9c3-2f7c-420e-93ec-4dcf189cc15c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:39:20,064: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:39:20,064: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:39:20,064: INFO rootCategory : |Sender|send|error|get value error, strKey = ext|
+2020-11-24 15:40:31,790: INFO rootCategory : myLog()
+2020-11-24 15:40:31,804: INFO rootCategory : |start|workFun|thread id : 139690246833920|
+2020-11-24 15:40:31,849: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:40:31,849: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:40:31,849: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:40:31,849: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:40:31,866: DEBUG rootCategory : |ConnectorProducer|constructor|complete|139690246833920|
+2020-11-24 15:40:55,215: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279CFB3E70004
+2020-11-24 15:40:55,215: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:40:55,215: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:40:55,215: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:40:55,215: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:40:55,215: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:ee3a8918-1422-4dc9-8358-8efb6ac247b0","randomId":"ceaa8cf7-8f2e-488e-a637-2e2e10f88d21","token":"ee3a8918-1422-4dc9-8358-8efb6ac247b0","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:40:55,215: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:40:55,215: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:41:57,888: INFO rootCategory : myLog()
+2020-11-24 15:41:57,911: INFO rootCategory : |start|workFun|thread id : 140498037024512|
+2020-11-24 15:41:57,952: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:41:57,952: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:41:57,952: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:41:57,952: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:41:57,969: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140498037024512|
+2020-11-24 15:41:58,452: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA30B262B56E0E79B60BCC0000
+2020-11-24 15:41:58,452: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:41:58,452: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:41:58,453: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:41:58,453: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:41:58,453: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:4c0eb426-1fdf-4066-880f-e26128d4ab5b","randomId":"471b8fa8-2f3a-40ce-8b20-b4a0d61ca6cf","token":"4c0eb426-1fdf-4066-880f-e26128d4ab5b","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:41:58,453: INFO rootCategory : |Sender|send|error|get value error, strKey = mustDeliver|
+2020-11-24 15:42:19,916: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA2D293EB5D223799733C40000
+2020-11-24 15:42:19,916: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:42:19,917: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:42:19,917: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:42:19,917: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:42:19,917: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":"false","context":{"authToken":"123:a4f352c7-a239-48e1-b41e-98876897f47c","randomId":"b4614514-fc25-4793-8089-ab1b49d59935","token":"a4f352c7-a239-48e1-b41e-98876897f47c","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:42:19,918: INFO rootCategory : |Sender|send|error|get value error, strKey = mustDeliver|
+2020-11-24 15:42:22,717: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA323B2C7CC21279D109C20005
+2020-11-24 15:42:22,717: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:42:22,718: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:42:22,718: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:42:22,718: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:42:22,718: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":0,"context":{"authToken":"123:e8870fe8-284b-47b6-b297-ae0ada986dd4","randomId":"5a52da9d-5972-49c1-8c99-869bc9495045","token":"e8870fe8-284b-47b6-b297-ae0ada986dd4","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:42:22,718: INFO rootCategory : |Sender|send|mustDeliver = 0|
+2020-11-24 15:42:22,718: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:42:22,804: INFO rootCategory : |ConnectorProducer|produce|Message ID: AC192BBA354B1F706A1179D10A100000|Message Body:{"context":{"authToken":"123:e8870fe8-284b-47b6-b297-ae0ada986dd4","randomId":"5a52da9d-5972-49c1-8c99-869bc9495045","token":"e8870fe8-284b-47b6-b297-ae0ada986dd4","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"sendId":"","cid":""}|threadId : 140498037024512|
+2020-11-24 15:49:27,774: INFO rootCategory : myLog()
+2020-11-24 15:49:27,833: INFO rootCategory : |start|workFun|thread id : 140407070521088|
+2020-11-24 15:49:27,878: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-11-24 15:49:27,878: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-11-24 15:49:27,878: INFO rootCategory : |MysqlService|constructor|complete|
+2020-11-24 15:49:27,878: DEBUG rootCategory : |ConnectorProducer|constructor|start|
+2020-11-24 15:49:27,884: DEBUG rootCategory : |ConnectorProducer|constructor|complete|140407070521088|
+2020-11-24 15:49:40,805: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA36841BA408DE79D7B9080000
+2020-11-24 15:49:40,805: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 15:49:40,806: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 15:49:40,806: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 15:49:40,806: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 15:49:40,806: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":1,"context":{"authToken":"123:9efc453c-aeb5-4151-bb6d-bdd81644e1db","randomId":"b0607808-353c-4422-a889-cb0bf08e818b","token":"9efc453c-aeb5-4151-bb6d-bdd81644e1db","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 15:49:40,806: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 15:49:40,806: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 15:49:40,895: INFO rootCategory : |ConnectorProducer|produce|Message ID: AC192BBA36951BA408DE79D7B9580000|Message Body:{"context":{"authToken":"123:9efc453c-aeb5-4151-bb6d-bdd81644e1db","randomId":"b0607808-353c-4422-a889-cb0bf08e818b","token":"9efc453c-aeb5-4151-bb6d-bdd81644e1db","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"sendId":"","cid":""}|threadId : 140407070521088|
+2020-11-24 16:12:05,260: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA36841BA408DE79EC3CCC0001
+2020-11-24 16:12:05,269: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 16:12:05,270: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 16:12:05,270: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 16:12:05,270: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 16:12:05,270: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":1,"context":{"authToken":"123:a57bac70-7266-4439-9ceb-bb727ff4569e","randomId":"2356627f-ab40-479b-9d5e-8ff9cc2c1fd5","token":"a57bac70-7266-4439-9ceb-bb727ff4569e","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 16:12:05,270: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 16:12:05,270: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 16:12:05,328: INFO rootCategory : |ConnectorProducer|produce|Message ID: AC192BBA36951BA408DE79EC3D160001|Message Body:{"context":{"authToken":"123:a57bac70-7266-4439-9ceb-bb727ff4569e","randomId":"2356627f-ab40-479b-9d5e-8ff9cc2c1fd5","token":"a57bac70-7266-4439-9ceb-bb727ff4569e","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"sendId":"","cid":""}|threadId : 140407070521088|
+2020-11-24 16:17:23,549: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA36841BA408DE79F118150002
+2020-11-24 16:17:23,550: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 16:17:23,550: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 16:17:23,550: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 16:17:23,550: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 16:17:23,550: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":1,"context":{"authToken":"123:02b1d27a-1b5a-495c-a70e-35f8dc7a5988","randomId":"377e0365-ea52-4162-b249-c590f73dcca8","token":"02b1d27a-1b5a-495c-a70e-35f8dc7a5988","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 16:17:23,550: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 16:17:23,550: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 16:17:23,630: INFO rootCategory : |ConnectorProducer|produce|Message ID: AC192BBA36951BA408DE79F1185E0002|Message Body:{"context":{"authToken":"123:02b1d27a-1b5a-495c-a70e-35f8dc7a5988","randomId":"377e0365-ea52-4162-b249-c590f73dcca8","token":"02b1d27a-1b5a-495c-a70e-35f8dc7a5988","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"sendId":"","cid":""}|threadId : 140407070521088|
+2020-11-24 16:33:49,675: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA36841BA408DE7A00242A0003
+2020-11-24 16:33:49,741: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 16:33:49,742: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 16:33:49,742: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 16:33:49,742: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 16:33:49,742: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":1,"context":{"authToken":"123:634dc8d0-d52c-43d9-aec1-339563709438","randomId":"9c24f8d0-138b-4231-9fdb-e44f72363952","token":"634dc8d0-d52c-43d9-aec1-339563709438","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 16:33:49,742: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 16:33:49,742: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 16:33:49,813: INFO rootCategory : |ConnectorProducer|produce|Message ID: AC192BBA36951BA408DE7A0024AE0003|Message Body:{"context":{"authToken":"123:634dc8d0-d52c-43d9-aec1-339563709438","randomId":"9c24f8d0-138b-4231-9fdb-e44f72363952","token":"634dc8d0-d52c-43d9-aec1-339563709438","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"sendId":"","cid":""}|threadId : 140407070521088|
+2020-11-24 16:34:05,641: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA36841BA408DE7A00627D0004
+2020-11-24 16:34:05,641: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 16:34:05,641: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 16:34:05,641: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 16:34:05,641: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 16:34:05,641: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":1,"context":{"authToken":"123:11ec62a0-39cd-4e5b-bd3a-5fb2534dc3ea","randomId":"5046d257-57d9-4f5f-80de-e82315a6945b","token":"11ec62a0-39cd-4e5b-bd3a-5fb2534dc3ea","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 16:34:05,641: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 16:34:05,642: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 16:34:05,713: INFO rootCategory : |ConnectorProducer|produce|Message ID: AC192BBA36951BA408DE7A0062CA0004|Message Body:{"context":{"authToken":"123:11ec62a0-39cd-4e5b-bd3a-5fb2534dc3ea","randomId":"5046d257-57d9-4f5f-80de-e82315a6945b","token":"11ec62a0-39cd-4e5b-bd3a-5fb2534dc3ea","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"sendId":"","cid":""}|threadId : 140407070521088|
+2020-11-24 16:34:18,625: INFO rootCategory : Received Message Topic:ProcessorToSender, MsgId:AC192BBA36841BA408DE7A0095360005
+2020-11-24 16:34:18,625: INFO rootCategory : |MysqlDriver|select|query = select onlineState from allUser where account = 123
+2020-11-24 16:34:18,626: DEBUG rootCategory : |SQLResult|constructor|start|
+2020-11-24 16:34:18,626: DEBUG rootCategory : |SQLResult|constructor|end|
+2020-11-24 16:34:18,626: DEBUG rootCategory : |Sender|send|onlineStatus = 1|
+2020-11-24 16:34:18,626: DEBUG rootCategory : |Sender|send|msgJson={"optid":"123","type":"USER_ONLINE","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"mustDeliver":1,"context":{"authToken":"123:400d14fd-637e-4adf-95dc-502e2ee223e1","randomId":"a07f2277-5f8a-4ed8-ba34-96904798eea1","token":"400d14fd-637e-4adf-95dc-502e2ee223e1","uid":"123","ip":"47.94.149.37","port":"2333"}}|
+2020-11-24 16:34:18,626: INFO rootCategory : |Sender|send|mustDeliver = 1|
+2020-11-24 16:34:18,626: INFO rootCategory : |Sender|send|useronline| optid = 123|
+2020-11-24 16:34:18,690: INFO rootCategory : |ConnectorProducer|produce|Message ID: AC192BBA36951BA408DE7A0095820005|Message Body:{"context":{"authToken":"123:400d14fd-637e-4adf-95dc-502e2ee223e1","randomId":"a07f2277-5f8a-4ed8-ba34-96904798eea1","token":"400d14fd-637e-4adf-95dc-502e2ee223e1","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"userInfo":{"account":"123","user_passwd":"123456","sculputre":"123123","nickName":"qizhou","birthday":"","sign":"","email":"","sex":"","tel":"","occupation":"","onlineState":"1","isFreeze":"","nation":"","privince":"","city":""}},"sendId":"","cid":""}|threadId : 140407070521088|

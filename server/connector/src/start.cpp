@@ -12,6 +12,8 @@
 #include <muduo/base/Thread.h>
 #include <muduo/net/Buffer.h>
 #include <iostream>
+#include <DefaultMQPushConsumer.h>
+#include "MessageListener.hpp"
 
 #include "TCPKeeper.hpp"
 // #include "QueryProcessor.hpp"
@@ -29,6 +31,20 @@ int main(int argc, char *argv[])
     }
     else
     {
+        DefaultMQPushConsumer *consumer = new DefaultMQPushConsumer("GID_Connector");
+        consumer->setNamesrvAddr("47.94.149.37:9876");
+        //register your own listener here to handle the messages received.
+        //请注册自定义侦听函数用来处理接收到的消息，并返回响应的处理结果。
+        MessageListener *messageListener = new MessageListener();
+        consumer->subscribe("SenderToConnector", "*");
+        consumer->registerMessageListener(messageListener);
+        //Start this consumer
+        //准备工作完成，必须调用启动函数，才可以正常工作。
+        // ********************************************
+        // 1.确保订阅关系的设置在启动之前完成。
+        // 2.确保相同 GID 下面的消费者的订阅关系一致。
+        // *********************************************
+        consumer->start();
         const char *ip = argv[1];
         uint16_t port = static_cast<uint16_t>(atoi(argv[2]));
         InetAddress listenAddr(ip, port);

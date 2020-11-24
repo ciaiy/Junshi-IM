@@ -4,7 +4,7 @@
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
 #ifndef EXCEPTION_H
-#define XCEPTION_H
+#define EXCEPTION_H
 
 #include <exception>
 #include <string>

@@ -17,10 +17,15 @@ else
     cd /opt/rocketmq-all-4.7.1-source-release/
     mvn -Prelease-all -DskipTests clean install -U
     # 修改配置信息
-    vim bin/runserver.sh
+    cd /opt/rocketmq-all-4.7.1-source-release/distribution/target/rocketmq-4.7.1/rocketmq-4.7.1/bin
+    vim runserver.sh
     # JAVA_OPT="${JAVA_OPT} -server -Xms256m -Xmx256m -Xmn512m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=320m"　
-    vim bin/runbroker.sh
+    vim runbroker.sh
     # JAVA_OPT="${JAVA_OPT} -server -Xms256m -Xmx256m -Xmn128m"
+    # 绑定外网IP 
+    echo "brokerIP1=外网IP" > broker.properties
+    nohup sh bin/mqbroker -n nameserverIP:9876 -c broker.properties &
+
 
     # 获取rocketmq-client-c++源代码并编译
     cd /opt
@@ -57,9 +62,9 @@ else
     # 启动
     cd /opt/rocketmq-all-4.7.1-source-release/distribution/target/rocketmq-4.7.1/rocketmq-4.7.1
     nohup sh bin/mqnamesrv & 
-    nohup sh bin/mqbroker -n 47.94.149.37:9876 &
+    nohup sh bin/mqbroker -n 47.108.60.159:9876 -c bin/broker.properties &
     cd /opt/rocketmq-externals/rocketmq-console
-    mvn clean package -Dmaven.test.skip=true
+    # mvn clean package -Dmaven.test.skip=true
     cd /opt/rocketmq-externals/rocketmq-console/
     java -jar target/rocketmq-console-ng-1.0.0.jar > ~/rocket-console.log &
 fi

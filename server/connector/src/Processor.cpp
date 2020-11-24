@@ -25,7 +25,7 @@ void Processor::receiveData(const TcpConnectionPtr &conn, const std::string &msg
         if(ORIGIN_CLIENT.compare(origin) == 0) {
             queryProcessor->receiveData(conn, dataJson.getCJsonObject("query").ToString());
         }else if(ORIGIN_SERVER.compare(origin) == 0) {
-            serverProcessor->receiveData(conn, dataJson.getCJsonObject("query").ToString());
+            serverProcessor->receiveData(dataJson.getCJsonObject("query").ToString());
         }else {
             throw Exception("origin error | " + origin);
         }

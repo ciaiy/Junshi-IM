@@ -25,11 +25,12 @@ namespace im
         Processor *processor = new Processor();
 
     public:
+    
         ConsumeStatus consumeMessage(const std::vector<MQMessageExt> &msgs)
         {
             for (auto item = msgs.begin(); item != msgs.end(); item++)
             {
-                logger->info(string("Received Message Topic:" + item->getTopic() + ", MsgId:" + item->getMsgId()));
+                logger->info(string("Received Message Topic:" + item->getTopic() + ", MsgId:" + item->getMsgId()) + item->getBody());
                 processor->process(item->getBody());
             }
             return CONSUME_SUCCESS;

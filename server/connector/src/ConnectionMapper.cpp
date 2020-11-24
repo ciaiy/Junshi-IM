@@ -6,7 +6,6 @@
 #include <map>
 
 using namespace im;
-using namespace im::common;
 
 ConnectionMapper::ObjectCreator ConnectionMapper::objectCreator;
 
@@ -16,15 +15,15 @@ ConnectionMapper *ConnectionMapper::getInstance()
     return &mapper;
 }
 
-std::string ConnectionMapper::insertConnection(const TcpConnectionPtr &conn)
+void ConnectionMapper::insertConnection(const TcpConnectionPtr &conn)
 {
     mtx.lock();
-    time_t timestamp = time(nullptr);
-    std::string threadId = common::CurrentThread::getThreadIdOfString(std::this_thread::get_id());
-    std::string key = std::to_string(timestamp) + threadId;
-    connectionMapper.insert(make_pair(key, conn));
+    boost::any key = conn->getContext();
+    if(key.empty()) {
+        throw common::Exception("conn context null");
+    }
+    connectionMapper.insert(make_pair(boost::any_cast<string>(key), conn));
     mtx.unlock();
-    return key;
 }
 
 bool ConnectionMapper::findConnection(const std::string &key)
@@ -40,7 +39,7 @@ bool ConnectionMapper::findConnection(const std::string &key)
     }
 }
 
-const TcpConnectionPtr ConnectionMapper::getConnection(const std::string &key) throw(common::Exception)
+const TcpConnectionPtr ConnectionMapper::getConnection(const std::string &key)
 {
     mtx.lock();
     if (findConnection(key))

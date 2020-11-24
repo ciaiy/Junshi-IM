@@ -10,7 +10,7 @@ ConnectorProducer::ConnectorProducer()
 {
     threadId = common::CurrentThread::getThreadIdOfString(this_thread::get_id());
     logger->debug("|ConnectorProducer|constructor|start|");
-    producer = new DefaultMQProducer(threadId);
+    producer = new DefaultMQProducer("GID_Sender");
     producer->setNamesrvAddr("47.94.149.37:9876");
     producer->setSessionCredentials("AK", "SK", "ALIYUN");
     producer->start();

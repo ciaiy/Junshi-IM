@@ -31,12 +31,14 @@ void TCPKeeper::onConnection(const TcpConnectionPtr &conn)
         logger->info("|TcpKeeper|onConnection|" + conn->getTcpInfoString() + "|");
         conn->setTcpNoDelay(true);
         conn->setCloseCallback(onClose);
-        cout << conn->name() << endl; 
+        cout << conn->name() << endl;
     }
 }
 
 void TCPKeeper::onClose(const TcpConnectionPtr &conn)
 {
+    boost::any context = conn->getContext();
+    ConnectionMapper::getInstance()->deleteConneciton(boost::any_cast<string>(context));
     logger->info("|TCPKeeper|onClose|" + conn->getTcpInfoString() + "|");
 }
 

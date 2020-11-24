@@ -25,6 +25,7 @@ SenderProducer::~SenderProducer()
 
 void SenderProducer::produce(const string &msgBody)
 {
+    logger->info("|SenderProducer|produce|msgBody = " + msgBody + "|");
     // 不安全，有可能produce失败
     MQMessage msg(TopicName, "HiTAG", msgBody);
     try

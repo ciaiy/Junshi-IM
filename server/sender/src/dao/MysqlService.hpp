@@ -25,7 +25,7 @@ namespace im
             MysqlService();
             ~MysqlService() = default;
             SQLResult checkUserOnline(const std::string &uid);
-            SQLResult insertOfflineMsg(const string &uid, const string &type, const string &data);
+            SQLResult insertOfflineMsg(const std::string &uid, const std::string &type, const std::string &data);
         };
 
     } // namespace dao

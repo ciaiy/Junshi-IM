@@ -17,7 +17,7 @@ MQProducer *MQProducer::getInstance()
 void MQProducer::produce(const std::string query)
 {
     // 不安全，有可能produce失败
-    MQMessage msg(MQProducer::TopicName, "HiTAG", query);
+    MQMessage msg("ConnectorToProcessor", "HiTAG", query);
     try
     {
         SendResult sendResult = producer->send(msg);
@@ -32,10 +32,8 @@ void MQProducer::produce(const std::string query)
 MQProducer::MQProducer()
 {
     logger->debug("|MQProducer|constructor|");
-    producer = new DefaultMQProducer("qizhouTestProducerGroup");
+    producer = new DefaultMQProducer("GID_Connector");
     producer->setNamesrvAddr("47.94.149.37:9876");
-
-    producer->setSessionCredentials("AK", "SK", "ALIYUN");
 
     //请确保参数设置完成之后启动 Producer。
     producer->start();

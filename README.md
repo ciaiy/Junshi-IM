@@ -11,7 +11,11 @@
 {
     "sourceType" : "client",
     "dataAck" : 123, // 随机值
-    "authTokn": "uid:your device token", // 123:TOKENTOKENTOKEN
+    "context":{
+        "queryId" : "randomID",
+        "authToken" : "uid + deviceId",
+        "token" : "deviceId"
+    },
     "queryBody" : {
         "queryType": "optionQuery",
         "queryInfo" : {
@@ -20,7 +24,7 @@
             "optid" : "optid",
             "type" : 1,  // LOGIN == 1
             "message" : "password",
-            "ext" : "your token"
+            "ext":""
         }
     }  
 }
@@ -31,16 +35,22 @@
 ```json
 {
         "queryType": "optionQuery",
-        "token" : "tokenTemp assigned by connector",
+        "context":{
+            "uid" : "uid",
+            "queryId" : "randomID",
+            "authToken" : "tokenTemp assigned by connector",
+            "token" : "deviceId"
+        },
         "queryInfo" : {
             "uid" : "uid",
             "cid" : "cid",
             "optid" : "optid",
             "type" : 1,  // LOGIN == 1
             "message" : "password",
-            "ext" : "your token"
+            "ext" : ""
         },
-        "ext" : "uid + your device token"
+        "ext" : ""
+}
 ```
 
  - processorToSender数据格式
@@ -49,7 +59,12 @@
 {
     "optid" : "123", // optid
     "type" : "USER_ONLINE",
-    "token" : "Token assigned by connector", 
+    "context":{
+            "uid" : "uid",
+            "queryId" : "randomID",
+            "authToken" : "tokenTemp assigned by connector",
+            "token" : "deviceId"
+    },
     "data" : {
         "loginResult" : 1,
         "userInfo" : {  // mysql的allUser表数据
@@ -71,7 +86,7 @@
         }
     },
     "mustDeliver"  : "false",
-    "ext" : "device token"
+    "ext" : ""
 }
 ```
 

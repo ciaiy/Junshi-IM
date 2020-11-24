@@ -16,9 +16,23 @@ namespace im
     {
     private:
         ConnectionMapper *mapper;
+        ServerProcessor();
+    public:
+        void receiveData(const std::string msg);
+
+        public:
+        static ServerProcessor *getInstance();
 
     public:
-        void receiveData(const TcpConnectionPtr &conn, const std::string msg) throw(common::Exception);
+        // 辅助代理类
+        struct ObjectCreator
+        {
+            ObjectCreator()
+            {
+                ServerProcessor::getInstance();
+            }
+        };
+        static ObjectCreator objectCreator;
     };
 } // namespace im
 
