@@ -1,11 +1,13 @@
 #include "ConnectionMapper.hpp"
 #include "../../common/CurrentThread.hpp"
 #include "../../common/Exception.hpp"
+#include "../../common/myLog.h"
 
 #include <mutex>
 #include <map>
 
 using namespace im;
+using im::common::logger;
 
 ConnectionMapper::ObjectCreator ConnectionMapper::objectCreator;
 
@@ -23,6 +25,7 @@ void ConnectionMapper::insertConnection(const TcpConnectionPtr &conn)
         throw common::Exception("conn context null");
     }
     connectionMapper.insert(make_pair(boost::any_cast<string>(key), conn));
+    logger->info("|ConnectionMapper|inserConnection|key = " + boost::any_cast<string>(key) +"|");
     mtx.unlock();
 }
 

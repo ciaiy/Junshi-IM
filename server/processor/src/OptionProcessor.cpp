@@ -54,9 +54,18 @@ void OptionProcessor::dispatch(OptionQuery *optionQuery)
 void OptionProcessor::login(string optid, string message, string context)
 {
     SQLResult sqlResult = sqlService.getUserInfo(optid);
+    CJsonObject msg;
+    msg.Add("optid", optid);
+    msg.Add("type", "USER_ONLINE");
+    CJsonObject data;
+    msg.Add("mustDeliver", false);
+    msg.Add("context", CJsonObject(context));
     // 检查SQL 出错
     if (!sqlResult.isSuccess())
     {
+        data.Add("result", 0);
+        data.Add("reason", "OTHER_ERROR");
+        msg.Add("data", data);
         logger->warn("|OptionProcessor|login|optid = " + optid + ", errorInfo :" + sqlResult.result().ToString());
     }
     else
@@ -65,6 +74,10 @@ void OptionProcessor::login(string optid, string message, string context)
         // 登录账号不存在
         if (sqlResult.getData().compare("") == 0)
         {
+            data.Add("result", 0);
+            data.Add("reason", "NOT_EXIST");
+            data.Add("specialMsg", 1);
+            msg.Add("data", data);
             logger->info("|OptionProcessor|login|optid = " + optid + " user not exist|");
         }
         else
@@ -77,19 +90,20 @@ void OptionProcessor::login(string optid, string message, string context)
             {
                 logger->info("|OptionProcessor|login|optid = " + optid + " login success|");
                 sqlService.userOnline(optid);
-                CJsonObject msg;
-                msg.Add("optid", optid);
-                msg.Add("type", "USER_ONLINE");
-                CJsonObject data;
-                data.Add("userInfo", userInfo);
+                data.Add("result", 1);
+                data.Add("reason", "SUCCESS");
                 msg.Add("data", data);
-                msg.Add("mustDeliver", true);
-                msg.Add("context", CJsonObject(context));
-                senderProducer->produce(msg.ToString());
                 logger->info("|OptionProcessor|login|login success| optid = " + optid + "|");
-            }else {
-                logger->info("|OptionProcessor|login|login failed| optid = " +  optid + "|password wrong|");
             }
-        }
+            else
+            {
+                logger->info("|OptionProcessor|login|login failed| optid = " + optid + "|password wrong|");
+                data.Add("result", 0);
+                data.Add("reason", "WRONG_PWD");
+                msg.Add("data", data);
+                msg.Add("context", CJsonObject(context));
+            }
+                }
+        senderProducer->produce(msg.ToString());
     }
 }

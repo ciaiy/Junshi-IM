@@ -3,6 +3,7 @@
 #include "../../common/myLog.h"
 #include "../../common/Exception.hpp"
 #include "MQProducer.hpp"
+#include "MessageSender.hpp"
 #include "ConnectionMapper.hpp"
 
 using namespace im;
@@ -29,11 +30,13 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string query
         string dataAck = queryJson.getString("dataAck");
         CJsonObject context = queryJson.getCJsonObject("context");
         CJsonObject queryBody = queryJson.getCJsonObject("queryBody");
+        string authToken = context.getString("authToken");
         // 在此检查数据是否安全，当mapper中没有该用户时，除非请求的类型为登录，否则其他的请求全部丢弃，并关闭该Connection
-        if (userAuthCheckAndSet(conn, context.getString("authToken"), queryBody.getCJsonObject("queryInfo").getInt32("type")))
+        if (userAuthCheckAndSet(conn, authToken, queryBody.getCJsonObject("queryInfo").getInt32("type")))
         {
             logger->debug("|QueryProcessor|receiveData|dataAck" + dataAck);
             // 临时加上ip + port
+            context.Replace("authToken", authToken);
             context.Add("ip", "47.94.149.37");
             context.Add("port", "2333");
             CJsonObject query;
@@ -41,7 +44,7 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string query
             query.Add("queryBody", queryBody);
             query.Add("ext", "");
             MQProducer::getInstance()->produce(query.ToString());
-            conn->send(&dataAck, sizeof(int64_t));
+            MessageSender::sendResponse(conn, dataAck);
         }
         else
         {
@@ -56,16 +59,17 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string query
 
 string QueryProcessor::generateTempSign()
 {
-    return to_string(time(nullptr));
+    return "temp" + to_string(time(nullptr));
 }
 
-bool QueryProcessor::userAuthCheckAndSet(const TcpConnectionPtr &conn, const string &authToken, const uint32_t type)
+bool QueryProcessor::userAuthCheckAndSet(const TcpConnectionPtr &conn, string &authToken, const uint32_t type)
 {
     boost::any context = conn->getContext();
     // 不为空的话，则校验其authToken是否和conn中的Context一致
-    if (!context.empty())
+    string contextSign = boost::any_cast<string>(context);
+    logger->debug("|QueryProcessor|userAutchCheckAndSet|contextSign = " + contextSign + "|authToken =  " + authToken + "| type = " + to_string(type) + "|");
+    if (!contextSign.empty() && contextSign.find("temp") == contextSign.npos)
     {
-        std::string contextSign = boost::any_cast<string>(context);
         return contextSign.compare(authToken) == 0;
     }
     else
@@ -75,7 +79,8 @@ bool QueryProcessor::userAuthCheckAndSet(const TcpConnectionPtr &conn, const str
         {
             try
             {
-                conn->setContext(generateTempSign());
+                authToken = generateTempSign() + authToken;
+                conn->setContext(authToken);
                 ConnectionMapper::getInstance()->insertConnection(conn);
             }
             catch (Exception ex)

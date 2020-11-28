@@ -14,12 +14,11 @@ void Sender::send(const std::string &msg)
     {
         CJsonObject msgJson(msg);
         std::string uid = msgJson.getString("optid");
-        std::string onlineState = CJsonObject(CJsonObject(sqlService.checkUserOnline(uid).getData())[0]).getString("onlineState");
-        logger->debug("|Sender|send|onlineStatus = " + onlineState + "|");
         logger->debug("|Sender|send|msgJson=" + msgJson.ToString() + "|");
         int mustDeliver = msgJson.getInt32("mustDeliver");
         logger->info("|Sender|send|mustDeliver = " + to_string(mustDeliver) + "|");
-        if (onlineState.compare(ONLINE_STATUS) == 0)
+        if ((msgJson.getCJsonObject("data").KeyExist("specialMsg") && msgJson.getInt32("specialMsg") == 1)
+            || CJsonObject(CJsonObject(sqlService.checkUserOnline(uid).getData())[0]).getString("onlineState").compare(ONLINE_STATUS) == 0 )
         {
             logger->info("|Sender|send|useronline| optid = " + uid + "|");
             std::string type = msgJson.getString("type");

@@ -43,6 +43,7 @@
 // SQLResult RedisSQLDriver::connect(SQLConn &conn)
 // {
 //     pRedisContext = (redisContext *)redisConnect(conn.ip().c_str(), atoi(conn.port().c_str()));
+
 //     if ((NULL == pRedisContext) || (pRedisContext->err))
 //     {
 //         if (pRedisContext)

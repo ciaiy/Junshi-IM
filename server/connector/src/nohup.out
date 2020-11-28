@@ -1,0 +1,228 @@
+connection: connection: 无法执行二进制文件
+2020-11-28 18:28:50,527: INFO rootCategory : myLog()
+2020-11-28 18:28:50,528: INFO rootCategory : |QueryProcessor|Constructor complete|
+2020-11-28 18:28:50,528: INFO rootCategory : |ServerProcessor|constrcutor|end|
+2020-11-28 18:28:50,528: DEBUG rootCategory : |MQProducer|constructor|
+2020-11-28 18:28:50,570: INFO rootCategory : |MQProducer|constructor complete|
+20201128 10:28:50.583193Z 30202 INFO  pid = 30202, tid = 30202 - TCPKeeper.cpp:9
+2020-11-28 18:30:56,772: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=31000 rttvar=15500 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#1
+2020-11-28 18:31:03,568: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:31:03,568: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:31:03,590: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:31:03,590: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:31:03,590: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:31:03,590: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:e36f6286-9220-46f4-9b81-9b2f24d2ef6e","randomId":"52dc447d-a94c-4a0c-ac39-4fcad28f85a7","token":"e36f6286-9220-46f4-9b81-9b2f24d2ef6e","uid":"123"},"dataAck":"52dc447d-a94c-4a0c-ac39-4fcad28f85a7","queryBody":{"queryInfo":{"cid":"","ext":"123:e36f6286-9220-46f4-9b81-9b2f24d2ef6e","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:31:03,590: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:e36f6286-9220-46f4-9b81-9b2f24d2ef6e| type = 1|
+2020-11-28 18:31:03,591: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606559463123:e36f6286-9220-46f4-9b81-9b2f24d2ef6e|
+2020-11-28 18:31:03,591: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck52dc447d-a94c-4a0c-ac39-4fcad28f85a7
+2020-11-28 18:31:03,690: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F04E8BB0000|Message Body:{"context":{"authToken":"temp1606559463123:e36f6286-9220-46f4-9b81-9b2f24d2ef6e","randomId":"52dc447d-a94c-4a0c-ac39-4fcad28f85a7","token":"e36f6286-9220-46f4-9b81-9b2f24d2ef6e","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:e36f6286-9220-46f4-9b81-9b2f24d2ef6e","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:31:03,690: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"52dc447d-a94c-4a0c-ac39-4fcad28f85a7"}|
+2020-11-28 18:31:03,927: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F04E9AE0000{"context":{"authToken":"temp1606559463123:e36f6286-9220-46f4-9b81-9b2f24d2ef6e","randomId":"52dc447d-a94c-4a0c-ac39-4fcad28f85a7","token":"e36f6286-9220-46f4-9b81-9b2f24d2ef6e","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:31:03,927: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:31:03,927: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1041026348","dataType":"Request"}|
+2020-11-28 18:31:03,927: INFO rootCategory : |MessageSender|sendResponse|dataLen = 105|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1041026348","dataType":"Request"}|
+2020-11-28 18:31:04,144: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=241000 ato=51000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=40811 rttvar=28257 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:31:16,315: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=34000 rttvar=17000 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#2
+2020-11-28 18:31:22,932: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:31:22,932: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:31:22,957: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:31:22,957: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:31:22,957: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:31:22,957: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:d3d22a28-8aa1-46fb-ace1-74397e656f8e","randomId":"a94d8d3e-ab32-4f04-98a1-2c3d3008dc4f","token":"d3d22a28-8aa1-46fb-ace1-74397e656f8e","uid":"123"},"dataAck":"a94d8d3e-ab32-4f04-98a1-2c3d3008dc4f","queryBody":{"queryInfo":{"cid":"","ext":"123:d3d22a28-8aa1-46fb-ace1-74397e656f8e","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:31:22,957: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:d3d22a28-8aa1-46fb-ace1-74397e656f8e| type = 1|
+2020-11-28 18:31:22,957: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606559482123:d3d22a28-8aa1-46fb-ace1-74397e656f8e|
+2020-11-28 18:31:22,957: DEBUG rootCategory : |QueryProcessor|receiveData|dataAcka94d8d3e-ab32-4f04-98a1-2c3d3008dc4f
+2020-11-28 18:31:23,021: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F05344D0001|Message Body:{"context":{"authToken":"temp1606559482123:d3d22a28-8aa1-46fb-ace1-74397e656f8e","randomId":"a94d8d3e-ab32-4f04-98a1-2c3d3008dc4f","token":"d3d22a28-8aa1-46fb-ace1-74397e656f8e","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:d3d22a28-8aa1-46fb-ace1-74397e656f8e","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:31:23,021: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"a94d8d3e-ab32-4f04-98a1-2c3d3008dc4f"}|
+2020-11-28 18:31:23,205: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F0534F60001{"context":{"authToken":"temp1606559482123:d3d22a28-8aa1-46fb-ace1-74397e656f8e","randomId":"a94d8d3e-ab32-4f04-98a1-2c3d3008dc4f","token":"d3d22a28-8aa1-46fb-ace1-74397e656f8e","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:31:23,205: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:31:23,205: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"695775975","dataType":"Request"}|
+2020-11-28 18:31:23,205: INFO rootCategory : |MessageSender|sendResponse|dataLen = 104|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"695775975","dataType":"Request"}|
+2020-11-28 18:32:23,659: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=235000 ato=54000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=34184 rttvar=9870 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:33:52,838: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=28000 rttvar=14000 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#3
+2020-11-28 18:34:00,803: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:34:00,803: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:34:00,831: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:34:00,831: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:34:00,831: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:34:00,831: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:416e080a-78aa-4501-89b7-9a1d54318586","randomId":"a2157da2-43dc-4ced-96b7-f296e17d6402","token":"416e080a-78aa-4501-89b7-9a1d54318586","uid":"123"},"dataAck":"a2157da2-43dc-4ced-96b7-f296e17d6402","queryBody":{"queryInfo":{"cid":"","ext":"123:416e080a-78aa-4501-89b7-9a1d54318586","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:34:00,832: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:416e080a-78aa-4501-89b7-9a1d54318586| type = 1|
+2020-11-28 18:34:00,832: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606559640123:416e080a-78aa-4501-89b7-9a1d54318586|
+2020-11-28 18:34:00,832: DEBUG rootCategory : |QueryProcessor|receiveData|dataAcka2157da2-43dc-4ced-96b7-f296e17d6402
+2020-11-28 18:34:00,904: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F079D000002|Message Body:{"context":{"authToken":"temp1606559640123:416e080a-78aa-4501-89b7-9a1d54318586","randomId":"a2157da2-43dc-4ced-96b7-f296e17d6402","token":"416e080a-78aa-4501-89b7-9a1d54318586","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:416e080a-78aa-4501-89b7-9a1d54318586","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:34:00,904: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"a2157da2-43dc-4ced-96b7-f296e17d6402"}|
+2020-11-28 18:34:01,084: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F079DAD0002{"context":{"authToken":"temp1606559640123:416e080a-78aa-4501-89b7-9a1d54318586","randomId":"a2157da2-43dc-4ced-96b7-f296e17d6402","token":"416e080a-78aa-4501-89b7-9a1d54318586","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:34:01,084: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:34:01,084: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"580478541","dataType":"Request"}|
+2020-11-28 18:34:01,084: INFO rootCategory : |MessageSender|sendResponse|dataLen = 104|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"580478541","dataType":"Request"}|
+2020-11-28 18:35:34,588: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=229000 ato=48000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=28113 rttvar=8358 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:35:37,463: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=31000 rttvar=15500 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#4
+2020-11-28 18:35:43,055: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:35:43,055: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:35:43,102: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:35:43,102: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:35:43,102: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:35:43,102: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:859b858c-0d4d-4314-af14-05238eee380f","randomId":"36325c9b-6946-4f1a-94b4-de6d5bb07fd6","token":"859b858c-0d4d-4314-af14-05238eee380f","uid":"123"},"dataAck":"36325c9b-6946-4f1a-94b4-de6d5bb07fd6","queryBody":{"queryInfo":{"cid":"","ext":"123:859b858c-0d4d-4314-af14-05238eee380f","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:35:43,102: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:859b858c-0d4d-4314-af14-05238eee380f| type = 1|
+2020-11-28 18:35:43,102: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606559743123:859b858c-0d4d-4314-af14-05238eee380f|
+2020-11-28 18:35:43,102: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck36325c9b-6946-4f1a-94b4-de6d5bb07fd6
+2020-11-28 18:35:43,168: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F092C7E0003|Message Body:{"context":{"authToken":"temp1606559743123:859b858c-0d4d-4314-af14-05238eee380f","randomId":"36325c9b-6946-4f1a-94b4-de6d5bb07fd6","token":"859b858c-0d4d-4314-af14-05238eee380f","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:859b858c-0d4d-4314-af14-05238eee380f","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:35:43,168: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"36325c9b-6946-4f1a-94b4-de6d5bb07fd6"}|
+2020-11-28 18:35:43,357: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F092D2C0003{"context":{"authToken":"temp1606559743123:859b858c-0d4d-4314-af14-05238eee380f","randomId":"36325c9b-6946-4f1a-94b4-de6d5bb07fd6","token":"859b858c-0d4d-4314-af14-05238eee380f","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:35:43,357: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:35:43,357: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"211629446","dataType":"Request"}|
+2020-11-28 18:35:43,357: INFO rootCategory : |MessageSender|sendResponse|dataLen = 104|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"211629446","dataType":"Request"}|
+2020-11-28 18:36:18,491: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=232000 ato=40000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=31057 rttvar=9169 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:36:40,957: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=30000 rttvar=15000 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#5
+2020-11-28 18:36:46,857: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:36:46,857: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:36:46,917: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:36:46,918: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:36:46,918: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:36:46,918: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:d59f64b7-6c3a-4645-93f3-e88f4c5ae00f","randomId":"73453a0c-1115-4d7b-b704-41ef9700608b","token":"d59f64b7-6c3a-4645-93f3-e88f4c5ae00f","uid":"123"},"dataAck":"73453a0c-1115-4d7b-b704-41ef9700608b","queryBody":{"queryInfo":{"cid":"","ext":"123:d59f64b7-6c3a-4645-93f3-e88f4c5ae00f","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:36:46,918: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:d59f64b7-6c3a-4645-93f3-e88f4c5ae00f| type = 1|
+2020-11-28 18:36:46,918: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606559806123:d59f64b7-6c3a-4645-93f3-e88f4c5ae00f|
+2020-11-28 18:36:46,918: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck73453a0c-1115-4d7b-b704-41ef9700608b
+2020-11-28 18:36:46,994: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F0A25C60004|Message Body:{"context":{"authToken":"temp1606559806123:d59f64b7-6c3a-4645-93f3-e88f4c5ae00f","randomId":"73453a0c-1115-4d7b-b704-41ef9700608b","token":"d59f64b7-6c3a-4645-93f3-e88f4c5ae00f","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:d59f64b7-6c3a-4645-93f3-e88f4c5ae00f","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:36:46,994: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"73453a0c-1115-4d7b-b704-41ef9700608b"}|
+2020-11-28 18:36:47,191: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F0A268A0004{"context":{"authToken":"temp1606559806123:d59f64b7-6c3a-4645-93f3-e88f4c5ae00f","randomId":"73453a0c-1115-4d7b-b704-41ef9700608b","token":"d59f64b7-6c3a-4645-93f3-e88f4c5ae00f","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:36:47,191: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:36:47,191: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"411869628","dataType":"Request"}|
+2020-11-28 18:36:47,191: INFO rootCategory : |MessageSender|sendResponse|dataLen = 104|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"411869628","dataType":"Request"}|
+2020-11-28 18:36:57,538: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=236000 ato=40000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=35231 rttvar=16553 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:39:51,629: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=33000 rttvar=16500 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#6
+2020-11-28 18:39:56,974: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:39:56,974: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:39:57,014: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:39:57,014: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:39:57,014: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:39:57,014: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:ccc1d835-f3e1-4f6d-a408-61a59c40c79e","randomId":"abfacbb5-ee1b-43f5-8088-891676364153","token":"ccc1d835-f3e1-4f6d-a408-61a59c40c79e","uid":"123"},"dataAck":"abfacbb5-ee1b-43f5-8088-891676364153","queryBody":{"queryInfo":{"cid":"","ext":"123:ccc1d835-f3e1-4f6d-a408-61a59c40c79e","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:39:57,014: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:ccc1d835-f3e1-4f6d-a408-61a59c40c79e| type = 1|
+2020-11-28 18:39:57,014: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606559997123:ccc1d835-f3e1-4f6d-a408-61a59c40c79e|
+2020-11-28 18:39:57,014: DEBUG rootCategory : |QueryProcessor|receiveData|dataAckabfacbb5-ee1b-43f5-8088-891676364153
+2020-11-28 18:39:57,091: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F0D0C560005|Message Body:{"context":{"authToken":"temp1606559997123:ccc1d835-f3e1-4f6d-a408-61a59c40c79e","randomId":"abfacbb5-ee1b-43f5-8088-891676364153","token":"ccc1d835-f3e1-4f6d-a408-61a59c40c79e","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:ccc1d835-f3e1-4f6d-a408-61a59c40c79e","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:39:57,091: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"abfacbb5-ee1b-43f5-8088-891676364153"}|
+2020-11-28 18:39:57,259: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F0D0D070005{"context":{"authToken":"temp1606559997123:ccc1d835-f3e1-4f6d-a408-61a59c40c79e","randomId":"abfacbb5-ee1b-43f5-8088-891676364153","token":"ccc1d835-f3e1-4f6d-a408-61a59c40c79e","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:39:57,259: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:39:57,259: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"852758016","dataType":"Request"}|
+2020-11-28 18:39:57,259: INFO rootCategory : |MessageSender|sendResponse|dataLen = 104|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"852758016","dataType":"Request"}|
+2020-11-28 18:40:03,799: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=237000 ato=58000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=36512 rttvar=15933 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:40:10,495: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=31000 rttvar=15500 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#7
+2020-11-28 18:40:19,477: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:40:19,477: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:40:19,489: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:40:19,489: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:40:19,489: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:40:19,489: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:55c372c9-78cd-48b3-8414-a10a4323febb","randomId":"9cb6666a-51bc-4f4d-9f11-bce1144d353d","token":"55c372c9-78cd-48b3-8414-a10a4323febb","uid":"123"},"dataAck":"9cb6666a-51bc-4f4d-9f11-bce1144d353d","queryBody":{"queryInfo":{"cid":"","ext":"123:55c372c9-78cd-48b3-8414-a10a4323febb","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:40:19,489: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:55c372c9-78cd-48b3-8414-a10a4323febb| type = 1|
+2020-11-28 18:40:19,489: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606560019123:55c372c9-78cd-48b3-8414-a10a4323febb|
+2020-11-28 18:40:19,489: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck9cb6666a-51bc-4f4d-9f11-bce1144d353d
+2020-11-28 18:40:19,555: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F0D64210006|Message Body:{"context":{"authToken":"temp1606560019123:55c372c9-78cd-48b3-8414-a10a4323febb","randomId":"9cb6666a-51bc-4f4d-9f11-bce1144d353d","token":"55c372c9-78cd-48b3-8414-a10a4323febb","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:55c372c9-78cd-48b3-8414-a10a4323febb","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:40:19,555: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"9cb6666a-51bc-4f4d-9f11-bce1144d353d"}|
+2020-11-28 18:40:19,734: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F0D64C80006{"context":{"authToken":"temp1606560019123:55c372c9-78cd-48b3-8414-a10a4323febb","randomId":"9cb6666a-51bc-4f4d-9f11-bce1144d353d","token":"55c372c9-78cd-48b3-8414-a10a4323febb","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:40:19,734: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:40:19,734: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1005830563","dataType":"Request"}|
+2020-11-28 18:40:19,734: INFO rootCategory : |MessageSender|sendResponse|dataLen = 105|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1005830563","dataType":"Request"}|
+2020-11-28 18:40:31,271: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=232000 ato=52000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=31147 rttvar=8970 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:41:28,752: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=235000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=35000 rttvar=17500 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#8
+2020-11-28 18:41:36,849: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:41:36,849: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:41:36,891: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:41:36,891: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:41:36,891: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:41:36,891: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:8ae76273-aa19-4d59-ab04-42be647dd626","randomId":"2531c794-7ea2-4b2d-961a-101389163cc5","token":"8ae76273-aa19-4d59-ab04-42be647dd626","uid":"123"},"dataAck":"2531c794-7ea2-4b2d-961a-101389163cc5","queryBody":{"queryInfo":{"cid":"","ext":"123:8ae76273-aa19-4d59-ab04-42be647dd626","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:41:36,891: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:8ae76273-aa19-4d59-ab04-42be647dd626| type = 1|
+2020-11-28 18:41:36,891: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606560096123:8ae76273-aa19-4d59-ab04-42be647dd626|
+2020-11-28 18:41:36,891: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck2531c794-7ea2-4b2d-961a-101389163cc5
+2020-11-28 18:41:36,955: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F0E927B0007|Message Body:{"context":{"authToken":"temp1606560096123:8ae76273-aa19-4d59-ab04-42be647dd626","randomId":"2531c794-7ea2-4b2d-961a-101389163cc5","token":"8ae76273-aa19-4d59-ab04-42be647dd626","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:8ae76273-aa19-4d59-ab04-42be647dd626","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:41:36,955: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"2531c794-7ea2-4b2d-961a-101389163cc5"}|
+2020-11-28 18:41:37,127: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F0E93250007{"context":{"authToken":"temp1606560096123:8ae76273-aa19-4d59-ab04-42be647dd626","randomId":"2531c794-7ea2-4b2d-961a-101389163cc5","token":"8ae76273-aa19-4d59-ab04-42be647dd626","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:41:37,127: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:41:37,127: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1253438893","dataType":"Request"}|
+2020-11-28 18:41:37,127: INFO rootCategory : |MessageSender|sendResponse|dataLen = 105|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1253438893","dataType":"Request"}|
+2020-11-28 18:41:46,212: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=234000 ato=49000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=33825 rttvar=11971 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:44:31,427: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=235000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=35000 rttvar=17500 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#9
+2020-11-28 18:44:37,068: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:44:37,068: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:44:37,311: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:44:37,311: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:44:37,311: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:44:37,311: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:b7210213-436d-405a-b00f-2c72c01faec6","randomId":"7ba4bad8-2aaa-4701-9eeb-93b25c57a2f6","token":"b7210213-436d-405a-b00f-2c72c01faec6","uid":"123"},"dataAck":"7ba4bad8-2aaa-4701-9eeb-93b25c57a2f6","queryBody":{"queryInfo":{"cid":"","ext":"123:b7210213-436d-405a-b00f-2c72c01faec6","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:44:37,311: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:b7210213-436d-405a-b00f-2c72c01faec6| type = 1|
+2020-11-28 18:44:37,311: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606560277123:b7210213-436d-405a-b00f-2c72c01faec6|
+2020-11-28 18:44:37,311: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck7ba4bad8-2aaa-4701-9eeb-93b25c57a2f6
+2020-11-28 18:44:37,392: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F11533F0008|Message Body:{"context":{"authToken":"temp1606560277123:b7210213-436d-405a-b00f-2c72c01faec6","randomId":"7ba4bad8-2aaa-4701-9eeb-93b25c57a2f6","token":"b7210213-436d-405a-b00f-2c72c01faec6","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:b7210213-436d-405a-b00f-2c72c01faec6","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:44:37,392: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"7ba4bad8-2aaa-4701-9eeb-93b25c57a2f6"}|
+2020-11-28 18:44:37,562: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F1153F70008{"context":{"authToken":"temp1606560277123:b7210213-436d-405a-b00f-2c72c01faec6","randomId":"7ba4bad8-2aaa-4701-9eeb-93b25c57a2f6","token":"b7210213-436d-405a-b00f-2c72c01faec6","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:44:37,562: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:44:37,562: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1127997567","dataType":"Request"}|
+2020-11-28 18:44:37,562: INFO rootCategory : |MessageSender|sendResponse|dataLen = 105|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1127997567","dataType":"Request"}|
+2020-11-28 18:44:37,971: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=392000 ato=40000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=68750 rttvar=80625 sshthresh=7 cwnd=10 total_retrans=2|
+2020-11-28 18:44:41,489: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=33000 rttvar=16500 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#10
+2020-11-28 18:44:52,052: ERROR rootCategory : |TCPKeeper|onClose|std::exception|
+2020-11-28 18:44:52,881: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=238000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=38000 rttvar=19000 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#11
+2020-11-28 18:44:59,031: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:44:59,031: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:44:59,054: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:44:59,054: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:44:59,054: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:44:59,054: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:0aeaa4c3-c21e-4702-ab0d-4795ef224e83","randomId":"95db14c4-338d-4fc8-912f-a8bb31f3b58f","token":"0aeaa4c3-c21e-4702-ab0d-4795ef224e83","uid":"123"},"dataAck":"95db14c4-338d-4fc8-912f-a8bb31f3b58f","queryBody":{"queryInfo":{"cid":"","ext":"123:0aeaa4c3-c21e-4702-ab0d-4795ef224e83","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:44:59,054: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:0aeaa4c3-c21e-4702-ab0d-4795ef224e83| type = 1|
+2020-11-28 18:44:59,055: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606560299123:0aeaa4c3-c21e-4702-ab0d-4795ef224e83|
+2020-11-28 18:44:59,055: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck95db14c4-338d-4fc8-912f-a8bb31f3b58f
+2020-11-28 18:44:59,119: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F11A82F0009|Message Body:{"context":{"authToken":"temp1606560299123:0aeaa4c3-c21e-4702-ab0d-4795ef224e83","randomId":"95db14c4-338d-4fc8-912f-a8bb31f3b58f","token":"0aeaa4c3-c21e-4702-ab0d-4795ef224e83","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:0aeaa4c3-c21e-4702-ab0d-4795ef224e83","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:44:59,119: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"95db14c4-338d-4fc8-912f-a8bb31f3b58f"}|
+2020-11-28 18:44:59,292: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F11A8CC0009{"context":{"authToken":"temp1606560299123:0aeaa4c3-c21e-4702-ab0d-4795ef224e83","randomId":"95db14c4-338d-4fc8-912f-a8bb31f3b58f","token":"0aeaa4c3-c21e-4702-ab0d-4795ef224e83","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:44:59,292: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:44:59,292: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1977133469","dataType":"Request"}|
+2020-11-28 18:44:59,292: INFO rootCategory : |MessageSender|sendResponse|dataLen = 105|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1977133469","dataType":"Request"}|
+2020-11-28 18:45:04,265: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=238000 ato=58000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=37908 rttvar=10855 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:50:34,877: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=28000 rttvar=14000 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#12
+2020-11-28 18:50:43,814: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:50:43,814: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:50:43,864: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:50:43,864: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:50:43,864: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:50:43,864: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e","randomId":"6c39fb01-daa6-4519-8db9-54d9cf2d4a86","token":"d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e","uid":"123"},"dataAck":"6c39fb01-daa6-4519-8db9-54d9cf2d4a86","queryBody":{"queryInfo":{"cid":"","ext":"123:d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:50:43,864: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e| type = 1|
+2020-11-28 18:50:43,864: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606560643123:d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e|
+2020-11-28 18:50:43,864: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck6c39fb01-daa6-4519-8db9-54d9cf2d4a86
+2020-11-28 18:50:43,938: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F16EB18000A|Message Body:{"context":{"authToken":"temp1606560643123:d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e","randomId":"6c39fb01-daa6-4519-8db9-54d9cf2d4a86","token":"d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:50:43,938: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"6c39fb01-daa6-4519-8db9-54d9cf2d4a86"}|
+2020-11-28 18:50:44,104: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F16EBC1000A{"context":{"authToken":"temp1606560643123:d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e","randomId":"6c39fb01-daa6-4519-8db9-54d9cf2d4a86","token":"d49ef1c0-4ff5-4f88-ab75-6d68b4e3649e","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:50:44,104: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:50:44,104: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"268709016","dataType":"Request"}|
+2020-11-28 18:50:44,104: INFO rootCategory : |MessageSender|sendResponse|dataLen = 104|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"268709016","dataType":"Request"}|
+2020-11-28 18:50:44,236: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=229000 ato=58000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=28509 rttvar=9620 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:52:06,192: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=34000 rttvar=17000 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#13
+2020-11-28 18:52:13,532: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :4|
+2020-11-28 18:52:13,532: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:52:13,582: DEBUG rootCategory : |TCPKeeper|onMessage|readableByte :418|
+2020-11-28 18:52:13,582: DEBUG rootCategory : |TCPKeeper|onMessage|dataLen:414|
+2020-11-28 18:52:13,582: DEBUG rootCategory : |TCPKeeper|onMessage|begin read|
+2020-11-28 18:52:13,582: DEBUG rootCategory : |TCPKeeper|onMessage|receive {"context":{"authToken":"123:904a11f6-b33b-4827-99d0-fff24658d2bb","randomId":"9d8bcafd-5f5b-43b2-9d1b-a50563467dc1","token":"904a11f6-b33b-4827-99d0-fff24658d2bb","uid":"123"},"dataAck":"9d8bcafd-5f5b-43b2-9d1b-a50563467dc1","queryBody":{"queryInfo":{"cid":"","ext":"123:904a11f6-b33b-4827-99d0-fff24658d2bb","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"sourceType":"client"}|
+2020-11-28 18:52:13,582: DEBUG rootCategory : |QueryProcessor|userAutchCheckAndSet|contextSign = |authToken =  123:904a11f6-b33b-4827-99d0-fff24658d2bb| type = 1|
+2020-11-28 18:52:13,582: INFO rootCategory : |ConnectionMapper|inserConnection|key = temp1606560733123:904a11f6-b33b-4827-99d0-fff24658d2bb|
+2020-11-28 18:52:13,582: DEBUG rootCategory : |QueryProcessor|receiveData|dataAck9d8bcafd-5f5b-43b2-9d1b-a50563467dc1
+2020-11-28 18:52:13,662: INFO rootCategory : |MQProducer|produce|Message ID: AC192BBA75FA773837A68F18498E000B|Message Body:{"context":{"authToken":"temp1606560733123:904a11f6-b33b-4827-99d0-fff24658d2bb","randomId":"9d8bcafd-5f5b-43b2-9d1b-a50563467dc1","token":"904a11f6-b33b-4827-99d0-fff24658d2bb","uid":"123","ip":"47.94.149.37","port":"2333"},"queryBody":{"queryInfo":{"cid":"","ext":"123:904a11f6-b33b-4827-99d0-fff24658d2bb","message":"123456","optid":"123","type":1,"uid":"123"},"queryType":"optionQuery"},"ext":""}|
+2020-11-28 18:52:13,662: INFO rootCategory : |MessageSender|sendResponse|dataLen = 72|data = {"dataType":"Response","dataAck":"9d8bcafd-5f5b-43b2-9d1b-a50563467dc1"}|
+2020-11-28 18:52:13,831: INFO rootCategory : |MessageListener|consumeMessage|Received Message Topic:SenderToConnector, MsgId:AC192BBA7639773837A68F184A3E000B{"context":{"authToken":"temp1606560733123:904a11f6-b33b-4827-99d0-fff24658d2bb","randomId":"9d8bcafd-5f5b-43b2-9d1b-a50563467dc1","token":"904a11f6-b33b-4827-99d0-fff24658d2bb","uid":"123","ip":"47.94.149.37","port":"2333"},"type":"USER_ONLINE","optid":"123","data":{"result":1,"reason":"SUCCESS"},"sendId":"","cid":""}|
+2020-11-28 18:52:13,831: INFO rootCategory : |ServerProcessor|receiveData|find authToken Connection|
+2020-11-28 18:52:13,832: INFO rootCategory : |ServerProcessor|receiveData|ready to send data ={"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1672619770","dataType":"Request"}|
+2020-11-28 18:52:13,832: INFO rootCategory : |MessageSender|sendResponse|dataLen = 105|data = {"data":{"result":1,"reason":"SUCCESS"},"type":"USER_ONLINE","dataAck":"1672619770","dataType":"Request"}|
+2020-11-28 18:53:05,109: INFO rootCategory : |TCPKeeper|onClose|unrecovered=0 rto=234000 ato=40000 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=33797 rttvar=9903 sshthresh=7 cwnd=10 total_retrans=0|
+2020-11-28 18:53:07,744: INFO rootCategory : |TcpKeeper|onConnection|unrecovered=0 rto=234000 ato=0 snd_mss=1440 rcv_mss=536 lost=0 retrans=0 rtt=33000 rttvar=16500 sshthresh=4 cwnd=10 total_retrans=0|
+TcpKeeper-0.0.0.0:2333#14

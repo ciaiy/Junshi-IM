@@ -22,7 +22,7 @@ namespace im
     private:
         MQProducer *producer;
         QueryProcessor();
-        bool userAuthCheckAndSet(const TcpConnectionPtr &conn, const string &authToken, const uint32_t type);
+        bool userAuthCheckAndSet(const TcpConnectionPtr &conn, string &authToken, const uint32_t type);
         string generateTempSign();
     public:
         void receiveData(const TcpConnectionPtr &conn, std::string query);

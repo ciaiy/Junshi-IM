@@ -2,6 +2,7 @@
 #include "ConnectionMapper.hpp"
 #include "../../common/CJsonObject.hpp"
 #include "../../common/myLog.h"
+#include "MessageSender.hpp"
 
 using namespace im;
 
@@ -34,19 +35,22 @@ void ServerProcessor::receiveData(const std::string msg)
         {
             logger->info("|ServerProcessor|receiveData|find authToken Connection|");
             TcpConnectionPtr conn = mapper->getConnection(authToken);
-            if (authToken.compare(boost::any_cast<string>(conn->getContext())) == 0)
+            if (!conn->getContext().empty() && authToken.compare(boost::any_cast<string>(conn->getContext())) == 0)
             {
                 CJsonObject reponseBody;
                 reponseBody.Add("data", msgJson.getCJsonObject("data"));
                 reponseBody.Add("type", msgJson.getString("type"));
                 reponseBody.Add("dataAck", to_string(random()));
+                reponseBody.Add("dataType", "Request");
                 logger->info("|ServerProcessor|receiveData|ready to send data =" + reponseBody.ToString() + "|");
-                // if (conn->connected())
-                // {
-                //     conn->outputBuffer()->append(reponseBody.ToString());
-                // }else {
-                //     throw("conn closed");
-                // }
+                if (conn->connected())
+                {
+                    MessageSender::sendRequest(conn, reponseBody.ToString());
+                }
+                else
+                {
+                    throw("conn closed");
+                }
             }
         }
         else
