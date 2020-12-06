@@ -28,6 +28,7 @@ namespace im
         const TcpConnectionPtr getConnection(const std::string &key);
         void deleteConneciton(const std::string key);
         void insertConnection(const TcpConnectionPtr &conn);
+        void refreshConnection(const string& oldToken, const string& newToken, const TcpConnectionPtr& conn);
 
     public:
         static ConnectionMapper *getInstance();

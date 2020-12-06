@@ -2,7 +2,7 @@
  * @Author: Qizhou 
  * @Date: 2020-10-23 10:08:18 
  * @Last Modified by: Qizhou
- * @Last Modified time: 2020-10-23 11:04:42
+ * @Last Modified time: 2020-12-03 04:53:26
  */
 #include "MysqlSQLDriver.hpp"
 #include "../../../common/myLog.h"
@@ -77,6 +77,20 @@ SQLResult MysqlSQLDriver::select(const string &query)
     {
         MYSQL_RES *res = mysql_store_result(sqlConn);
         return SQLResult(0, "success", sqlConn, res);
+    }
+}
+
+SQLResult MysqlSQLDriver::insert(const string &query) {
+    logger->info("|MysqlSQLDriver|insert|query = " + query + "|");
+     if (mysql_query(sqlConn, query.c_str()) != 0)
+    {
+        string errorComment = string(mysql_error(sqlConn));
+        logger->info("|MysqlDriver|insert|query = " + query + "| error :" + errorComment + "|");
+        return SQLResult(-1, errorComment);
+    }
+    else
+    {
+        return SQLResult(0, "success");
     }
 }
 

@@ -1,0 +1,142 @@
+2020-12-03 22:35:02,958: INFO rootCategory : myLog()
+2020-12-03 22:35:03,071: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:35:03,072: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:35:03,072: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:35:03,072: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = context|
+2020-12-03 22:35:03,072: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (-289719071-13105322251607006103)|
+2020-12-03 22:35:03,072: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (-289719071-13105322251607006103)| error :Column count doesn't match value count at row 1|
+2020-12-03 22:35:03,072: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:39:53,008: INFO rootCategory : myLog()
+2020-12-03 22:39:53,054: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:39:53,054: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:39:53,054: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:39:53,055: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = context|
+2020-12-03 22:39:53,055: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (33856456-13551118881607006393)|
+2020-12-03 22:39:53,055: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (33856456-13551118881607006393)| error :Column count doesn't match value count at row 1|
+2020-12-03 22:39:53,055: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:41:40,911: INFO rootCategory : myLog()
+2020-12-03 22:41:41,022: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:41:41,022: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:41:41,022: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:41:41,022: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = context|
+2020-12-03 22:41:41,022: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,6880200,,382739728,,1607006501)|
+2020-12-03 22:41:41,049: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,6880200,,382739728,,1607006501)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ',6880200,,382739728,,1607006501)' at line 1|
+2020-12-03 22:41:41,049: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:45:16,142: INFO rootCategory : myLog()
+2020-12-03 22:45:16,224: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:45:16,224: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:45:16,224: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:45:16,225: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = context|
+2020-12-03 22:45:16,225: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,16993224,,1836898976,,1607006716)|
+2020-12-03 22:45:16,225: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,16993224,,1836898976,,1607006716)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ',16993224,,1836898976,,1607006716)' at line 1|
+2020-12-03 22:45:16,225: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:46:19,281: INFO rootCategory : myLog()
+2020-12-03 22:46:19,286: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:46:19,286: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:46:19,286: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:46:19,286: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = context|
+2020-12-03 22:46:19,286: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,4289279,,-368899812,,1607006779)|
+2020-12-03 22:46:19,286: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,4289279,,-368899812,,1607006779)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ',4289279,,-368899812,,1607006779)' at line 1|
+2020-12-03 22:46:19,286: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:49:31,842: INFO rootCategory : myLog()
+2020-12-03 22:49:31,844: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:49:31,844: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:49:31,845: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:49:31,845: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = context|
+2020-12-03 22:49:31,845: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,4289471,,1116354844,,1607006971)|
+2020-12-03 22:49:31,846: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,4289471,,1116354844,,1607006971)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ',4289471,,1116354844,,1607006971)' at line 1|
+2020-12-03 22:49:31,846: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:50:28,431: INFO rootCategory : myLog()
+2020-12-03 22:50:28,433: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:50:28,433: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:50:28,433: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:50:28,433: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = context|
+2020-12-03 22:50:28,433: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,1385324992,,1385325040,,1607007028)|
+2020-12-03 22:50:28,433: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,1385324992,,1385325040,,1607007028)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ',1385324992,,1385325040,,1607007028)' at line 1|
+2020-12-03 22:50:28,433: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:52:10,695: INFO rootCategory : myLog()
+2020-12-03 22:52:10,697: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:52:10,697: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:52:10,697: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:52:10,697: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:52:10,697: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = context|
+2020-12-03 22:52:10,697: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,-658194720,,-658194672,,1607007130)|
+2020-12-03 22:52:10,697: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (,,-658194720,,-658194672,,1607007130)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ',-658194720,,-658194672,,1607007130)' at line 1|
+2020-12-03 22:52:10,697: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:53:37,573: INFO rootCategory : myLog()
+2020-12-03 22:53:37,575: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:53:37,575: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:53:37,575: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:53:37,575: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:53:37,575: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = ext|
+2020-12-03 22:53:37,575: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,1231,,765416184,,1607007217)|
+2020-12-03 22:53:37,583: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,1231,,765416184,,1607007217)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '765416184,,1607007217)' at line 1|
+2020-12-03 22:53:37,583: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:55:40,562: INFO rootCategory : myLog()
+2020-12-03 22:55:40,564: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:55:40,564: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:55:40,564: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:55:40,564: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:55:40,564: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = ext|
+2020-12-03 22:55:40,564: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,1231,,505893624,,1607007340)|
+2020-12-03 22:55:40,564: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,1231,,505893624,,1607007340)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '505893624,,1607007340)' at line 1|
+2020-12-03 22:55:40,564: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:56:20,143: INFO rootCategory : myLog()
+2020-12-03 22:56:20,147: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:56:20,147: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:56:20,147: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:56:20,147: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:56:20,147: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = ext|
+2020-12-03 22:56:20,147: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,1231,,754889464,,1607007380)|
+2020-12-03 22:56:20,147: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,1231,,754889464,,1607007380)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '754889464,,1607007380)' at line 1|
+2020-12-03 22:56:20,147: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:57:04,678: INFO rootCategory : myLog()
+2020-12-03 22:57:04,680: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:57:04,680: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:57:04,680: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:57:04,680: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:57:04,680: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = ext|
+2020-12-03 22:57:04,680: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,,-726949128,,1607007424)|
+2020-12-03 22:57:04,681: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,,-726949128,,1607007424)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-726949128,,1607007424)' at line 1|
+2020-12-03 22:57:04,681: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:58:14,707: INFO rootCategory : myLog()
+2020-12-03 22:58:14,709: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:58:14,709: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:58:14,709: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:58:14,709: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:58:14,709: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = ext|
+2020-12-03 22:58:14,709: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,,-81235208,,1607007494)|
+2020-12-03 22:58:14,710: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,,-81235208,,1607007494)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-81235208,,1607007494)' at line 1|
+2020-12-03 22:58:14,710: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:59:06,627: INFO rootCategory : myLog()
+2020-12-03 22:59:06,628: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:59:06,628: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:59:06,628: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:59:06,628: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:59:06,629: INFO rootCategory : |MessageQuery|constructor|error : get value error, strKey = ext|
+2020-12-03 22:59:06,629: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,,-1129676040,,1607007546)|
+2020-12-03 22:59:06,629: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,,-1129676040,,1607007546)| error :You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-1129676040,,1607007546)' at line 1|
+2020-12-03 22:59:06,629: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:59:45,867: INFO rootCategory : myLog()
+2020-12-03 22:59:45,869: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:59:45,869: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:59:45,869: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:59:45,869: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:59:45,869: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,213,1,123,1607007585)|
+2020-12-03 22:59:45,882: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:59:51,654: INFO rootCategory : myLog()
+2020-12-03 22:59:51,656: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:59:51,656: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:59:51,656: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:59:51,656: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:59:51,656: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,213,1,123,1607007591)|
+2020-12-03 22:59:51,657: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,213,1,123,1607007591)| error :Duplicate entry '' for key 'PRIMARY'|
+2020-12-03 22:59:51,657: DEBUG rootCategory : |SQLResult|constructor|complete|
+2020-12-03 22:59:56,713: INFO rootCategory : myLog()
+2020-12-03 22:59:56,715: INFO rootCategory : |MysqlSQLDriver|connect|connect success 
+2020-12-03 22:59:56,715: INFO rootCategory : |MysqlSQLDriver|constructor|complete|
+2020-12-03 22:59:56,715: INFO rootCategory : |MysqlService|constructor|complete|
+2020-12-03 22:59:56,715: DEBUG rootCategory : |MessageQuery|constructor start|
+2020-12-03 22:59:56,715: INFO rootCategory : |MysqlSQLDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,213,1,123,1607007596)|
+2020-12-03 22:59:56,715: INFO rootCategory : |MysqlDriver|insert|query = insert into msg (msgid, cid, message, type, sourceName, sourceType, sourceUid, createTime) values (msgid,cid,123,1,213,1,123,1607007596)| error :Duplicate entry '' for key 'PRIMARY'|
+2020-12-03 22:59:56,715: DEBUG rootCategory : |SQLResult|constructor|complete|

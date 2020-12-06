@@ -41,10 +41,6 @@ static void workFun()
 int main(int argc, char *argv[])
 {
 
-    thread th(workFun);
-   
-    while(true) {
-        // std::cout << "1" << std::endl;
-    }
+    workFun();
     return 0;
 }

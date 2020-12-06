@@ -31,8 +31,10 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string query
         CJsonObject context = queryJson.getCJsonObject("context");
         CJsonObject queryBody = queryJson.getCJsonObject("queryBody");
         string authToken = context.getString("authToken");
+        int type = queryBody.getCJsonObject("queryInfo").getInt32("type");
+        string queryType = queryBody.getString("queryType");
         // 在此检查数据是否安全，当mapper中没有该用户时，除非请求的类型为登录，否则其他的请求全部丢弃，并关闭该Connection
-        if (userAuthCheckAndSet(conn, authToken, queryBody.getCJsonObject("queryInfo").getInt32("type")))
+        if (userAuthCheckAndSet(conn, authToken, type))
         {
             logger->debug("|QueryProcessor|receiveData|dataAck" + dataAck);
             // 临时加上ip + port
@@ -44,7 +46,10 @@ void QueryProcessor::receiveData(const TcpConnectionPtr &conn, std::string query
             query.Add("queryBody", queryBody);
             query.Add("ext", "");
             MQProducer::getInstance()->produce(query.ToString());
-            MessageSender::sendResponse(conn, dataAck);
+            if (queryType != "messageQuery")
+            {
+                MessageSender::sendResponse(conn, dataAck);
+            }
         }
         else
         {
@@ -68,8 +73,9 @@ bool QueryProcessor::userAuthCheckAndSet(const TcpConnectionPtr &conn, string &a
     // 不为空的话，则校验其authToken是否和conn中的Context一致
     string contextSign = boost::any_cast<string>(context);
     logger->debug("|QueryProcessor|userAutchCheckAndSet|contextSign = " + contextSign + "|authToken =  " + authToken + "| type = " + to_string(type) + "|");
-    if (!contextSign.empty() && contextSign.find("temp") == contextSign.npos)
+    if (type != OPTION_LOGIN &&!contextSign.empty() && contextSign.find("temp") == contextSign.npos)
     {
+        logger->debug("|QueryProcrssor|userAuthCheckAndSet|contextSign = " + contextSign + "|authToken = " + authToken);
         return contextSign.compare(authToken) == 0;
     }
     else

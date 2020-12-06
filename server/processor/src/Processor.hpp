@@ -3,6 +3,7 @@
 
 #include "../../common/SingletonPattern.hpp"
 #include "OptionProcessor.hpp"
+#include "MessageProcessor.hpp"
 #include "SenderProducer.hpp"
 using im::common::SingtonPattern;
 
@@ -15,9 +16,9 @@ namespace im
         void process(string msg);
 
     private:
-        void createMessageQuery(string queryBody);
         SenderProducer *senderProducer;
         OptionProcessor *optionProcessor;
+        MessageProcessor *messageProcessor;
     };
 } // namespace im
 #endif

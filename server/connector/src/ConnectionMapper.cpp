@@ -21,11 +21,12 @@ void ConnectionMapper::insertConnection(const TcpConnectionPtr &conn)
 {
     mtx.lock();
     boost::any key = conn->getContext();
-    if(key.empty()) {
+    if (key.empty())
+    {
         throw common::Exception("conn context null");
     }
     connectionMapper.insert(make_pair(boost::any_cast<string>(key), conn));
-    logger->info("|ConnectionMapper|inserConnection|key = " + boost::any_cast<string>(key) +"|");
+    logger->info("|ConnectionMapper|inserConnection|key = " + boost::any_cast<string>(key) + "|");
     mtx.unlock();
 }
 
@@ -70,5 +71,15 @@ void ConnectionMapper::deleteConneciton(const std::string key)
     {
         mtx.unlock();
         throw common::Exception("Connection not exist");
+    }
+}
+
+void ConnectionMapper::refreshConnection(const string &oldToken, const string &newToken, const TcpConnectionPtr &conn)
+{
+    if (findConnection(newToken)) {
+        throw common::Exception("new Token exist " + newToken);
+    }else {
+        insertConnection(conn);
+        deleteConneciton(oldToken);
     }
 }

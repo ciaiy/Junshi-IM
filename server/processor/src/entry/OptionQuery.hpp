@@ -4,8 +4,8 @@
  * @Last Modified by: Qizhou
  * @Last Modified time: 2020-10-22 18:21:27
  */
-#ifndef _MESSAGEQUERY_H_
-#define _MESSAGEQUERY_H_
+#ifndef _OPTIONQUERY_H_
+#define _OPTIONQUERY_H_
 
 #include <string>
 

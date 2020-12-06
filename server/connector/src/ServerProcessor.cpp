@@ -3,21 +3,40 @@
 #include "../../common/CJsonObject.hpp"
 #include "../../common/myLog.h"
 #include "MessageSender.hpp"
+#include "ConnectionMapper.hpp"
 
 using namespace im;
+using namespace im::common;
 
 ServerProcessor::ObjectCreator ServerProcessor::objectCreator;
 
 ServerProcessor::ServerProcessor()
 {
     mapper = ConnectionMapper::getInstance();
-    logger->info("|ServerProcessor|constrcutor|end|");
+    common::logger->info("|ServerProcessor|constrcutor|end|");
 }
 
 ServerProcessor *ServerProcessor::getInstance()
 {
     static ServerProcessor serverProcessor;
     return &serverProcessor;
+}
+
+void ServerProcessor::refreshConnection(const TcpConnectionPtr &conn, CJsonObject context)
+{
+    try
+    {
+        string newToken = context.getString("uid") + ":" + context.getString("token");
+        string oldToken = boost::any_cast<string>(conn->getContext());
+        logger->info("|ServerProcessor|refreshConnection|conn context :" + oldToken + "new context = " + newToken);
+        conn->setContext(newToken);
+        ConnectionMapper::getInstance()->refreshConnection(oldToken, newToken, conn);
+        logger->debug("|ServerProcessor|refreshConnectino|now conn context: " + boost::any_cast<string>(conn->getContext()) + "|");
+    }
+    catch (std::exception ex)
+    {
+        logger->error("|ServerProcessor|refreshConnection|error " + string(ex.what()) + "|");
+    }
 }
 
 void ServerProcessor::receiveData(const std::string msg)
@@ -38,9 +57,17 @@ void ServerProcessor::receiveData(const std::string msg)
             if (!conn->getContext().empty() && authToken.compare(boost::any_cast<string>(conn->getContext())) == 0)
             {
                 CJsonObject reponseBody;
+                string type = msgJson.getString("type");
+                if (type.compare("USER_ONLINE") == 0)
+                {
+                    refreshConnection(conn, msgJson.getCJsonObject("context"));
+                }
                 reponseBody.Add("data", msgJson.getCJsonObject("data"));
-                reponseBody.Add("type", msgJson.getString("type"));
-                reponseBody.Add("dataAck", to_string(random()));
+                reponseBody.Add("type", type);
+                if (type.compare("MSGACK") != 0)
+                {
+                    reponseBody.Add("dataAck", to_string(random()));
+                }
                 reponseBody.Add("dataType", "Request");
                 logger->info("|ServerProcessor|receiveData|ready to send data =" + reponseBody.ToString() + "|");
                 if (conn->connected())
@@ -60,6 +87,10 @@ void ServerProcessor::receiveData(const std::string msg)
         }
     }
     catch (Exception ex)
+    {
+        logger->info("|ServerProcessor|receiveData|error = " + string(ex.what()) + "|");
+    }
+    catch (std::exception ex)
     {
         logger->info("|ServerProcessor|receiveData|error = " + string(ex.what()) + "|");
     }

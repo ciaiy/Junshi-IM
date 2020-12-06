@@ -1,111 +1,100 @@
-// /*
-//  * @Author: Qizhou 
-//  * @Date: 2020-10-12 00:01:27 
-//  * @Last Modified by: Qizhou
-//  * @Last Modified time: 2020-10-22 18:10:23
-//  */
-// #ifndef _MESSAGEQUERY_H_
-// #define _MESSAGEQUERY_H_
+/*
+ * @Author: Qizhou 
+ * @Date: 2020-10-12 00:01:27 
+ * @Last Modified by: Qizhou
+ * @Last Modified time: 2020-12-03 03:37:52
+ */
+#ifndef _MESSAGEQUERY_H_
+#define _MESSAGEQUERY_H_
 
-// #include <string>
+#include <string>
+#include "../../../common/CJsonObject.hpp"
+#include "../../../common/Exception.hpp"
+#include "../../../common/myLog.h"
 
-// using std::string;
-// namespace im
-// {
-//     namespace entry
-//     {
-//         // 对话消息类
-//         class MessageQuery
-//         {
-//         private:
-//             // 发起请求的id
-//             string uid;
-//             // 相关cid
-//             string cid;
-//             // 操作数据
-//             string message;
-//             // 操作类型
-//             string type;
-//             // 冗余备用
-//             string ext;
+using std::string;
+using namespace im::common;
+namespace im
+{
+    namespace entry
+    {
+        // 对话消息类
+        class MessageQuery
+        {
+        private:
+            // 发起请求的id
+            string uid;
+            // 消息id
+            string msgId;
+            // 相关cid
+            string cid;
+            // 操作数据
+            string message;
+            // 操作类型
+            int type;
+            // 发送消息的用户名
+            string sourceName;
+            // 发送消息的uid
+            string sourceUid;
+            // 发送消息的来源类型
+            int sourceType;
+            // 冗余备用
+            string ext;
+            // 上下文
+            CJsonObject context;
 
-//         public:
-//             class Builder
-//             {
-//             public:
-//                 string uid;
-//                 string cid;
-//                 string message;
-//                 string type;
-//                 string ext;
+        public:
+            string getUid()
+            {
+                return this->uid;
+            }
 
-//                 Builder *uid(string uid)
-//                 {
-//                     this->uid = uid;
-//                     return this;
-//                 }
-//                 Builder *cid(string cid)
-//                 {
-//                     this->cid = cid;
-//                     return this;
-//                 }
-//                 Builder *message(string message)
-//                 {
-//                     this->message = message;
-//                     return this;
-//                 }
-//                 Builder *type(string type)
-//                 {
-//                     this->type = type;
-//                     return this;
-//                 }
-//                 Builder *ext(string ext)
-//                 {
-//                     this->ext = ext;
-//                     return this;
-//                 }
-//                 MessageQuery create()
-//                 {
-//                     return MessageQuery(this);
-//                 }
-//             };
+            string getCid()
+            {
+                return this->cid;
+            }
 
-//         private:
-//             MessageQuery(Builder *builder) : uid(builder->uid),
-//                                              cid(builder->cid),
-//                                              message(builder->message),
-//                                              type(builder->type),
-//                                              ext(builder->ext)
-//             {
-//             }
+            string getMessage()
+            {
+                return this->message;
+            }
 
-//         public:
-//             string getUid()
-//             {
-//                 return this->uid;
-//             }
+            string getExt()
+            {
+                return this->ext;
+            }
 
-//             string getCid()
-//             {
-//                 return this->cid;
-//             }
+            string getSourceName()
+            {
+                return this->sourceName;
+            }
 
-//             string getMessage()
-//             {
-//                 return this->message;
-//             }
+            string getSourceUid()
+            {
+                return this->sourceUid;
+            }
 
-//             string getExt()
-//             {
-//                 return this->ext;
-//             }
+            int getSourceType()
+            {
+                return this->sourceType;
+            }
 
-//             string getType()
-//             {
-//                 return this->type;
-//             }
-//         };
-//     } // namespace entry
-// } // namespace im
+            int getType()
+            {
+                return this->type;
+            }
 
-// #endif
+            string getMsgId() {
+                return this->msgId;
+            }
+
+            CJsonObject getContext() {
+                return this->context;
+            }
+
+            MessageQuery(string query);
+        };
+    } // namespace entry
+} // namespace im
+
+#endif

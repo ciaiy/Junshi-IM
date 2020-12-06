@@ -8,6 +8,7 @@ using namespace im::entry;
 
 OptionQuery::OptionQuery(string queryStr)
 {
+    try{
     CJsonObject queryJson(queryStr);
     CJsonObject queryInfo = queryJson.getCJsonObject("queryInfo");
     context = queryJson.getCJsonObject("context").ToString();
@@ -17,4 +18,7 @@ OptionQuery::OptionQuery(string queryStr)
     type = queryInfo.getInt32("type");
     message = queryInfo.getString("message");
     ext = queryInfo.getString("ext");
+    }catch(Exception ex) {
+        logger->info("|OptionQuery|constructor|error  = " + string(ex.what()) + "|");
+    }
 }

@@ -3,6 +3,7 @@
 
 #include "../../common/SingletonPattern.hpp"
 #include "../../common/Exception.hpp"
+#include "../../common/CJsonObject.hpp"
 #include "ConnectionMapper.hpp"
 #include <muduo/net/TcpConnection.h>
 
@@ -17,10 +18,12 @@ namespace im
     private:
         ConnectionMapper *mapper;
         ServerProcessor();
+
     public:
         void receiveData(const std::string msg);
+        void refreshConnection(const TcpConnectionPtr &conn, CJsonObject context);
 
-        public:
+    public:
         static ServerProcessor *getInstance();
 
     public:

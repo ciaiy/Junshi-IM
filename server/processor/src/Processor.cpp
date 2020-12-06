@@ -2,7 +2,7 @@
  * @Author: Qizhou 
  * @Date: 2020-10-12 00:01:47 
  * @Last Modified by: Qizhou
- * @Last Modified time: 2020-10-22 18:07:03
+ * @Last Modified time: 2020-12-03 03:40:27
  */
 #include "Processor.hpp"
 #include "../../common/myLog.h"
@@ -11,6 +11,7 @@
 #include "../../common/CJsonObject.hpp"
 #include "entry/MessageQuery.hpp"
 #include "OptionProcessor.hpp"
+#include "MessageProcessor.hpp"
 
 using namespace im;
 using namespace im::common;
@@ -20,6 +21,7 @@ Processor::Processor()
 {
     senderProducer = new SenderProducer();
     optionProcessor = new OptionProcessor(senderProducer);
+    messageProcessor = new MessageProcessor(senderProducer);
     logger->info("|Processor|Constructor complete|");
 }
 
@@ -42,15 +44,8 @@ void Processor::process(string msg)
             string queryType = queryBody.getString("queryType");
             if (common::MESSAGE_QUREY.compare(queryType) == 0)
             {
-                string messageQuery;
-                if (query.Get("queryInfo", messageQuery))
-                {
-                    // MessageProcessor->process(createMessageQuery(messageQuery));
-                }
-                else
-                {
-                    logger->warn("|processor|process getQueryInfo error|" + msg + "|");
-                }
+
+                messageProcessor->process(MessageQuery(msg));
             }
             else if (common::OPTION_QUERY.compare(queryType) == 0)
             {
@@ -62,8 +57,10 @@ void Processor::process(string msg)
                 optionQuery.Add("ext", "");
                 optionProcessor->process(optionQuery.ToString());
             }
-        }catch(Exception ex) {
-               logger->warn("|processor|process error|" + string(ex.what())+ "|");
+        }
+        catch (Exception ex)
+        {
+            logger->warn("|processor|process error|" + string(ex.what()) + "|");
         }
     }
 }

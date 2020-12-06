@@ -18,6 +18,7 @@ namespace im
     public:
         static QueryProcessor *getInstance();
         const uint32_t OPTION_LOGIN = 1;
+        const uint32_t OPTION_SINGLEMSG = 2;
 
     private:
         MQProducer *producer;

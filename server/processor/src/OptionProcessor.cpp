@@ -9,6 +9,7 @@
 #include "../../common/Exception.hpp"
 #include "entry/OptionQuery.hpp"
 #include "dao/MysqlService.hpp"
+#include "dao/RedisSQLDriver.hpp"
 #include "../../common/CurrentThread.hpp"
 #include "dao/SQLResult.hpp"
 
@@ -55,11 +56,12 @@ void OptionProcessor::login(string optid, string message, string context)
 {
     SQLResult sqlResult = sqlService.getUserInfo(optid);
     CJsonObject msg;
+    CJsonObject contextJson(context);
     msg.Add("optid", optid);
     msg.Add("type", "USER_ONLINE");
     CJsonObject data;
     msg.Add("mustDeliver", false);
-    msg.Add("context", CJsonObject(context));
+    msg.Add("context", contextJson);
     // 检查SQL 出错
     if (!sqlResult.isSuccess())
     {
@@ -88,7 +90,9 @@ void OptionProcessor::login(string optid, string message, string context)
             std::string userpasswd = userInfo.getString("user_passwd");
             if (message.compare(userpasswd) == 0)
             {
+                // 登录成功
                 logger->info("|OptionProcessor|login|optid = " + optid + " login success|");
+                RedisSQLDriver::getInstance()->set(contextJson.getString("uid") + ":" + contextJson.getString("token"), "connectorId");
                 sqlService.userOnline(optid);
                 data.Add("result", 1);
                 data.Add("reason", "SUCCESS");
